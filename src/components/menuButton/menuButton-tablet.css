@@ -1,0 +1,173 @@
+header > div{
+display: none;
+}
+@media (min-width: 540px) and (max-width: 968px) {
+    header > div{
+        display: block;
+        }
+    .header__menu-button{
+        display: block;
+        position: relative;
+        margin-left: auto;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        padding: 0;
+        border: 0;
+        cursor: pointer;
+    }
+    .header__menu-button::before,
+    .header__menu-button span,
+    .header__menu-button::after{    
+        display: block;
+        content: "";
+        position: absolute;
+        left: 0;
+        top:calc(50%-2px); 
+        width: 50px;
+        height: 7px;
+        background-color:var(--main-bg-color);
+    border-radius: 3px;
+    transform-origin: 50% 50%;
+    }
+    .header__menu-button::before{
+        transform: translateY(-15px);
+    }
+    .header__menu-button::after{
+        transform: translateY(15px);
+    }
+
+    .header__menu-button.activeBurger::before{
+        animation: moveTopLine 0.4s forwards;
+        }
+        .header__menu-button.activeBurger span{
+            animation: moveMidLine 0.4s forwards;
+        }
+        .header__menu-button.activeBurger::after{
+            animation: moveBotLine 0.4s forwards;
+        }
+        .header__menu-button.unactiveBurger::before{
+        animation: moveTopLineRev 0.4s forwards;
+        }
+        .header__menu-button.unactiveBurger span{
+            animation: moveMidLineRev 0.4s forwards;
+        }
+        .header__menu-button.unactiveBurger::after{
+            animation: moveBotLineRev 0.4s forwards;
+        }
+        
+
+    @keyframes moveTopLine{
+        0%{
+            transform: scale(1) translateY(-15px);
+        }
+        25%{
+            transform: scale(1.5) translateY(-11px);
+        }
+        50%{
+            transform: scale(1) translateY(-15px);
+        }
+        75%{
+            transform: scale(1) translateY(0);
+        }
+        100%{
+            transform: scale(1) translateY(0) rotate(45deg);
+        }
+    }
+    @keyframes moveMidLine {
+        0% {
+            transform: scale(1);
+        }
+    
+        25% {
+            transform: scale(1.5);
+        }
+    
+        50% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    
+        75% {
+            opacity: 0;
+        }
+    
+        100% {
+            opacity: 0;
+        }
+    }
+    @keyframes moveBotLine{
+        0%{
+            transform: scale(1) translateY(15px);
+        }
+        25%{
+            transform: scale(1.5) translateY(11px);
+        }
+        50%{
+            transform: scale(1) translateY(15px);
+        }
+        75%{
+            transform: scale(1) translateY(0);
+        }
+        100%{
+            transform: scale(1) translateY(0) rotate(-45deg);
+        }
+    }
+    @keyframes moveTopLineRev{
+        0%{
+            transform: scale(1) translateY(0) rotate(-45deg);
+            
+        }
+        25%{
+            transform: scale(1.5)  translateY(0) rotate(-45deg);
+        }
+        50%{
+            transform: scale(1)  translateY(0) rotate(-45deg);
+        }
+        75%{
+            transform: scale(1)  translateY(0) rotate(0);
+        }
+        100%{
+            transform: scale(1) translateY(-15px);
+        }
+    }
+    @keyframes moveMidLineRev {
+        0% {
+            opacity: 0;
+        }
+    
+        25% {
+            opacity: 0;
+        }
+    
+        50% {
+            opacity: 0;
+        }
+    
+        75% {
+            opacity: 1;
+        }
+    
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes moveBotLineRev{
+        0%{
+            transform: scale(1) translateY(0) rotate(45deg);
+            
+        }
+        25%{
+            transform: scale(1.5)  translateY(0) rotate(45deg);
+        }
+        50%{
+            transform: scale(1)  translateY(0) rotate(45deg);
+        }
+        75%{
+            transform: scale(1)  translateY(0) rotate(0);
+        }
+        100%{
+            transform: scale(1) translateY(15px);
+        }
+    }
+}

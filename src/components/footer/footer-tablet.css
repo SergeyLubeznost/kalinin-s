@@ -1,0 +1,41 @@
+@media (min-width: 540px) and (max-width: 968px) {
+    footer{
+     flex-wrap: wrap;
+     padding: 0 2.3% 0 2.3%;
+     height: 220px;
+    }
+    .logo-footer{
+        width: 78px!important;
+        height: 72px;
+        margin-top: 3.3%;
+        margin-left: 2%;
+    }
+    footer > .footer-info {
+        margin-top: 2%;
+        width: 580px;
+        height: 78px;
+        text-align: justify;
+        margin-bottom: 0px;
+    
+    }
+    .group-footer{
+        width: 210px;
+        height: 92px;
+        margin-top: 0%;
+        margin-left: 2%;
+    }
+    .footer-title{
+   
+        font-size: 16px;
+        line-height: 24.8px;
+      
+    }
+    
+    .group-footer > div > p{
+       width: 176px;
+       font-family: "M-l";
+       font-size: 14px;
+       font-weight: 400;
+       line-height: 20.3px;
+    }
+}

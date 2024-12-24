@@ -1,0 +1,66 @@
+@media (min-width: 969px) and (max-width: 1440px)  {
+    .section-bestseller{
+        padding: 0 2.3% 0 2.3% !important;
+        height: 930px;
+        margin-top: -8.6%;
+        overflow: hidden;
+    }
+
+    .section-bestseller h2{
+        font-size: 30px;
+    }
+
+    .card-bestseller{
+        width:367px;
+        height: 532px;
+    }
+    
+    .card-bestseller img{
+        width:367px;
+    height: 295px;
+    border-radius: 15px 15px 0 0;
+    }
+    
+    .category__title{
+        width: 160px;
+        height: 34px;
+    }
+    .category__title p{
+       font-size: 14px;
+        }
+
+    
+    .title__like-container h3{
+
+        font-size: 25px;
+
+    }
+    
+    .title__like-container .image-like{
+        width: 18px;
+        height: 17px;
+    }
+    
+    .title__like-container p {
+        font-size: 20px;
+    }
+    
+    .matherial__title{
+        font-size: 16px;
+    }
+    
+    .block__price p{
+        font-family: "Arial";
+        font-size: 27px;
+        font-weight: 700;
+        line-height: 36.56px;
+        letter-spacing: 1%;
+    }
+    
+    .price__button{
+        width: 190px;
+        height: 43px;
+        font-size: 18px !important;
+        line-height: 19.86px !important;
+    }
+}

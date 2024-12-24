@@ -1,0 +1,31 @@
+.section__prelodaer {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center; /* центрирование по горизонтали */
+    align-items: center; /*центрирование по вертикали */
+    background-color: rgba(255, 255, 255, 0.8); /* легкий фон для прелоадера */
+  }
+
+  .preloader__container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .preloader__container img{
+    width: 150px;
+    height: 150px;
+  }
+
+  .preloader__container{
+    color: rgba(234, 137, 154, 1)!important;
+  }
+
+  @media(max-width:540px) {
+    .preloader__container img{
+        width: 80px;
+        height: 80px;
+      }
+  }

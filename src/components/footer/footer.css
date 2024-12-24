@@ -1,0 +1,69 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    padding: 0 9.3% 0 9.6%;
+    height: 161px;
+    /* padding-top: 13px; */
+    background-color: #fff;
+}
+
+.logo-footer{
+    width: 108px;
+    height: 100px;
+    margin-top: 2%;
+}
+
+footer > .footer-info {
+    width: 367px;
+    height: 121px;
+    font-family: "M-l";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20.15px;
+    letter-spacing: 1px;
+    color: Gray;
+
+}
+
+.footer-info span{
+    font-family: "Montserrat";
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20.15px;
+    color: black;
+}
+
+.group-footer{
+    width: 210px;
+    height: 69px;
+    margin-top: 1%;
+}
+
+.footer-title{
+    font-family: 'Gotham';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27.9px;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+}
+
+.group-footer > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.group-footer > div > p{
+   width: 176px;
+   font-family: "M-l";
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 26.1px;
+}
+
+
+.social-icons{
+    width: 70px;
+    height: 43px;
+}

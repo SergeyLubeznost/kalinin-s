@@ -1,0 +1,36 @@
+@media (max-width: 539px) {
+    .modal__form{
+       width: 355px;
+       height: 449px;
+    }
+
+
+    .modal__form__title{
+        font-size: 20px;
+        line-height: 31px;
+    }
+    .space{
+        display: none;
+    }
+    .space2{
+        display: block;
+    }
+ 
+    .modal__form__main > form{
+justify-content: flex-start;
+        left: 6%;
+    }
+    .modal__form__input{
+      
+        height: 55px;
+        width: 288px;
+        margin-bottom: 20px;
+
+    }
+
+    .modal__form__button{
+      
+    bottom: 0px;
+   
+    }
+}

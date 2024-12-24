@@ -1,0 +1,130 @@
+@media (min-width: 540px) and (max-width: 968px) {
+    .slider-section {
+        height:566.77px;
+        padding: 0 2.3% 0 2.3%;
+        margin-top: 46px;
+    }
+    .slide1{
+        border-radius: 50px;
+        width: 100%!important;
+        height: 565px!important;
+        overflow: hidden;
+    }
+
+    .slide2{
+      background: url("./Group15.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .other__con-slide2{
+      position: relative;
+      top: 399px;
+      height: 250px;
+      left: -17px;
+    }
+    
+    .other__con-slide2-paragpaph{
+      font-family: 'Gotham'!important;
+        color: #ffffff!important;
+        font-weight: 700!important;
+        font-size: 24px!important;
+    }
+
+    .slide3{
+      background: url("./Group18.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .other__con-slide3{
+      position: relative;
+      top: 358px;
+      height: 250px;
+      left: -17px;
+    }
+    .other__con-slide3 p{
+      font-size: 16px!important;
+      width: 296px;
+    }
+
+    .semiElipse{
+        right: -8%;
+      }
+      .elipse{
+        right: -86%;
+        bottom: 50%;
+      }
+  
+
+    .custom-next-button img, .custom-prev-button img{
+        width: 58%;
+      }
+      
+      .custom-next-button {
+        right: -29px;
+        top: 49%;
+      }
+      
+      .custom-prev-button {
+        left: -30px;
+        transform: translateY(-50%) rotate(180deg);
+        top: 47%;
+      }
+
+      .other-container h3{
+        font-size: 30px;
+        line-height: 46.5px;
+        bottom: 107%;
+        left: 26%;
+        width: 377px;
+        margin-left: -2%;
+      }
+      .other-container p{
+        font-size: 20px;
+        line-height: 31.04px;
+        bottom: 107.2%;
+        left: 24%;
+      }
+      .other-container button {
+        font-size: 18px;
+        line-height: 21.47px;
+        width: 209px;
+        height: 57px;
+        bottom: 55%;
+        left: 23%;
+        bottom: 239px;
+      }
+
+      .size-banner{
+        width: 256px;
+        right: -3.8%;
+        bottom: -53.6%;
+        z-index: 2;
+      }
+      .zercalo{
+        width: 219px;
+        height: 477px;
+        right: -33%;
+        bottom: 10%;
+        margin-top: -82px;
+
+      }
+
+      .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+        padding-left: 31%;
+        width: 32%!important;
+        top: 90%!important;
+        display: flex;
+        justify-content: space-evenly;
+    }
+      
+.swiper-pagination-bullet{
+    width: 16px !important;
+    height: 16px !important; 
+}
+.swiper-pagination-bullet-active{
+    width: 16px !important;
+    height: 16px !important;
+}
+}

@@ -1,0 +1,153 @@
+.css-1vq2j8x-MuiPaper-root-MuiDrawer-paper {
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.87);
+    -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    box-shadow: var(--Paper-shadow);
+    background-image: var(--Paper-overlay);
+    overflow-y: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    z-index: 1;
+    -webkit-overflow-scrolling: touch;
+    position: fixed;
+    top: 0;
+    outline: 0;
+    top: 100px;
+    left: 0;
+    right: 0;
+    height: auto;
+    max-height: 100%;
+   
+
+}
+.css-68zbsl {
+    width: auto;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.css-4nmryk-MuiBackdrop-root-MuiModal-backdrop {
+    background-color: rgba(255, 255, 255, 0.1)!important; /* Цвет фона с прозрачностью */
+    backdrop-filter: blur(10px); /* Эффект размытого стекла */
+    -webkit-backdrop-filter: blur(10px); /* Для поддержки в WebKit */
+}
+
+.MuiBox-root ul{
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+.MuiBox-root ul li {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.burger-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.3%;
+}
+.burger-forminput::placeholder{
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23.54px;
+    color: #8E8E8E;
+    margin-top: 2%;
+}
+.burger-form input{
+    width: 302px;
+    height: 30px;
+    border: none;
+    border-bottom: #8E8E8E 1px solid;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23.54px;
+    
+}
+.burger-form input:focus{
+    outline: none;
+}
+
+.burger-form  button{
+    margin-left: -28px;
+
+    background-color: rgba(255, 255, 255,0);
+    border: none;
+}
+
+.nav__burger-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 178px;
+    width: 306px;
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.group__burger>p{
+     font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21.7px;
+    margin-bottom: 0;
+}
+.group__burger>div{
+     font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21.7px;
+
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+}
+
+.group__burger-phone-group{
+    width: 138px!important;
+    display: flex;
+    align-items: center;
+}
+.group__burger-social-icons{
+   display: flex!important;
+   justify-content: center!important;
+   margin-top: 10px;
+   margin-bottom: 43px;
+}
+
+.group__burger-social-icons img{
+    margin-right: 10px;
+    margin-left: 10px;
+}

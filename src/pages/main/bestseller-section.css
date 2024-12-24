@@ -1,0 +1,171 @@
+.section-bestseller{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 9.3% 0 9.6%;
+    height: 72vh;
+    margin-top: 3.4%;
+
+   
+}
+
+.section-bestseller h2{
+    align-self: flex-start;
+    font-family: 'Gotham';
+    margin-top: -100.84px;
+    color: #3D3D3D;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 54.25px;
+
+}
+.poducts-bestseller{
+    position: absolute;
+    width: 103.4%;
+}
+.bestseller-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+.bestseller-container > .bigElipse{
+    margin-top: 10%;
+    margin-left: -12%;
+    position: relative;
+    bottom: 10%;
+    width: 24%;
+
+}
+.bestseller-container > .smallElipse{
+    margin-top: -21%;
+    margin-right: -6.5%;
+    position: relative;
+    right: 0%;
+    bottom: 9%;
+    width: 13%;
+}
+
+.mySwiper2{
+    width: 100% !important;
+    margin-bottom: -11%;
+    margin-top: 2%;
+    height: 640px;
+}
+
+.card-bestseller{
+    width: 465px;
+    height: 613px;
+    border-radius: 15px !important;
+    border: 2px solid #E3E3E3;
+    box-shadow: 0 4px 27px 0 #6363634D;
+    background-color: #ffff;
+}
+
+.card-bestseller img{
+width:465px;
+height: 369px;
+border-radius: 15px 15px 0 0;
+
+}
+
+.category__title{
+    margin-left: 4%;
+    margin-top: 2.5%;
+    width: 178px;
+    height: 38px;
+    border-radius: 5px;
+    background-color: #FFBFBF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.category__title p{
+   font-family: 'Arial';
+   color: #ffffff;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 24.83px;
+   text-align: center;
+    }
+.title__like-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 47px;
+    margin-top: 3%;
+    padding-left: 4%;
+    padding-right: 7%;
+}
+
+.title__like-container h3{
+    font-family: 'Gotham';
+    color: #3D3D3D;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 46.56px;
+}
+
+.title__like-container .image-like{
+    width: 20px;
+    height: 19px;
+    border-radius: 0;
+    position: relative;
+    left: -13%;
+}
+
+.title__like-container p {
+   
+    font-family: 'Gotham';
+    color: #3D3D3D;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 31.04px;
+}
+
+.matherial__title{
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.83px;
+    padding-left: 4.23%;
+}
+
+.block__price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -5.8%;
+    padding-right: 4%;
+    padding-left: 4%;
+}
+.block__price p{
+    font-family: "Arial";
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 46.56px;
+    letter-spacing: 1%;
+}
+
+.price__button{
+    width: 194px;
+    height: 53px;
+    border-radius: 10px!important;
+    background-color: #EA899A!important;
+    font-family: "Arial"!important;
+    font-size: 20px!important;
+    font-weight: 600!important;
+    line-height: 23.86px!important;
+    text-transform: none !important;
+}
+
+.likes__mobile{
+    display: none;
+}
+
+.dop__block{
+    display: none!important;
+}
+

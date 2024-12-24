@@ -1,0 +1,50 @@
+@media (min-width: 969px) and (max-width: 1440px)  {
+    .main__about{
+     
+        min-height: 1850px;
+    }
+   
+    .section__about h2{
+        font-size:30px;
+    }
+    .section__about_info_1{
+        width: 1200px;
+        margin-top: 37px;
+    }
+    .section__about_info_1 img{
+        width: 506px;
+        height: 506px;
+     }
+     .info_1__container {
+        width: 624px;
+        height: 430px;
+      
+    }
+
+    .info2__section {
+        margin-top: 100px;
+    }
+
+    .info2__height{
+        height: 260px;
+        width: 506px;
+    }
+
+    .info2__img {
+        width: 645px !important;
+        height: 430px !important;
+        margin-right: -8px;
+    }
+
+    .info_1__container .info_1__bold{
+        font-size: 20px
+    }
+    .info_1__container p{
+        font-size: 17px;
+    }
+    .info3__height{
+        width: 661px;
+        height: 364px;
+        margin-right: -18px;
+    }
+}

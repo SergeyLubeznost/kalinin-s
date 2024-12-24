@@ -1,0 +1,134 @@
+@media (max-width: 539px) {
+    .slider-section {
+        height:566.77px;
+        padding: 0 2.3% 0 2.3%;
+        margin-top: -30px;
+    }
+    .slide1{
+      border-radius: 30px;
+      width: 100% !important;
+      height: 506px !important;
+      overflow: hidden;
+      
+    }
+
+    .slide2{
+      background: url("./Group16.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .other__con-slide2{
+      position: relative;
+      top: 370px;
+      height: 143px;
+      left: 0px;
+    }
+    .other__con-slide2 h3{
+        left: 21%!important;
+    }
+    
+    .other__con-slide2-paragpaph{
+      font-family: 'Gotham'!important;
+        color: #ffffff!important;
+        font-weight: 700!important;
+        font-size: 18px!important;
+    }
+
+    .other__con-slide2 button{
+      display: none;
+    }
+
+    .slide3{
+      background: url("./Group19.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .other__con-slide3{
+      position: relative;
+      top: 370px;
+      height: 143px;
+      left: 0px;
+    }
+    .other__con-slide3 h3{
+      width: 313px!important;
+      margin-left: 0%!important;
+      z-index: 4 !important;
+      left: 32%!important;
+    }
+    .other__con-slide3 button{
+      display: none;
+    }
+    .semiElipse{
+      right: -41%;
+      width: 138px;
+
+      }
+      .elipse{
+        right: -112%;
+        bottom: 52%;
+        width: 97px;
+      }
+  
+
+    .custom-next-button img, .custom-prev-button img{
+        width: 50%;
+      }
+      
+      .custom-next-button {
+        right: -29px;
+        top: 47.9%;
+      }
+      
+      .custom-prev-button {
+        left: -30px;
+        transform: translateY(-50%) rotate(180deg);
+        top: 47%;
+      }
+
+      .other-container h3{
+        font-size: 20px;
+        line-height: 30.5px;
+        bottom: 222%;
+        left: 36%;
+        text-align: center;
+        width: 261px;
+        margin-left: -2%;
+        z-index: 4;
+      }
+      .other-container p{
+        font-size: 16px;
+        line-height: 31.04px;
+        bottom: 225.2%;
+        left: 35%;
+        z-index: 4;
+      }
+      .other-container button {
+      
+        display: none;
+      }
+
+      .size-banner{
+        width: 152px;
+        right: 77.2%;
+        bottom: -53.6%;
+        z-index: 2;
+   
+      }
+      .zercalo{
+        width: 139px;
+        height: 303px;
+        right: 37%;
+        bottom: -14%;
+        margin-top: 0px;
+
+      }
+
+      .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+        display: none;
+    }
+      
+}

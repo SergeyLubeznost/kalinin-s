@@ -1,0 +1,54 @@
+.modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.1); /* Цвет фона с прозрачностью */
+    backdrop-filter: blur(10px); /* Эффект размытого стекла */
+    -webkit-backdrop-filter: blur(10px); /* Для поддержки в WebKit */
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none; /* Отключаем события указателя по умолчанию */
+    transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.modal.active {
+    opacity: 1;
+    pointer-events: all; /* Включаем события указателя, когда модалка активна */
+}
+
+.modal.active:hover,
+.modal.active:focus {
+    background-color: rgba(255, 255, 255, 0.1); /* Нет изменения фона при наведении или фокусе */
+    outline: none; /* Убираем обводку при фокусе */
+}
+
+/* Убираем стиль для :active */
+.modal.active:active {
+    background-color: rgba(255, 255, 255, 0.1); /* Поддерживаем тот же фон */
+}
+
+
+.modal__content{
+   
+    border-radius: 26px;
+    background-color: #fff;
+    transform: scale(0.5);
+    transition: all 175ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor:auto;
+}
+
+.modal__content.active{
+    transform: scale(1);
+}
+
+@media (max-width: 539px) {
+    .modal__content{
+        border-radius: 38px;
+    }
+}

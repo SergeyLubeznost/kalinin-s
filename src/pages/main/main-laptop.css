@@ -1,0 +1,34 @@
+@media (min-width: 969px) and (max-width: 1770px)  {
+    .main-container{
+        height: 86vh;
+        padding: 0 2.3% 0 2.3%!important;
+    }
+    .logo-main{
+        margin-top: 60px;
+    }
+    .logo-main img{
+        width: 250px;
+    }
+
+    .main-title{
+        margin-top: 76.16px;
+        font-size: 45px;
+        line-height: 67.25px;
+    }
+    .main-btn-group{
+        width: 476px;
+        margin-top: 56px;
+    }
+    
+    .main-btn-catalog,.main-btn-contact{
+        width: 187.6px;
+        height: 61px;
+     
+        font-size: 20px;
+        letter-spacing: 0px;
+    }
+    .guarantees{
+       
+        padding: 0 2.3% 0 2.3%!important;
+    }
+}

@@ -1,0 +1,48 @@
+@media(max-width:540px) {
+   footer{
+      flex-wrap: wrap;
+      padding: 15px 2.3% 0 2.3%;
+      height: 305px;
+     }
+     .logo-footer{
+         width: 50px!important;
+         height: 46px;
+         margin-top: 3.3%;
+         margin-left: 2%;
+     }
+     footer > .footer-info {
+         margin-top: 2%;
+         width: 82%;
+
+         height: 78px;
+         text-align: justify;
+         margin-bottom: 0px;
+     font-size: 10px;
+     line-height: 15.5px;
+     }
+     .footer-info span{
+      font-size: 10px;
+      line-height: 15.5px;
+  }
+     .group-footer{
+         width: 156px;
+         height: 70px;
+         margin-top: 0%;
+         margin-left: 2%;
+     }
+     .footer-title{
+    
+         font-size: 14px;
+         line-height: 21.7px;
+       
+     }
+     
+     .group-footer > div > p{
+        width: 176px;
+        font-family: "M-l";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20.3px;
+     }
+    
+}

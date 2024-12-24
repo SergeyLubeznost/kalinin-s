@@ -1,0 +1,121 @@
+.main__form-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10% 0 11%;
+    align-items: center;
+    margin-top: 85px;
+    margin-bottom: 108px;
+
+}
+
+.main__form-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: -65px;
+    margin-left: -26px;
+}
+.main__form-text h2{
+    font-family: 'Gotham';
+    color: #3D3D3D;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 54.25px;
+    width: 403px;
+
+}
+.main__form-text p{
+    font-family: 'G-l';
+    color: #222121;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 4%;
+    letter-spacing: 1px;
+    width: 390px;
+    margin-top: 14px;
+}
+
+.main__form-formBlock{
+    width:874px;
+    height: 306px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+    background-color: #FFFF;
+    box-shadow: 0 10px 72px rgba(255, 194, 212, 0.7);
+}
+
+.main__form-formBlock img{
+width: 163px;
+height: 136px;
+}
+
+.main__form-inputGroup{
+    width: 320px;
+    height: 156px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: -10%;
+}
+
+.main__form-inputGroup  .MuiOutlinedInput-notchedOutline{
+    border-width: 0px!important;
+    outline: none;
+  }
+
+.main__form-inputGroup label{
+    font-family: 'M-l';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27.9px;
+    letter-spacing: 1%;
+    color: #616161!important;
+    background-color: white;
+}
+.main__form-input{
+    border: 1px solid #ea899a!important;
+    border-radius: 10px;
+    width: 310px;
+    height: 55px;
+}
+
+.main__form-buttonGroup{
+    width: 265px;
+    height: 156px;
+    display: flex
+;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    right: 7%;
+    bottom: 1%;
+}
+
+.label-chekbox{
+    font-family: 'M-l';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27.9px;
+}
+
+.main_form-button{
+    width: 194px;
+    height: 55px;
+    border-radius: 10px!important;
+    background-color: #ea899a!important;
+    color: #FFFF!important;
+    font-family: 'G-l'!important;
+    font-weight: 400!important;
+    font-size: 18px!important;
+    line-height: 17.23px!important;
+   text-transform: none!important;
+}
+
+.min__form-dopTitle{
+    display: none;
+}

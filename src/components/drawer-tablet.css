@@ -1,0 +1,5 @@
+@media (min-width: 540px) and (max-width: 968px) {
+    .list__item-burger{
+        display: none!important;
+    }
+}

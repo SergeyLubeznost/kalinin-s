@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Gotham';
+  src: url('./fonts/GothamPro/gothampro_bold.ttf') format('truetype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'G-l';
+  src: url('./fonts/GothamPro/gothampro_light.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Montserrat'; /* Исправлено на правильное написание */
+  src: url('./fonts/montserrat/Montserrat-Medium.ttf') format('truetype'); /* Исправлено написание папки и файла */
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'M-l'; 
+  src: url('./fonts/montserrat/Montserrat-Light.ttf') format('truetype'); /* Исправлено написание папки и файла */
+  font-weight: 400;
+}
+
+:root {
+  --main-bg-color: #EA899A;
+}
+
+
+
+/* Ссылки */
+a {
+  text-decoration: none; /* Убираем подчеркивание */
+}
+
+ul, ol {
+  list-style: none; /* Убираем маркеры списка */
+}
+button {
+  cursor: pointer; /* Устанавливаем курсор "указатель" для кнопок */
+}
+
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(250, 250, 250);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

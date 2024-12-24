@@ -1,0 +1,84 @@
+@media (min-width: 540px) and (max-width: 968px) {
+    .main__about {
+            min-height: 1380px;
+        }
+    
+        .section__about {
+            margin-top: 15.16px;
+        }
+    
+        .section__about h2 {
+            font-size: 30px;
+        }
+    
+        .section__about img {
+            width: 30px;
+            height: 30px;
+        }
+    
+        .section__about_info_1 {
+            width: 768px;
+            margin-top: -2px;
+        }
+    
+        .section__about_info_1 img {
+            width: 371.32px;
+            height: 371.32px;
+        }
+    
+        .info_1__container {
+            width: 369.24px;
+            height: 375px;
+            margin-right: 8px;
+            margin-top: 0px;
+    
+        }
+    
+        .info_1__container p {
+            font-size: 14px;
+            line-height: 21.73px;
+        }
+    
+        .info_1__container .info_1__bold {
+            font-size: 16px;
+            line-height: 31.04px;
+        }
+    
+        .main__title__about {
+            font-size: 20px !important;
+        }
+    
+        .info2__img {
+            width: 375px !important;
+            height: 220.03px !important;
+            margin-right: 0px;
+    
+        }
+    
+        .info2__height {
+            height: 228px;
+            margin-left: 16px;
+        }
+    
+        .title2__size__tablet {
+            font-size: 15px !important;
+        }
+    
+        .info2__section {
+            margin-top: 93px;
+        }
+    
+        .info3__height {
+            width: 359px;
+            height: 398px;
+            margin-right: 14px;
+        }
+    
+        .info3__section {
+            margin-top: 87px;
+        }
+    
+        .title3__size3 {
+            width: 262px !important;
+        }
+}

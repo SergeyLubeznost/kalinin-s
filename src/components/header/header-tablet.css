@@ -1,0 +1,36 @@
+@media (min-width: 540px) and (max-width: 968px) {
+    header{
+        padding: 0 19.89px 0 19.89px!important;
+        height: 81.81px!important;  
+    }
+    .logo{
+        width: 6%;
+    }
+    header ul{
+        display: none!important;
+    }
+    
+    .phone-group{
+        display: none!important; 
+    } 
+    .icon-group{
+        width: 114px!important;
+        left: 0px!important;
+        top: 0px!important;
+    }
+    .icon-group > img{
+        margin-right: 10px!important;
+     }
+     .logo{
+        width: 9% !important;
+        margin-left: -3.4%;  
+    }
+    header > form {
+        width: 314px !important;
+        margin-top: 0% !important;
+        margin-left: 7%;
+    }
+    header > form > button{
+        left: -9%;
+    }
+}

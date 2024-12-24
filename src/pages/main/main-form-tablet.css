@@ -1,0 +1,91 @@
+@media (min-width: 540px) and (max-width: 968px) {
+    .main__form-section{
+        padding: 0 2.3% 0 2.3%;
+        margin-top: 85px;
+        margin-bottom: 83px;
+
+    }
+    .main__form-text{
+        margin-top: -291px;
+        margin-left: -1px;
+
+      
+    }
+    .main__form-text h2{
+        font-size: 25px;
+        line-height: 38.75px;
+        width: 295px;
+
+    
+    }
+    .main__form-text p{
+        font-size: 18px;
+        line-height: 27px;
+        width: 315px;
+        margin-top: 7px;
+    }
+
+    .main__form-formBlock{
+        width:359.62px;
+        height: 346.56px;
+   flex-direction: column;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-top: -93px;
+        position: relative;
+    }
+    .main__form-formBlock img{
+        width: 135px;
+        height: 112px;
+        position: relative;
+        right: 45%;
+        margin-top: -21px;
+        }
+
+        .main__form-inputGroup{
+            width: 288px;
+            height: 133px;
+            margin-left: 0%;
+            margin-top: -64px;
+        }
+    
+        .main__form-input{
+            border: 1px solid #ea899a!important;
+            border-radius: 10px;
+            width: 288px;
+            height: 55px;
+            background-color: #fff;
+        }
+        .main__form-inputGroup .css-h9e54m-MuiInputBase-root-MuiOutlinedInput-root {
+            font-size: 16px !important;
+            height: 55px;
+            outline: none;
+        }
+        .main__form-inputGroup label{
+            border-radius: 20px;
+        }
+
+        .main__form-buttonGroup{
+            width: 100%;
+            align-items: center;
+            right: 0%;
+            bottom: 0%;
+        }
+
+        .label-chekbox{
+            font-family: 'M-l';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24.8px;
+            width: 208px;
+        }
+
+        .main_form-button{
+            height: 53px;
+            position: relative !important;
+            bottom: 31px;
+        }
+        .min__form-dopTitle{
+            display: none;
+        }
+}

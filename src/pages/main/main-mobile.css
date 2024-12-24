@@ -1,0 +1,82 @@
+@media(max-width:540px) {
+    .main-container{
+        background: url("./image-main/main-bck-mobile.webp") no-repeat center;
+        width: 100%;
+        background-size: cover;
+        height: 513px;
+        padding: 0 2.3% 0 2.3%;
+    }
+    .logo-main{
+        height: 43,33px;
+        margin-top: 70.75px;
+        margin-left: 0px;
+    }
+    .logo-main img{
+        width: 189px;
+    }
+        .main-title {
+            font-family: 'Gotham';
+            margin-top: 101.92px;
+            font-size: 25px;
+            line-height: 38.75px;
+            margin-left: 0px;
+    }
+    .main-btn-group{
+        width: 354px!important;
+        margin-top: 31px!important;
+        margin-left: 0px!important;
+    }
+
+    .main-btn-catalog,.main-btn-contact{
+        width: 172px!important;
+        height: 57px!important;
+        border: none!important;
+        font-family: "Montserrat"!important;
+        font-size: 16px!important;
+        font-weight: 500!important;
+        line-height: 18.83px!important;
+        border-radius: 10px!important;
+        letter-spacing: -1px!important;
+    }
+
+    .guarantees {
+     
+        padding: 0 2.3% 0 2.3%;
+    }
+    
+    .guarantees-container{
+        margin-top: 12.5%;
+     
+        min-height: 307px;
+        width: 100%;
+      
+        flex-direction: column;
+        justify-content: flex-start;
+ 
+    }
+    .guarantees-item{
+        width: 100%;
+        min-height: 81px;
+        margin-bottom: 9%;
+
+    }
+
+    .guarntes__title{
+        margin-bottom: 10px;
+        font-size: 16px!important;
+        line-height: 0px;
+    }
+    .accordion__paragraph{
+        font-size: 14px!important;
+        line-height: 21.73px;
+    }
+    .guarantees-item img{
+        width: 56px;
+        margin-right: 0px;
+    } 
+    .position-guarantees-last-div{
+        width: 100%;
+        margin-top: 0%;
+    }
+    
+}

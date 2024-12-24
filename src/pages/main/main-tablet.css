@@ -1,0 +1,92 @@
+@media (min-width: 540px) and (max-width: 968px) {
+    .guarantees {
+     
+        padding: 0 2.3% 0 2.3%;
+    }
+    
+    .main-container{
+        background: url("./image-main/mainTablet(1)_11zon.webp") no-repeat center;
+        height: 657.32px;
+        width: 100%;
+        padding: 0 2.3% 0 2.3%;
+
+    }
+    .logo-main{
+        position: relative;
+
+        margin-top: 12%;
+
+    }
+    .logo-main img {
+        width: 255px;
+    }
+    .main-title {
+        margin-top: 117.16px;
+        font-size: 40px;
+        line-height: 62px;
+        margin-left: 0px;
+    }
+    .main-btn-group {
+        width: 456px;
+        margin-top: 33px;
+        position: relative;
+        margin-left: 0px;
+        bottom: 2%;
+    }
+
+ 
+    .guarantees-container{
+        margin-top: 9.5%;
+     
+        min-height: 355px;
+      
+        flex-direction: column;
+        justify-content: flex-start;
+ 
+    }
+    .guarantees-item{
+        width: 100%;
+        height: 81px;
+        margin-bottom: 9%;
+
+    }
+
+    .guarantees-item div > h3{
+        margin-bottom: 10px;
+    }
+    .guarantees-item img{
+        width: 81px;
+    } 
+    .position-guarantees{
+        position: relative;
+        right: 0%;
+        bottom: 0px;
+    }
+    .position-guarantees-img{
+        position: relative;
+        right: 0%;
+        bottom: 0px;
+    }
+    .position-guarantees-mid-img{
+        position: relative;
+        right: 0%;
+        bottom: 0px;
+    }
+    .position-guarantees-mid-div{
+        position: relative;
+        right: 0%;
+        bottom: 0px;
+    }
+    .position-guarantees-last-img{
+        position: relative;
+        right: 0%;
+        bottom: 0px;
+    }
+    .position-guarantees-last-div{
+        position: relative;
+        right: 0%;
+        bottom: 0px;
+    }
+    
+
+}

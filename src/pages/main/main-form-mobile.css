@@ -1,0 +1,79 @@
+@media(max-width:540px) {
+    .main__form-section {
+        padding: 0 2.3% 0 2.3%;
+        margin-top: 85px;
+        margin-bottom: 52px;
+
+    }
+    .main__form-formBlock{
+        width:100%;
+        height: 425px;
+   flex-direction: column;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-top: -63px;
+        position: relative;
+    }
+    .min__form-dopTitle{
+        display: none;
+    }
+    .main__form-text{
+       display: none;
+    }
+
+    .main__form-formBlock img{
+        width: 135px;
+        height: 112px;
+        position: relative;
+        right: 45%;
+        margin-top: -21px;
+        }
+
+        .main__form-inputGroup{
+            width: 288px;
+            height: 133px;
+            margin-left: 0%;
+            margin-top: -64px;
+        }
+        .main__form-input{
+            border: 1px solid #ea899a!important;
+            border-radius: 10px;
+            width: 288px;
+            height: 55px;
+            background-color: #fff;
+        }
+        .main__form-inputGroup label{
+            border-radius: 20px;
+        }
+
+        .main__form-buttonGroup{
+            width: 100%;
+            align-items: center;
+            right: 0%;
+            bottom: 0%;
+        }
+
+        .label-chekbox{
+            font-family: 'M-l';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24.8px;
+            width: 208px;
+        }
+
+        .main_form-button{
+            height: 53px;
+            position: relative !important;
+            bottom: 31px;
+        }
+        .min__form-dopTitle{
+            display: block;
+            font-family: 'Gotham';
+            color: #3D3D3D;
+            font-weight: 700;
+            font-size:20px;
+            line-height: 31px;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+}

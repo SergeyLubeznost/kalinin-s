@@ -1,0 +1,104 @@
+.main__about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: clamp(768px, 100%, 1920px);
+    background-image: url("../image-about/background\ about\ us.png");
+    min-height: 2200px;
+}
+
+.section__about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 373px;
+    margin-top: 34.16px;
+}
+.main__title__mobile{
+    display: none;
+}
+.section__about h2 {
+    font-family: 'Gotham';
+
+    color: #000000;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 62px;
+    margin-left: 20px;
+}
+
+.section__about img {
+    width: 58px;
+    height: 58px;
+}
+
+.info__align {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section__about_info_1 {
+    width: 1385px;
+    margin-top: 37px;
+}
+
+.section__about_info_1 img {
+    width: 606px;
+    height: 606px;
+}
+
+.info_1__container {
+    width: 658px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-right: 17px;
+    margin-top: 10px;
+
+}
+
+.info_1__container * {
+    margin: 0;
+}
+
+.info_1__container p {
+    font-family: 'M-l';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27.94px;
+}
+
+.info_1__container .info_1__bold {
+    font-family: 'Gotham';
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 38.8px;
+}
+
+.info2__height {
+    height: 274px;
+}
+
+.info2__img {
+    width: 784px !important;
+    height: 460px !important;
+    margin-right: -100px;
+
+}
+
+.info2__section {
+    margin-top: 93px;
+}
+
+.info3__height {
+    width: 672px;
+    height: 364px;
+    margin-right: -34px;
+}
+
+.info3__section {
+    margin-top: 87px;
+}

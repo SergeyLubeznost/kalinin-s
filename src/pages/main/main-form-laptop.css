@@ -1,0 +1,87 @@
+@media (min-width: 969px) and (max-width: 1800px) {
+    .main__form-section {
+        padding: 0 2.3% 0 2.3% !important;
+        margin-top: 0px;
+width: 90%;
+
+    }
+
+    .main__form-text {
+        margin-left: 0px;
+    }
+
+    .main__form-text h2 {
+        font-size: 30px;
+        line-height: 44.25px;
+    }
+
+    .main__form-text p {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .main__form-formBlock {
+        width: 680px;
+    }
+
+    .main__form-formBlock img {
+        width: 116px;
+        height: 136px;
+    }
+
+    .main__form-inputGroup {
+        width: 279px;
+        height: 155px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-left: 0%;
+    }
+
+    .main__form-inputGroup label {
+        font-family: 'M-l';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 13.9px;
+        letter-spacing: 1%;
+        color: #616161 !important;
+        background-color: white;
+        height: 22px;
+    }
+
+    .main__form-inputGroup .css-h9e54m-MuiInputBase-root-MuiOutlinedInput-root {
+        font-size: 16px !important;
+        height: 43px;
+    }
+
+    .css-h9e54m-MuiInputBase-root-MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+        border-color: #ea899a !important;
+        border-width: 1px !important;
+    }
+
+    .main__form-input {
+        border: 1px solid #ea899a !important;
+        width: 248px !important;
+        height: 43px;
+
+    }
+
+    .main__form-buttonGroup {
+        width: 237px;
+        height: 147px;
+
+        right: 3%;
+        bottom: 0%;
+    }
+
+    .label-chekbox {
+        font-size: 14px;
+        line-height: 22.9px;
+    }
+
+    .main_form-button {
+        width: 166px;
+        height: 43px;
+    }
+}
