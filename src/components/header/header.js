@@ -66,7 +66,7 @@ function Header (){
                     </li>
                     <li>
                         <NavLink
-                            to={"/aa"}
+                            to={"/delivery"}
                             className={({ isActive, isPending }) =>
                                 isActive
                                     ? "active"

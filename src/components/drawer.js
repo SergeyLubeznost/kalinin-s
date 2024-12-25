@@ -107,7 +107,7 @@ export default function AnchorTemporaryDrawer() {
             О нас
           </NavLink>
           <NavLink
-            to={"/ab"}
+            to={"/delivery"}
             className={({ isActive, isPending }) =>
               isActive
                 ? "active"

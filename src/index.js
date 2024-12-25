@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Root from './App';
-import AnchorTemporaryDrawer from "./components/drawer"
-import AboutUs from "./pages/abautUs/about"
-import Main from "./pages/main/main"; // Импортируйте компоненты, которые будут маршрутизироваться
+import DeliveryPage from "./pages/delivery/delivery";
+import AboutUs from "./pages/abautUs/about";
+import Main from "./pages/main/main";
 
 import reportWebVitals from './reportWebVitals';
 import {
@@ -22,9 +22,10 @@ const router = createBrowserRouter([
         element: <Main />, // Компонент, который будет отображаться
       },
       {
-        path: "/drawer",
-        element: <AnchorTemporaryDrawer />, // Другой маршрут
+        path: "/delivery", 
+        element: <DeliveryPage />, 
       },
+     
       {
         path: "/about",
         element: <AboutUs/>

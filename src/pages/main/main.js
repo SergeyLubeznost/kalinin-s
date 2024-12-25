@@ -1,23 +1,26 @@
 import {useState} from "react";
-import "./main.css"
-import './main-laptop.css'
-import "./main-slider.css"
-import "./main-tablet.css"
-import "./sliderStyle/slider-tablet.css"
-import "./slider-bestseller-laptop1500.css"
-import "./sliderStyle/slider-mobile.css"
-import "./sliderStyle/slider-laptop.css"
-import "./main-mobile.css"
-import "./bestseller-section.css"
-import "./bestseller-tablet.css"
-import "./bestseller-mobile.css"
-import "./bestseller-laptop.css"
-import "./main-form.css"
-import "./main-form-tablet.css"
-import "./main-form-mobile.css"
-import "./main-form-laptop.css"
-import "./modal-form-style/modal-form-desktop.css"
-import "./modal-form-style/modal-form-mobile.css"
+import { Link } from 'react-router-dom';
+
+
+import "./main.css";
+import './main-laptop.css';
+import "./main-slider.css";
+import "./main-tablet.css";
+import "./sliderStyle/slider-tablet.css";
+import "./slider-bestseller-laptop1500.css";
+import "./sliderStyle/slider-mobile.css";
+import "./sliderStyle/slider-laptop.css";
+import "./main-mobile.css";
+import "./bestseller-section.css";
+import "./bestseller-tablet.css";
+import "./bestseller-mobile.css";
+import "./bestseller-laptop.css";
+import "./main-form.css";
+import "./main-form-tablet.css";
+import "./main-form-mobile.css";
+import "./main-form-laptop.css";
+import "./modal-form-style/modal-form-desktop.css";
+import "./modal-form-style/modal-form-mobile.css";
 
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
@@ -38,12 +41,12 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 // import required modules
-import { Navigation, Pagination,FreeMode } from 'swiper/modules';
+import { Navigation, Pagination,FreeMode, Autoplay } from 'swiper/modules';
 
-import logoMain from "./image-main/Group 61.svg"
-import galochka from './image-main/galochka.svg'
-import shesternya from './image-main/shesterenka.svg'
-import korona from './image-main/korona.svg'
+import logoMain from "./image-main/Group 61.svg";
+import galochka from './image-main/galochka.svg';
+import shesternya from './image-main/shesterenka.svg';
+import korona from './image-main/korona.svg';
 // import from slider img
 import semiElipse from './image-main/Ellipseslide1.png';
 import elipse from './image-main/EllipseFullslide1.png';
@@ -52,15 +55,15 @@ import strelka from './image-main/slider-img/right.svg';
 import sizeBanner from './image-main/slider-img/Group 58.png';
 import bigElipse from "./image-main/bestseller-img/Ellipse 21.svg";
 import smallElipse from "./image-main/bestseller-img/Ellipse 20.svg";
-import telega from "./image-main/telega.svg"
+import telega from "./image-main/telega.svg";
+import telegramm from "../../image/icons8-телеграм.svg";
+//изображения модального окна
+import VKontakte  from '../../components/footer/icon-footer/VK.svg';
+import data from "./data.js";
+import closeModal from "../../components/main-dialog/closeImg.svg";
+import telegramModal from "./image-main/telega.svg";
 
-import VKontakte  from '../../components/footer/icon-footer/VK.svg'
-import data from "./data.js"
-
-import closeModal from "../../components/main-dialog/closeImg.svg"
-import telegramModal from "./image-main/telega.svg"
-
-import FormDialogModal from "../../components/main-dialog/main-modal.js"
+import FormDialogModal from "../../components/main-dialog/main-modal.js";
 
 function Main() {
     const [swiperInstance, setSwiperInstance] = useState(null);
@@ -117,10 +120,16 @@ function Main() {
                         <div className="modal__social__connection">
                             <h3>А так же вы можете написать нам в соц. сети</h3>
                             <div className="modal__social__icon__container">
-                              <p>Вконтакте:</p>
+                              <div>
+                              <Link to={"https://vk.com/katerina__kalinina"} target="_blank">
                               <img src={VKontakte} alt="" />
-                              <p>Телеграмм:</p>
-                              <img src={telegramModal} alt="" />
+                              </Link>
+                              </div>
+                              <div>
+                              <Link to={"https://t.me/KalininyDelayut"} target="_blank">
+                              <img src={telegramm} alt="" />
+                              </Link>
+                              </div>
                             </div>
                           </div>
                       </div>
@@ -257,7 +266,7 @@ function Main() {
           }}
         pagination={true}
         loop={true}
-        modules={[Navigation, Pagination,]}
+        modules={[Navigation, Pagination,Autoplay]}
         className="mySwiper"
         slidesPerView={1} // Измените параметр для адаптивности
         spaceBetween={30} // Отступы между слайдами
@@ -269,6 +278,11 @@ function Main() {
             slidesPerView: 1, // Для ширины более 1024 пикселей
           },
         }}
+
+        autoplay={{
+          delay: 4500, // задержка в миллисекундах
+          disableOnInteraction: false, // чтобы автопрокрутка не отключалась при взаимодействии с слайдом
+      }}
       >
 
         <SwiperSlide><div className="slide1">

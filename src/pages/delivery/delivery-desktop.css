@@ -1,0 +1,39 @@
+.delivery__section__title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.delivery__section__title h2{
+    font-family: 'Gotham';
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+
+}
+
+.delivery__container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.delivery__map__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+ 
+}
+.delivery__map__container img{
+    width: 805px;
+    height: 602px;
+}
+
+.delivery__info__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   align-items: flex-start;
+    width: 50%;
+}
+
