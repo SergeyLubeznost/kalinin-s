@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5e789ec7.css",
-    "main.js": "/static/js/main.4233cf16.js",
+    "main.css": "/static/css/main.caf483ea.css",
+    "main.js": "/static/js/main.d228e3cc.js",
     "static/js/453.3e375d93.chunk.js": "/static/js/453.3e375d93.chunk.js",
     "static/media/Group17.png": "/static/media/Group17.9d99e3f5449de59c8a76.png",
     "static/media/Group 14.png": "/static/media/Group 14.e7b8b209e214eb498e06.png",
@@ -21,6 +21,7 @@
     "static/media/background about us.png": "/static/media/background about us.6b0f85e40918220d3025.png",
     "static/media/Group 58.png": "/static/media/Group 58.94774e9bb367f5d127d8.png",
     "static/media/Rectangle10_11zon.webp": "/static/media/Rectangle10_11zon.ae11e064ba167f98628c.webp",
+    "static/media/map.webp": "/static/media/map.e88a41e96b836d3fc045.webp",
     "static/media/Ellipseslide1.png": "/static/media/Ellipseslide1.677d3764219e0e552630.png",
     "static/media/gothampro_bold.ttf": "/static/media/gothampro_bold.764ba13de4409a990823.ttf",
     "static/media/gothampro_light.ttf": "/static/media/gothampro_light.dfbba8c980f43420d2d1.ttf",
@@ -30,17 +31,24 @@
     "static/media/Group 61.svg": "/static/media/Group 61.50bed9c07f28eb452f25cf5fdba971c7.svg",
     "static/media/Group 59.svg": "/static/media/Group 59.43cb4be92871ab5f497cbecf7fd76e60.svg",
     "static/media/shesterenka.svg": "/static/media/shesterenka.71a8acf42a26921b32afe58873c782f7.svg",
+    "static/media/velosiped.svg": "/static/media/velosiped.0265831af6294b0fa362b723723ad13c.svg",
     "static/media/korona.svg": "/static/media/korona.ce1c48afbac3ecb0852e34b46b376576.svg",
     "static/media/galochka.svg": "/static/media/galochka.a6587f752662cabe96b0da58a6a803b2.svg",
     "static/media/instaFooter.svg": "/static/media/instaFooter.6ee7de8a29d9f3a5ee0ca901fe49ca28.svg",
     "static/media/Vector (1).svg": "/static/media/Vector (1).ea3fa65a44a5ab5fc8d3ad9569b53ca7.svg",
     "static/media/find.svg": "/static/media/find.3563d9e0058e4c68af942004c00f34b3.svg",
     "static/media/right.svg": "/static/media/right.f0650f591916d848074e2cdf50ebda23.svg",
+    "static/media/sunduk.svg": "/static/media/sunduk.e5b9e1575590f92ffc2757126081559a.svg",
     "static/media/closeImg.svg": "/static/media/closeImg.62dd55d1e56640d66cb862ada0fb97d7.svg",
     "static/media/VK.svg": "/static/media/VK.25c40d533297464b9f72d50a2474941c.svg",
     "static/media/Ellipse 21.svg": "/static/media/Ellipse 21.64c4f04bce31ea56d7d4f4856a6f187a.svg",
     "static/media/Ellipse 20.svg": "/static/media/Ellipse 20.45b33ea6e9e3863c0c9056e1e0a9128c.svg",
+    "static/media/icons8-телеграм.svg": "/static/media/icons8-телеграм.e6cbdfa80097ae5338e7379257e7c200.svg",
+    "static/media/track2.svg": "/static/media/track2.de78c30ef8f0cb474e9d55fcd7ac1df1.svg",
+    "static/media/icon-return.svg": "/static/media/icon-return.c83819756577ed7a4960ae0598e24793.svg",
     "static/media/phone.svg": "/static/media/phone.e96df442aa2c7ebc1d6548b48ccbee21.svg",
+    "static/media/track.svg": "/static/media/track.18f2a4822d647b5d03c6acd57ea804b8.svg",
+    "static/media/place.svg": "/static/media/place.84e169c9f88c71cb3676fb4c29cda810.svg",
     "static/media/placeVector.svg": "/static/media/placeVector.84e169c9f88c71cb3676fb4c29cda810.svg",
     "static/media/user.svg": "/static/media/user.0fb377ca320bd810813bf51dfe1e37d5.svg",
     "static/media/phoneFooter.svg": "/static/media/phoneFooter.4e7d1c548f96f4981063fe04dd211751.svg",
@@ -48,12 +56,12 @@
     "static/media/like.svg": "/static/media/like.f6f64adce528dfbd066a9da22850c3f5.svg",
     "index.html": "/index.html",
     "static/media/telega.svg": "/static/media/telega.a00f20d0a54594f3190060c30c08adb1.svg",
-    "main.5e789ec7.css.map": "/static/css/main.5e789ec7.css.map",
-    "main.4233cf16.js.map": "/static/js/main.4233cf16.js.map",
+    "main.caf483ea.css.map": "/static/css/main.caf483ea.css.map",
+    "main.d228e3cc.js.map": "/static/js/main.d228e3cc.js.map",
     "453.3e375d93.chunk.js.map": "/static/js/453.3e375d93.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e789ec7.css",
-    "static/js/main.4233cf16.js"
+    "static/css/main.caf483ea.css",
+    "static/js/main.d228e3cc.js"
   ]
 }

@@ -121,7 +121,7 @@ function Main() {
                             <h3>А так же вы можете написать нам в соц. сети</h3>
                             <div className="modal__social__icon__container">
                               <div>
-                              <Link to={"https://vk.com/katerina__kalinina"} target="_blank">
+                              <Link to={"https://vk.com/kalininy_delayut"} target="_blank">
                               <img src={VKontakte} alt="" />
                               </Link>
                               </div>

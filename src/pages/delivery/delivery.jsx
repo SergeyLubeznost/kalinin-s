@@ -10,11 +10,18 @@ import map from "./delivery-image/map.webp"
 import track from "./delivery-image/track.svg"
 import place from "./delivery-image/place.svg"
 
+import track2 from "./delivery-image/track2.svg"
+import sunduk from "./delivery-image/sunduk.svg"
+import velik from "./delivery-image/velosiped.svg"
+import iconReturn from "./delivery-image/icon-return.svg"
+
 import telegramm from "../../image/icons8-телеграм.svg";
 import VKontakte  from '../../components/footer/icon-footer/VK.svg';
 import closeModal from "../../components/main-dialog/closeImg.svg";
 import telegramModal from "../../pages/main/image-main/telega.svg";
 
+import VK2  from '../../components/footer/icon-footer/VK.svg'
+import INSTA2 from '../../components/footer/icon-footer/instaFooter.svg'
 
 export default function DeliveryPage() {
 
@@ -40,7 +47,7 @@ const [open, setOpen] = useState(false);
 
           <div>
             <p className="delivery__info__title">Как до нас добраться :</p>
-            <p className="delivery__info__text">
+            <p className="delivery__info__text delivery__info__text_width">
               Наше производство находится в Ленингрaдcкoй области,Всеволожского
               района. До нас можно добраться только на автомобиле,так как
               общественный транспорт не ходит. . В навигаторе вы можете указать
@@ -55,8 +62,8 @@ const [open, setOpen] = useState(false);
             </p>
           </div>
 
-          <div>
-            <p className="delivery__info__title">Как до нас добраться :</p>
+          <div className='delivery__info__block_conditions'>
+            <p className="delivery__info__title">Мы доставляем :</p>
             <div className="delivery__info_conditions_container">
               <div>
                 <p className="delivery__info__title">
@@ -81,72 +88,95 @@ const [open, setOpen] = useState(false);
                 <p className="delivery__info__title">Выберите способ доставки :</p>
                 <div className="delivery__info__method__select">
 
-                    <div className='track__select'>
-                        
-                        <p className="delivery__info__title"><img  src={track} alt="" /> Самовывоз</p>
-                        <p>(1 день)</p>
-                    </div>
-
-                    <div className='track__select'>
-                        
-                        <p className="delivery__info__title"> <img  src={track} alt="" /> Курьером</p>
-                        <p>(1-3 дня)</p>
-                    </div>
-                   
-                    <div className='track__select'>
-                        <img  src={track} alt="" />
-                        <p className="delivery__info__title"> <img  src={track} alt="" /> Деловыми линиями</p>
-                        <p>(В замисимости от вашего города)</p>
-                    </div>
-                   
+                <div className='track__select'>
+                  <img src={track2} alt="" />
+                  <div>
+                    <p className="delivery__info__title delivery__info__title_size"> Самовывоз</p>
+                    <p className='align__text'>(1 день)</p>
+                  </div>
                 </div>
+
+                <div className='track__select'>
+                  <img src={velik} alt="" />
+                  <div>
+                    <p className="delivery__info__title delivery__info__title_size"> Курьером</p>
+                    <p className='align__text'>(1-3 дня)</p>
+                  </div>
+                </div>
+
+                <div className='track__select'>
+                  <img src={sunduk} alt="" />
+                  <div>
+                    <p className="delivery__info__title delivery__info__title_size"> Деловыми линиями</p>
+                    <p className='align__text'>(В замисимости от вашего города)</p>
+                  </div>
+                </div>
+
+              </div>
 
             </div>
 
           </div>
         </div>
       </section>
+
+
+
       <section className="delivery__dopInfo__container">
-        <p>Вернуться в каталог <img  src={track} alt="" /></p>
+        <div className='delivery__dopInfo__container__section'>
 
-        <div>
-        <Button className="main-btn-contact" variant="contained" onClick={()=> setOpen(true)}>Связаться</Button> 
-        <FormDialogModal active={open}  setActive={setOpen}>
-                      <div className="modal__form">
-                        <div className="modal__form__header">
-                        <img src={closeModal} alt="close" onClick={()=> setOpen(false)}/>
-                        </div>
-                        <p className="modal__form__title">
-                        Оставьте <span style={{ fontWeight: 'bold', color: '#EA899A'}}>свои данные</span>,<br className="space2"/> и мы с вами свяжемся
-                        </p>
-                        <div className="modal__form__main">
-                        <img src={telegramModal} alt="" />
-                          <form >
-                            <input className="modal__form__input" type="text" placeholder="Введите имя"/>
-                            <input className="modal__form__input" type="tel" placeholder="Введите телефон"/>
-                            <Button className="modal__form__button" variant="contained">Отправить</Button> 
-                          </form>
-                        </div>
-                        <div className="modal__social__connection">
-                            <h3>А так же вы можете написать нам в соц. сети</h3>
-                            <div className="modal__social__icon__container">
-                              <div>
-                              <Link to={"https://vk.com/katerina__kalinina"} target="_blank">
-                              <img src={VKontakte} alt="" />
-                              </Link>
-                              </div>
-                              <div>
-                              <Link to={"https://t.me/KalininyDelayut"} target="_blank">
-                              <img src={telegramm} alt="" />
-                              </Link>
-                              </div>
-                            </div>
-                          </div>
-                      </div>
+        <p className='returnToCatalog'>Вернуться в каталог <img src={iconReturn} alt="" /></p>
 
 
-                    </FormDialogModal>
+
+
+        <div  className='delivery__group__container__social'>
+          <Button className="main-btn-contact del__but__margin" variant="contained" onClick={() => setOpen(true)}>Связаться</Button>
+
+          <div className="group-footer">
+            <p className='footer-title'><strong>Мы в соц. сетях :</strong></p>
+            <div className='social-icons'>
+              <img src={VK2} alt="" />
+              <img src={INSTA2} alt="" />
+            </div>
+          </div>
         </div>
+        </div>
+
+          {/* //////////////////////////////////////////////////// */}
+          <FormDialogModal active={open} setActive={setOpen}>
+            <div className="modal__form">
+              <div className="modal__form__header">
+                <img src={closeModal} alt="close" onClick={() => setOpen(false)} />
+              </div>
+              <p className="modal__form__title">
+                Оставьте <span style={{ fontWeight: 'bold', color: '#EA899A' }}>свои данные</span>,<br className="space2" /> и мы с вами свяжемся
+              </p>
+              <div className="modal__form__main">
+                <img src={telegramModal} alt="" />
+                <form >
+                  <input className="modal__form__input" type="text" placeholder="Введите имя" />
+                  <input className="modal__form__input" type="tel" placeholder="Введите телефон" />
+                  <Button className="modal__form__button" variant="contained">Отправить</Button>
+                </form>
+              </div>
+              <div className="modal__social__connection">
+                <h3>А так же вы можете написать нам в соц. сети</h3>
+                <div className="modal__social__icon__container">
+                  <div>
+                    <Link to={"https://vk.com/kalininy_delayut"} target="_blank">
+                      <img src={VKontakte} alt="" />
+                    </Link>
+                  </div>
+                  <div>
+                    <Link to={"https://t.me/KalininyDelayut"} target="_blank">
+                      <img src={telegramm} alt="" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </FormDialogModal>
       </section>
     </main>
   );
