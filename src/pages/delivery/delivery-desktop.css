@@ -37,6 +37,7 @@
     font-size: 18px;
     display: flex;
     align-items: center;
+    line-height: 24px;
 }
 
 .delivery__info__text img {
