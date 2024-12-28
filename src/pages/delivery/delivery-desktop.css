@@ -1,4 +1,4 @@
-.delivery__main{
+.delivery__main {
     padding: 0 9.3% 0 9.6%;
 }
 
@@ -8,7 +8,8 @@
     justify-content: center;
     align-items: center;
 }
-.delivery__section__title h2{
+
+.delivery__section__title h2 {
     font-family: 'Gotham';
     font-weight: 700;
     font-size: 35px;
@@ -23,8 +24,9 @@
     display: flex;
     align-items: center;
 }
-.delivery__info__title img{
-   margin-right: 8px;
+
+.delivery__info__title img {
+    margin-right: 8px;
 }
 
 
@@ -36,63 +38,68 @@
     display: flex;
     align-items: center;
 }
+
 .delivery__info__text img {
-   margin-right: 8px;
+    margin-right: 8px;
 }
 
-.delivery__info__text_width{
+.delivery__info__text_width {
     width: 680px;
 }
 
-.delivery__container{
+.delivery__container {
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
-.delivery__map__container{
+
+.delivery__map__container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding-top: 20px;
+    flex-direction: column;
     width: 50%;
     margin-right: 78px;
 
 }
-.delivery__map__container img{
+
+.delivery__map__container img {
     width: 805px;
     height: 602px;
 }
 
-.delivery__info__container{
+.delivery__info__container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-   align-items: flex-start;
+    align-items: flex-start;
     width: 50%;
 }
 
-.delivery__info__block_conditions{
+.delivery__info__block_conditions {
     width: 100%;
 }
 
-.delivery__info_conditions_container{
+.delivery__info_conditions_container {
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
 }
 
-.delivery__info_conditions_container div img{
-margin-right: 8px;
+.delivery__info_conditions_container div img {
+    margin-right: 8px;
 }
 
 
-.delivery__info__method__select{
+.delivery__info__method__select {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.track__select{
+.track__select {
     width: 233px;
     height: 120px;
     border-radius: 10px;
@@ -102,16 +109,18 @@ margin-right: 8px;
     align-items: flex-start;
     flex-direction: column;
     box-shadow: 0 10px 15px #B0B0B0;
-    transition: all 0.5s ease;
+    transition: all 0.2s ease;
     margin-right: 18px;
-  
-}
-.track__select div *{
-  margin: 0;
+    box-sizing: border-box;
+    cursor: pointer;
 }
 
-.track__select div{
-   position: absolute;
+.track__select div * {
+    margin: 0;
+}
+
+.track__select div {
+    position: absolute;
     padding: 7px;
     width: 100%;
     height: 100%;
@@ -120,30 +129,32 @@ margin-right: 8px;
     justify-content: center;
     align-items: center;
 }
-.align__text{
+
+.align__text {
     width: 80%;
     text-align: center;
-    opacity: 0.3;
-
-}
-.delivery__info__title_size{
-    font-size: 18px!important;
-    margin-bottom: 5px!important;
-    text-align: center!important;
-    opacity: 0.3;
+    opacity: 0;
 }
 
+.delivery__info__title_size {
+    font-size: 18px !important;
+    margin-bottom: 5px !important;
+    text-align: center !important;
+    opacity: 0.3;
+}
 
-.delivery__info__title_size_opasity{
+
+.delivery__info__title_size_opasity {
     opacity: 1;
 }
 
 
-.track__select_opasity{
+.track__select_opasity {
     opacity: 1;
 }
-.track__select_border{
-    border: 2px solid var( --main-bg-color);
+
+.track__select_border {
+    border: 2px solid var(--main-bg-color);
     box-shadow: 0 0px 0px #B0B0B0;
 }
 
@@ -154,25 +165,31 @@ margin-right: 8px;
     justify-content: end;
     align-items: center;
 }
-.delivery__dopInfo__container__section{
-  width: 45%;
+
+.delivery__dopInfo__container__section {
+    width: 45%;
 
 }
 
-.returnToCatalog{
+.returnToCatalog {
     font-family: 'G-l';
     font-weight: 400;
     font-size: 22px;
     color: var(--main-bg-color);
 }
 
-.delivery__group__container__social{
-    display: flex ;
-        width: 75% !important;
-        justify-content: space-between;
-        align-items: center;
+.delivery__group__container__social {
+    display: flex;
+    width: 75% !important;
+    justify-content: space-between;
+    align-items: center;
 }
-.del__but__margin{
+
+.del__but__margin {
     margin-top: 34px !important;
-    border: 1.5px solid var( --main-bg-color)!important;
+    border: 1.5px solid var(--main-bg-color) !important;
+}
+
+.delivery__map__container__tablet {
+    display: none;
 }

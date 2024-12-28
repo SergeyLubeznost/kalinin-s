@@ -1,0 +1,45 @@
+@media (min-width: 969px) and (max-width: 1440px)  {
+.delivery__main{
+    padding: 0 2.3% 0 2.3%
+}
+
+
+.delivery__section__title h2{
+    font-size: 30px;
+}
+
+.delivery__info__title {
+    font-size: 20px;
+
+}
+.delivery__info__text {
+    font-size: 16px;
+}
+.delivery__info__text_width{
+    width: 540px;
+}
+
+.delivery__map__container{
+  
+    margin-right: 18px;
+
+}
+
+.delivery__map__container img{
+    width: 598px;
+    height: 442px;
+}
+
+.delivery__info_conditions_container{
+
+    width: 95%;
+  
+}
+
+.delivery__dopInfo__container__section {
+    width: 50%;
+}
+.delivery__group__container__social {
+    width: 91% !important;
+}
+}
