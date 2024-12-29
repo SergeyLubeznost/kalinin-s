@@ -75,7 +75,7 @@ export default function DeliveryPage() {
           <div className="delivery__map__container__tablet">
             <Link to={"https://yandex.ru/maps/?ll=30.707417%2C60.065009&mode=poi&poi%5Bpoint%5D=30.707517%2C60.065584&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D23285806855&z=17.26"} target='_blank'> <img src={map} alt="наша геопозиция" /></Link>
             <p className="delivery__info__text">
-              Нажмите на изображение, чтобы пролоржить маршрут
+              Нажмите на изображение, чтобы проложить маршрут
             </p>
           </div>
 
@@ -167,7 +167,7 @@ export default function DeliveryPage() {
       <section className="delivery__dopInfo__container">
         <div className='delivery__dopInfo__container__section'>
 
-          <p className='returnToCatalog'>Вернуться в каталог <img src={iconReturn} alt="" /></p>
+        <Link to="/katalog">  <p className='returnToCatalog'>Вернуться в каталог <img src={iconReturn} alt="" /></p></Link>
 
 
 

@@ -5,6 +5,7 @@ import Root from './App';
 import DeliveryPage from "./pages/delivery/delivery";
 import AboutUs from "./pages/abautUs/about";
 import Main from "./pages/main/main";
+import Katalog from './pages/katalog/katalog';
 
 import reportWebVitals from './reportWebVitals';
 import {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "/", // Главная страница
         element: <Main />, // Компонент, который будет отображаться
+      },
+      {
+        path: "/katalog", 
+        element: <Katalog />,
       },
       {
         path: "/delivery", 

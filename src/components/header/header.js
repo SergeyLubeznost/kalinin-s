@@ -38,7 +38,7 @@ function Header (){
                     </li>
                     <li>
                         <NavLink
-                            to={"/drawer"}
+                            to={"/katalog"}
                             className={({ isActive, isPending }) =>
                                 isActive
                                     ? "active"

@@ -97,7 +97,7 @@ function Main() {
                     </div>
                     <h1 className="main-title">ГРИМЁРНЫЕ СТОЛЫ <br />И ЗЕРКАЛА ДЛЯ ВАС</h1>
                     <div className="main-btn-group">
-                        <button className="main-btn-catalog">Каталог</button>
+                      <Link to="/katalog"><button className="main-btn-catalog">Каталог</button></Link>
                         <Button className="main-btn-contact" variant="contained" onClick={()=> setOpen(true)}>Связаться</Button> 
                     </div>
 

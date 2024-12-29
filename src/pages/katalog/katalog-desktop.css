@@ -1,0 +1,30 @@
+.main__catalog{
+    background-color: rgba(245 245 245 0.73);
+    padding: 0 9.3% 0 9.6%;
+}
+
+.katalog__container__sort{
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.katalog__container__sort h2{
+    font-family: 'Gotham';
+    color: #3d3d3d;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 54.25px;
+}
+
+.select__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 302px;
+}
+.select__container p{
+    font-family: 'M-l'; 
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 35.85px;
+}

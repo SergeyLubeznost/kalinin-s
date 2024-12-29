@@ -1,0 +1,9 @@
+.sort__container{
+    width: 338px;
+    min-height: 570px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
