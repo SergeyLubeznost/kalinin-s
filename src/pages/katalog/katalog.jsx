@@ -10,7 +10,9 @@ import Select from '@mui/material/Select';
 
 import BlockSort from "./block-sort/block-sort";
 
-import strelkaSelect from "./image-katalog/strelkaSelect.svg"
+import strelkaSelect from "./image-katalog/strelkaSelect.svg";
+
+import data from "../main/data";
 
 
 export default function Katalog (){
@@ -41,26 +43,30 @@ export default function Katalog (){
             <h2>Каталог товаров</h2>
             <div className="select__container">
                 <p>Cортировка :</p>
-            <FormControl sx={{ m: 1, minWidth: 120 }}>
+            <FormControl variant="standard" sx={{ m: 1, minWidth: 120,boxShadow: 'none', outline:'none', border: 'none', background: 'transparent' }}>
         <Select
+        sx={{  color: '#EA899A' }}
           value={age}
+        
           onChange={handleChange}
           onOpen={() => setOpenSelect(true)} // Устанавливаем состояние при открытии
           onClose={() => setOpenSelect(false)} // Устанавливаем состояние при закрытии
           displayEmpty
           inputProps={{ 'aria-label': 'Without label' }}
-          IconComponent={() => <CustomIcon open={openSelect} />}
+          IconComponent={() => <CustomIcon open={openSelect} />
+        
+        }
         >
           
           <MenuItem value={"популярные"}>популярные</MenuItem>
-          <MenuItem value={"быстрая доставка"}>быстрая доставка</MenuItem>
-          <MenuItem value={"доступность"}>доступность</MenuItem>
+          <MenuItem value={"по убыванию"}>по убыванию</MenuItem>
+          <MenuItem value={"по возрастанию"}>по возрастанию</MenuItem>
         </Select>
       </FormControl>
       </div>
             </div>
             
-            <BlockSort />
+            <BlockSort arr={data} />
         </main>
     )
 }
