@@ -107,7 +107,7 @@ export default function BlockSort({ arr, newArr, setNewArr }) {
 
     useEffect(() => {
         handleFilter(); 
-      }, [selectedCategories,selectedSize,minPriceValue,maxPriceValue,selectedMirror]);
+      }, [selectedCategories,selectedSize,minPriceValue,maxPriceValue,selectedMirror,handleFilter]);
 
 
     return (
