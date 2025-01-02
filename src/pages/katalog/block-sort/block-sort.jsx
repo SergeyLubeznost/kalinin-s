@@ -77,7 +77,7 @@ export default function BlockSort({ arr, newArr }) {
                 ))
             }
          
-            <Accordion style={{ boxShadow: 'none', border: 'none', background: 'transparent', width: '100%' }}>
+            <Accordion style={{ boxShadow: 'none', border: 'none', background: 'transparent', width: '100%' }} >
                 <AccordionSummary
                     expandIcon={<CustomIcon open={openSelect} />}
                     aria-controls="panel1-content"

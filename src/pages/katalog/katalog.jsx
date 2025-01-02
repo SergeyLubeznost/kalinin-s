@@ -4,6 +4,11 @@ import "./katalog-laptop.css";
 import "./katalog-tablet.css";
 import "./katalog-mobile.css";
 
+import Button from '@mui/material/Button';
+import Checkbox from '@mui/material/Checkbox';
+import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
+import Favorite from '@mui/icons-material/Favorite';
+
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
@@ -15,58 +20,85 @@ import strelkaSelect from "./image-katalog/strelkaSelect.svg";
 import data from "../main/data";
 
 
-export default function Katalog (){
+export default function Katalog() {
 
-    const CustomIcon = ({ open }) => (
-        <img
-          src={strelkaSelect}
-          alt="стрелка"
-          style={{
-            width: '1rem',
-            height: '1rem',
-            marginRight:"15px",
-            transition: 'transform 0.3s',  // Добавляем анимацию
-            transform: open ? 'rotate(180deg)' : 'rotate(0deg)' // Поворачиваем стрелку
-          }}
-        />
-      );
-      const [openSelect, setOpenSelect] = useState(false);
-    const [age, setAge] = useState("популярные");
+  const CustomIcon = ({ open }) => (
+    <img
+      src={strelkaSelect}
+      alt="стрелка"
+      style={{
+        width: '1rem',
+        height: '1rem',
+        marginRight: "15px",
+        transition: 'transform 0.3s',  // Добавляем анимацию
+        transform: open ? 'rotate(180deg)' : 'rotate(0deg)' // Поворачиваем стрелку
+      }}
+    />
+  );
+  const [openSelect, setOpenSelect] = useState(false);
+  const [age, setAge] = useState("популярные");
 
-    const handleChange = (event) => {
-      setAge(event.target.value);
-    };
+  const handleChange = (event) => {
+    setAge(event.target.value);
+  };
 
-    return(
-        <main className="main__catalog">
-            <div className="katalog__container__sort">
-            <h2>Каталог товаров</h2>
-            <div className="select__container">
-                <p>Cортировка :</p>
-            <FormControl variant="standard" sx={{ m: 1, minWidth: 120,boxShadow: 'none', outline:'none', border: 'none', background: 'transparent' }}>
-        <Select
-        sx={{  color: '#EA899A' }}
-          value={age}
-        
-          onChange={handleChange}
-          onOpen={() => setOpenSelect(true)} // Устанавливаем состояние при открытии
-          onClose={() => setOpenSelect(false)} // Устанавливаем состояние при закрытии
-          displayEmpty
-          inputProps={{ 'aria-label': 'Without label' }}
-          IconComponent={() => <CustomIcon open={openSelect} />
-        
-        }
-        >
-          
-          <MenuItem value={"популярные"}>популярные</MenuItem>
-          <MenuItem value={"по убыванию"}>по убыванию</MenuItem>
-          <MenuItem value={"по возрастанию"}>по возрастанию</MenuItem>
-        </Select>
-      </FormControl>
+  return (
+    <main className="main__catalog">
+      <div className="katalog__container__sort">
+        <h2>Каталог товаров</h2>
+        <div className="select__container">
+          <p>Cортировка :</p>
+          <FormControl variant="standard" sx={{ m: 1, minWidth: 120, boxShadow: 'none', outline: 'none', border: 'none', background: 'transparent' }}>
+            <Select
+              sx={{ color: '#EA899A' }}
+              value={age}
+
+              onChange={handleChange}
+              onOpen={() => setOpenSelect(true)} // Устанавливаем состояние при открытии
+              onClose={() => setOpenSelect(false)} // Устанавливаем состояние при закрытии
+              displayEmpty
+              inputProps={{ 'aria-label': 'Without label' }}
+              IconComponent={() => <CustomIcon open={openSelect} />
+
+              }
+            >
+
+              <MenuItem value={"популярные"}>популярные</MenuItem>
+              <MenuItem value={"по убыванию"}>по убыванию</MenuItem>
+              <MenuItem value={"по возрастанию"}>по возрастанию</MenuItem>
+            </Select>
+          </FormControl>
+        </div>
       </div>
-            </div>
-            
-            <BlockSort arr={data} />
-        </main>
-    )
+      <div className="sort__card__container">
+        <BlockSort arr={data} />
+        <div className="card__container">
+
+          {data.map(item => {
+            return(
+            <div key={item.id}  className="card-bestseller catalog__kard">
+              <img src={item.img} alt={item.title} />
+
+              <div className="mobile__category catalog__category">
+                <div className="category__title catalog__title">
+                  <p>{item.category}</p>
+                </div>
+
+                <p className="likes__mobile"> <Checkbox className="image-like" icon={<FavoriteBorder sx={{ color: '#EA899A' }} />} checkedIcon={<Favorite sx={{ color: '#EA899A' }} />} /> {item.likes}</p>
+              </div>
+              <div className="title__like-container catalog__like__container">
+                <h3>{item.title}</h3> <p> <Checkbox className="image-like" icon={<FavoriteBorder sx={{ color: '#EA899A' }} />} checkedIcon={<Favorite sx={{ color: '#EA899A' }} />} /> {item.likes}</p>
+              </div>
+              <p className="matherial__title catalog__matherial__title">Материал: {item.material}</p>
+              <div className="block__price catalog__block__price">
+                <p>{item.price} р.</p>
+                <Button className="price__button catalog__price__button" variant="contained" >Купить</Button>
+              </div>
+            </div>)
+          })}
+
+        </div>
+      </div>
+    </main>
+  )
 }
