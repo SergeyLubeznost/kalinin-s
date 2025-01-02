@@ -58,19 +58,7 @@ export default function BlockSort({ arr, newArr, setNewArr }) {
     };
 
 
-    const handleFilter = () => {
 
-        const filteredArr = arr.filter(item => {
-          return (
-            (selectedCategories.length === 0 || selectedCategories.includes(item.category)) 
-            && (selectedSize.length === 0 || selectedSize.includes(item.size))
-            && item.priceNumber >= minPriceValue
-            && item.priceNumber <= maxPriceValue
-            && (selectedMirror ? item.mirror : true) // Фильтрация по наличию рамки
-          );
-        });
-        setNewArr(filteredArr); 
-      };
 
 
 
@@ -106,8 +94,21 @@ export default function BlockSort({ arr, newArr, setNewArr }) {
     );
 
     useEffect(() => {
+        const handleFilter = () => {
+
+            const filteredArr = arr.filter(item => {
+              return (
+                (selectedCategories.length === 0 || selectedCategories.includes(item.category)) 
+                && (selectedSize.length === 0 || selectedSize.includes(item.size))
+                && item.priceNumber >= minPriceValue
+                && item.priceNumber <= maxPriceValue
+                && (selectedMirror ? item.mirror : true) // Фильтрация по наличию рамки
+              );
+            });
+            setNewArr(filteredArr); 
+          };
         handleFilter(); 
-      }, [selectedCategories,selectedSize,minPriceValue,maxPriceValue,selectedMirror,handleFilter]);
+      }, [selectedCategories,selectedSize,minPriceValue,maxPriceValue,selectedMirror,arr, setNewArr]);
 
 
     return (
