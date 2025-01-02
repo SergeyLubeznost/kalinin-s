@@ -97,3 +97,43 @@ height: 369px;
     height: 53px;
     font-size: 20px!important;
 }
+
+.button__show__more__container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.button__show__more{
+    width: 220px;
+    height: 61px;
+    border-radius: 10px!important;
+    background-color: #EA899A!important;
+    font-family: "Arial"!important;
+    font-size: 20px!important;
+    font-weight: 600!important;
+    line-height: 23.86px!important;
+    text-transform: none !important;
+    padding: 19px 26px;
+    box-sizing: border-box;
+}
+.button__show__more img{
+    width: 21px;
+    height: 21px;
+  margin-left: 15px;
+}
+
+.rotating-image {
+    animation: rotate 1s linear forwards; /* Анимация вращения */
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

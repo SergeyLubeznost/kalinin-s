@@ -1,4 +1,4 @@
-
+import React, { useState, useEffect } from 'react';
 import "./block-sort-desktop.css"
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -26,12 +26,61 @@ const PinkSwitch = styled(Switch)(({ theme }) => ({
     },
 }));
 
-export default function BlockSort({ arr, newArr }) {
+export default function BlockSort({ arr, newArr, setNewArr }) {
+
+    const [selectedCategories, setSelectedCategories] = useState(arr.map(item => item.category));
+    const [selectedSize, setSelectedSize] = useState(arr.map(item => item.size));
+    const [selectedMirror, setSelectedMirror] = useState(false);
+
+    const handleCategoryChange = (event) => {
+        const { checked, name } = event.target; // Получаем имя (категорию) и состояние чекбокса
+
+        if (checked) {
+            setSelectedCategories([...selectedCategories, name]); // Добавляем категорию в массив
+         
+        } else {
+            setSelectedCategories(selectedCategories.filter(category => category !== name)); // Удаляем категорию из массива
+        
+        }
+      
+    };
+    const handleSizeChange = (event) => {
+        const { checked, name } = event.target; // Получаем имя (size) и состояние чекбокса
+
+        if (checked) {
+            setSelectedSize([...selectedSize, name]); // Добавляем категорию в массив
+           
+        } else {
+            setSelectedSize(selectedSize.filter(size => size !== name)); // Удаляем категорию из массива
+           
+        }
+
+    };
+
+
+    const handleFilter = () => {
+
+        const filteredArr = arr.filter(item => {
+          return (
+            (selectedCategories.length === 0 || selectedCategories.includes(item.category)) 
+            && (selectedSize.length === 0 || selectedSize.includes(item.size))
+            && item.priceNumber >= minPriceValue
+            && item.priceNumber <= maxPriceValue
+            && (selectedMirror ? item.mirror : true) // Фильтрация по наличию рамки
+          );
+        });
+        setNewArr(filteredArr); 
+      };
+
 
 
 
     const minPrice = Math.min(...arr.map(item => item.priceNumber));
     const maxPrice = Math.max(...arr.map(item => item.priceNumber));
+
+    const [minPriceValue, setMinPriceValue] = useState(minPrice); // Состояние для минимальной цены
+    const [maxPriceValue, setMaxPriceValue] = useState(maxPrice); // Состояние для максимальной цены
+
 
     const exclusiveData = arr.filter((item, index, self) =>
         index === self.findIndex((t) => (
@@ -40,7 +89,7 @@ export default function BlockSort({ arr, newArr }) {
     );
     const exclusiveLength = arr.filter((item, index, self) =>
         index === self.findIndex((t) => (
-            t.length === item.length
+            t.size === item.size
         ))
     );
 
@@ -56,6 +105,10 @@ export default function BlockSort({ arr, newArr }) {
         />
     );
 
+    useEffect(() => {
+        handleFilter(); 
+      }, [selectedCategories,selectedSize,minPriceValue,maxPriceValue,selectedMirror]);
+
 
     return (
         <div className="sort__container">
@@ -64,8 +117,11 @@ export default function BlockSort({ arr, newArr }) {
                 exclusiveData.map((item) => (
                     <FormControlLabel
                         className="category__side"
-                        key={item.id} 
-                        control={<Checkbox defaultChecked
+                        key={item.id}
+                        control={<Checkbox
+                            checked={selectedCategories.includes(item.category)} // Состояние чекбокса
+                            onChange={handleCategoryChange} // Обработчик события
+                            name={item.category} // Устанавливаем имя для категорииz
                             sx={{
                                 '&.Mui-checked': {
                                     color: '#EA899A'
@@ -76,10 +132,10 @@ export default function BlockSort({ arr, newArr }) {
                     />
                 ))
             }
-         
+
             <Accordion style={{ boxShadow: 'none', border: 'none', background: 'transparent', width: '100%' }} >
                 <AccordionSummary
-                    expandIcon={<CustomIcon/>}
+                    expandIcon={<CustomIcon />}
                     aria-controls="panel1-content"
                     id="panel1-header"
                     className='accordion__padding'
@@ -88,23 +144,28 @@ export default function BlockSort({ arr, newArr }) {
                 </AccordionSummary>
                 <AccordionDetails className='accordion__padding__content'>
                     <div className="input__group">
-                        <input type="number" placeholder={"от " + minPrice} />
-                        <input type="number" placeholder={"до " + maxPrice} />
+                        <input type="number" placeholder={"от " + minPrice}
+                            value={minPriceValue} // Связываем input с состоянием
+                            onChange={(e) => setMinPriceValue(parseInt(e.target.value))} />
+                        <input type="number" placeholder={"до " + maxPrice}
+                            value={maxPriceValue} // Связываем input с состоянием
+                            onChange={(e) => setMaxPriceValue(parseInt(e.target.value))} />
                     </div>
                     <Slider
                         className='slider__category'
                         defaultValue={maxPrice}
                         min={minPrice}
-                        max={maxPrice} // Устанавливаем максимальное значение для слайдера
+                        max={maxPrice}
                         aria-label="Default"
                         valueLabelDisplay="auto"
-
+                        value={maxPriceValue} // Связываем слайдер с состоянием
+                        onChange={(event, newValue) => setMaxPriceValue(newValue)} // Обработчик изменения слайдера
                     />
                 </AccordionDetails>
             </Accordion>
             <Accordion style={{ boxShadow: 'none', outline: 'none', border: 'none', background: 'transparent', borderColor: 'white', width: '100%' }}>
                 <AccordionSummary
-                    expandIcon={<CustomIcon/>}
+                    expandIcon={<CustomIcon />}
                     aria-controls="panel2-content"
                     id="panel2-header"
                     className='accordion__padding'
@@ -118,14 +179,17 @@ export default function BlockSort({ arr, newArr }) {
                             <FormControlLabel
                                 className='checkbox__length'
                                 key={item.id} // Не забудьте добавить уникальный ключ для каждой метки
-                                control={<Checkbox defaultChecked
+                                control={<Checkbox
+                                    checked={selectedSize.includes(item.size)} // Состояние чекбокса
+                                    onChange={handleSizeChange} // Обработчик события
+                                    name={item.size} // Устанавливаем имя для категорииz
                                     sx={{
                                         '&.Mui-checked': {
                                             color: '#EA899A',
                                         },
 
                                     }} />}
-                                label={item.length}
+                                label={item.size}
                             />
                         ))
                     }
@@ -134,7 +198,10 @@ export default function BlockSort({ arr, newArr }) {
 
             <div className="block__sort__radio__container">
                 <p className='categoty__title '>Наличие рамок у зеркал</p>
-                <FormControlLabel control={<PinkSwitch defaultChecked />} label="" />
+                <FormControlLabel control={<PinkSwitch 
+                checked={selectedMirror} 
+                onChange={() => setSelectedMirror(!selectedMirror)} 
+                />} label="" />
             </div>
 
         </div>

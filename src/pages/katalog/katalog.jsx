@@ -16,11 +16,23 @@ import Select from '@mui/material/Select';
 import BlockSort from "./block-sort/block-sort";
 
 import strelkaSelect from "./image-katalog/strelkaSelect.svg";
+import preloaderShowMore from "./image-katalog/PreloaderShowMore.svg";
 
 import data from "../main/data";
 
 
 export default function Katalog() {
+  const [newArr, setNewArr] = useState(data);
+  const [itemsToShow, setItemsToShow] = useState(6); // Начальное количество карточек
+  const [isLoading, setIsLoading] = useState(false); // Состояние для анимации
+
+  const handleShowMore = () => {
+    setIsLoading(true); // Запускаем анимацию
+    setTimeout(() => {
+      setItemsToShow(prevItemsToShow => prevItemsToShow + 6); 
+      setIsLoading(false); // Останавливаем анимацию
+    }, 1000); 
+  };
 
   const CustomIcon = ({ open }) => (
     <img
@@ -71,32 +83,42 @@ export default function Katalog() {
         </div>
       </div>
       <div className="sort__card__container">
-        <BlockSort arr={data} />
+        <BlockSort arr={data} newArr={newArr} setNewArr={setNewArr} />
         <div className="card__container">
 
-          {data.map(item => {
-            return(
-            <div key={item.id}  className="card-bestseller catalog__kard">
-              <img src={item.img} alt={item.title} />
+          {newArr.slice(0, itemsToShow).map(item => {
+            return (
+              <div key={item.id} className="card-bestseller catalog__kard">
+                <img src={item.img} alt={item.title} />
 
-              <div className="mobile__category catalog__category">
-                <div className="category__title catalog__title">
-                  <p>{item.category}</p>
+                <div className="mobile__category catalog__category">
+                  <div className="category__title catalog__title">
+                    <p>{item.category}</p>
+                  </div>
+
+                  <p className="likes__mobile"> <Checkbox className="image-like" icon={<FavoriteBorder sx={{ color: '#EA899A' }} />} checkedIcon={<Favorite sx={{ color: '#EA899A' }} />} /> {item.likes}</p>
                 </div>
-
-                <p className="likes__mobile"> <Checkbox className="image-like" icon={<FavoriteBorder sx={{ color: '#EA899A' }} />} checkedIcon={<Favorite sx={{ color: '#EA899A' }} />} /> {item.likes}</p>
-              </div>
-              <div className="title__like-container catalog__like__container">
-                <h3>{item.title}</h3> <p> <Checkbox className="image-like" icon={<FavoriteBorder sx={{ color: '#EA899A' }} />} checkedIcon={<Favorite sx={{ color: '#EA899A' }} />} /> {item.likes}</p>
-              </div>
-              <p className="matherial__title catalog__matherial__title">Материал: {item.material}</p>
-              <div className="block__price catalog__block__price">
-                <p>{item.price} р.</p>
-                <Button className="price__button catalog__price__button" variant="contained" >Купить</Button>
-              </div>
-            </div>)
+                <div className="title__like-container catalog__like__container">
+                  <h3>{item.title}</h3> <p> <Checkbox className="image-like" icon={<FavoriteBorder sx={{ color: '#EA899A' }} />} checkedIcon={<Favorite sx={{ color: '#EA899A' }} />} /> {item.likes}</p>
+                </div>
+                <p className="matherial__title catalog__matherial__title">Материал: {item.material}</p>
+                <div className="block__price catalog__block__price">
+                  <p>{item.price} р.</p>
+                  <Button className="price__button catalog__price__button" variant="contained" >Купить</Button>
+                </div>
+              </div>)
           })}
-
+        <div className="button__show__more__container">
+        {itemsToShow < newArr.length && ( 
+        <Button 
+          className="button__show__more" 
+          variant="contained" 
+          onClick={handleShowMore}
+        >
+          Показать еще  <img className={isLoading ? "rotating-image" : ''} src={preloaderShowMore} alt="" />
+        </Button>
+      )}
+        </div>
         </div>
       </div>
     </main>
