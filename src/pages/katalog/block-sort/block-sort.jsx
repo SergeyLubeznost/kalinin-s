@@ -1,4 +1,4 @@
-import { useState } from 'react';
+
 import "./block-sort-desktop.css"
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -55,7 +55,7 @@ export default function BlockSort({ arr, newArr }) {
             }}
         />
     );
-    const [openSelect, setOpenSelect] = useState(false);
+
 
     return (
         <div className="sort__container">
@@ -79,7 +79,7 @@ export default function BlockSort({ arr, newArr }) {
          
             <Accordion style={{ boxShadow: 'none', border: 'none', background: 'transparent', width: '100%' }} >
                 <AccordionSummary
-                    expandIcon={<CustomIcon open={openSelect} />}
+                    expandIcon={<CustomIcon/>}
                     aria-controls="panel1-content"
                     id="panel1-header"
                     className='accordion__padding'
@@ -104,7 +104,7 @@ export default function BlockSort({ arr, newArr }) {
             </Accordion>
             <Accordion style={{ boxShadow: 'none', outline: 'none', border: 'none', background: 'transparent', borderColor: 'white', width: '100%' }}>
                 <AccordionSummary
-                    expandIcon={<CustomIcon open={openSelect} />}
+                    expandIcon={<CustomIcon/>}
                     aria-controls="panel2-content"
                     id="panel2-header"
                     className='accordion__padding'
