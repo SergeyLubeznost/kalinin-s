@@ -102,7 +102,7 @@ export default function BlockSort({ arr, newArr, setNewArr }) {
                 && (selectedSize.length === 0 || selectedSize.includes(item.size))
                 && item.priceNumber >= minPriceValue
                 && item.priceNumber <= maxPriceValue
-                && (selectedMirror ? item.mirror : true) // Фильтрация по наличию рамки
+                && (selectedMirror ? item.mirror : true) 
               );
             });
             setNewArr(filteredArr); 

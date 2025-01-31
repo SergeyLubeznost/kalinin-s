@@ -26,6 +26,8 @@ export default function Katalog() {
   const [itemsToShow, setItemsToShow] = useState(6); // Начальное количество карточек
   const [isLoading, setIsLoading] = useState(false); // Состояние для анимации
 
+
+
   const handleShowMore = () => {
     setIsLoading(true); // Запускаем анимацию
     setTimeout(() => {
@@ -48,11 +50,30 @@ export default function Katalog() {
     />
   );
   const [openSelect, setOpenSelect] = useState(false);
+
   const [age, setAge] = useState("популярные");
 
   const handleChange = (event) => {
     setAge(event.target.value);
+    let sortedArr = [...newArr]; // Создаем копию массива
+  
+    switch (event.target.value) { // Используем значение из select напрямую
+      case "популярные":
+        sortedArr.sort((a, b) => b.likes - a.likes); // Сортировка по лайкам по убыванию
+        break;
+      case "по убыванию":
+        sortedArr.sort((a, b) => b.priceNumber - a.priceNumber); // Сортировка по цене по убыванию
+        break;
+      case "по возрастанию":
+        sortedArr.sort((a, b) => a.priceNumber - b.priceNumber); // Сортировка по цене по возрастанию
+        break;
+      default:
+        break;
+    }
+  
+    setNewArr(sortedArr); // Обновляем состояние массива
   };
+  
 
   return (
     <main className="main__catalog">
