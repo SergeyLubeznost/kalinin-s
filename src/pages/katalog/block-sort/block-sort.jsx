@@ -12,6 +12,7 @@ import { pink } from '@mui/material/colors';
 import Slider from '@mui/material/Slider';
 
 import strelkaSelect from "../image-katalog/strelkaSelect.svg";
+import closeModal from "../../../components/main-dialog/closeImg.svg";
 
 const PinkSwitch = styled(Switch)(({ theme }) => ({
     '& .MuiSwitch-switchBase.Mui-checked': {
@@ -26,7 +27,7 @@ const PinkSwitch = styled(Switch)(({ theme }) => ({
     },
 }));
 
-export default function BlockSort({ arr, newArr, setNewArr }) {
+export default function BlockSort({ arr, newArr, setNewArr, setOpenModal }) {
 
     const [selectedCategories, setSelectedCategories] = useState(arr.map(item => item.category));
     const [selectedSize, setSelectedSize] = useState(arr.map(item => item.size));
@@ -113,7 +114,11 @@ export default function BlockSort({ arr, newArr, setNewArr }) {
 
     return (
         <div className="sort__container">
+            <div className='closeFilter__container'>
             <h4 className='categoty__title'>Продукт</h4>
+            <img src={closeModal} alt="close" onClick={()=> setOpenModal(false)}/>
+            </div>
+           
             {
                 exclusiveData.map((item) => (
                     <FormControlLabel

@@ -1,0 +1,98 @@
+@media (max-width: 539px) {
+    .main__catalog {
+        padding: 0 2.3% 0 2.3%;
+    }
+
+    .block__sort__component {
+        display: none !important;
+    }
+
+    .button__show__filter {
+        display: block !important;
+        background-color: transparent !important;
+        width: min-content !important;
+        height: min-content !important;
+        margin-top: auto !important;
+        margin-bottom: auto !important;
+    }
+
+    .categoty__title {
+        color: black;
+        font-size: 25px !important;
+    }
+
+    .category__side span {
+        color: black;
+        font-size: 16px;
+
+    }
+
+    .closeFilter__container img{  
+        display: block!important;
+    }
+
+    .sort__container {
+        width: 502px!important;
+        margin-right:0px!important;
+    }
+
+    .catalog__kard{
+        width: 221px !important;
+        height: 371px !important;
+        margin-bottom: 30px;
+    }
+
+    .catalog__kard img{
+        width:100% !important;
+        height: 167px;
+        }
+        .catalog__title {
+            width: 131px;
+            height: 26px;
+        }
+        .catalog__title p{
+            font-size: 12.5px;
+             }
+
+             .catalog__like__container h3{
+                font-size: 16px;
+            }
+            .catalog__like__container {
+                margin-top: 3%;
+                padding-left: 5%;
+                padding-right: 4%;
+            }
+
+            .catalog__like__container .image-like{
+                width: 18px;
+                height: 17px;
+                border-radius: 0;
+                position: relative;
+                left: 0%;
+            }
+            .catalog__like__container p {
+                font-size: 16px;
+            }
+
+            .catalog__matherial__title{
+                font-size: 12px;
+                padding-left: 4.23%;
+            }
+
+            .catalog__block__price p{
+                font-size: 16px;
+            }
+
+            .catalog__price__button{
+                width: 117px;
+                height: 37px;
+                font-size: 14px!important;
+                border-radius: 5px!important;
+            }
+
+            .button__show__more{
+                width: 182px;
+                height: 57px;
+                font-size: 16px!important;
+            }
+}

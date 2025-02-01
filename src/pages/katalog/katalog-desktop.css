@@ -8,6 +8,10 @@
     width: 100%;
     justify-content: space-between;
 }
+
+.button__show__filter{
+  display: none;
+}
 .katalog__container__sort h2{
     font-family: 'Gotham';
     color: #3d3d3d;
@@ -29,6 +33,12 @@
   line-height: 35.85px;
 }
 
+.block__sort__component{
+    box-sizing: content-box;
+    padding: 0;
+    margin: 0;
+}
+
 .sort__card__container{
     display: flex;
     justify-content: space-between;
@@ -43,8 +53,9 @@
 }
 
 .catalog__kard{
-    width: 389px!important;
-    height: 615px!important;
+    width: 377px !important;
+    height: 609px !important;
+
     margin-bottom: 33px;
 }
 

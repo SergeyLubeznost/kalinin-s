@@ -17,6 +17,9 @@ import BlockSort from "./block-sort/block-sort";
 
 import strelkaSelect from "./image-katalog/strelkaSelect.svg";
 import preloaderShowMore from "./image-katalog/PreloaderShowMore.svg";
+import iconFilter from "./image-katalog/icon_filter.svg"
+
+import FormDialogModal from "../../components/main-dialog/main-modal.js";
 
 import data from "../main/data";
 
@@ -25,15 +28,16 @@ export default function Katalog() {
   const [newArr, setNewArr] = useState(data);
   const [itemsToShow, setItemsToShow] = useState(6); // Начальное количество карточек
   const [isLoading, setIsLoading] = useState(false); // Состояние для анимации
+  const [open, setOpen] = useState(false); // состояние модального окна
 
 
 
   const handleShowMore = () => {
     setIsLoading(true); // Запускаем анимацию
     setTimeout(() => {
-      setItemsToShow(prevItemsToShow => prevItemsToShow + 6); 
+      setItemsToShow(prevItemsToShow => prevItemsToShow + 6);
       setIsLoading(false); // Останавливаем анимацию
-    }, 1000); 
+    }, 1000);
   };
 
   const CustomIcon = ({ open }) => (
@@ -56,7 +60,7 @@ export default function Katalog() {
   const handleChange = (event) => {
     setAge(event.target.value);
     let sortedArr = [...newArr]; // Создаем копию массива
-  
+
     switch (event.target.value) { // Используем значение из select напрямую
       case "популярные":
         sortedArr.sort((a, b) => b.likes - a.likes); // Сортировка по лайкам по убыванию
@@ -70,10 +74,10 @@ export default function Katalog() {
       default:
         break;
     }
-  
+
     setNewArr(sortedArr); // Обновляем состояние массива
   };
-  
+
 
   return (
     <main className="main__catalog">
@@ -102,9 +106,24 @@ export default function Katalog() {
             </Select>
           </FormControl>
         </div>
+        <Button
+          className="button__show__filter"
+          variant="contained"
+          onClick={() => setOpen(true)}
+        >
+          <img src={iconFilter} alt="iconFilter" />
+        </Button>
+
+        <FormDialogModal active={open} setActive={setOpen}>
+
+          <BlockSort arr={data} newArr={newArr} setNewArr={setNewArr} setOpenModal={setOpen}/>
+        </FormDialogModal>
       </div>
       <div className="sort__card__container">
-        <BlockSort arr={data} newArr={newArr} setNewArr={setNewArr} />
+        <div className="block__sort__component">
+          <BlockSort arr={data} newArr={newArr} setNewArr={setNewArr} />
+        </div>
+
         <div className="card__container">
 
           {newArr.slice(0, itemsToShow).map(item => {
@@ -129,17 +148,17 @@ export default function Katalog() {
                 </div>
               </div>)
           })}
-        <div className="button__show__more__container">
-        {itemsToShow < newArr.length && ( 
-        <Button 
-          className="button__show__more" 
-          variant="contained" 
-          onClick={handleShowMore}
-        >
-          Показать еще  <img className={isLoading ? "rotating-image" : ''} src={preloaderShowMore} alt="" />
-        </Button>
-      )}
-        </div>
+          <div className="button__show__more__container">
+            {itemsToShow < newArr.length && (
+              <Button
+                className="button__show__more"
+                variant="contained"
+                onClick={handleShowMore}
+              >
+                Показать еще  <img className={isLoading ? "rotating-image" : ''} src={preloaderShowMore} alt="" />
+              </Button>
+            )}
+          </div>
         </div>
       </div>
     </main>
