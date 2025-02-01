@@ -20,6 +20,11 @@ import preloaderShowMore from "./image-katalog/PreloaderShowMore.svg";
 import iconFilter from "./image-katalog/icon_filter.svg"
 
 import FormDialogModal from "../../components/main-dialog/main-modal.js";
+import { Link } from 'react-router-dom';
+import telegramModal from "../main/image-main/telega.svg";
+import VKontakte from '../../components/footer/icon-footer/VK.svg';
+import telegramm from "../../image/icons8-телеграм.svg";
+import closeModal from "../../components/main-dialog/closeImg.svg";
 
 import data from "../main/data";
 
@@ -29,7 +34,7 @@ export default function Katalog() {
   const [itemsToShow, setItemsToShow] = useState(6); // Начальное количество карточек
   const [isLoading, setIsLoading] = useState(false); // Состояние для анимации
   const [open, setOpen] = useState(false); // состояние модального окна
-
+const [openModalManager, setOpenModalManager] = useState(false);
 
 
   const handleShowMore = () => {
@@ -114,15 +119,95 @@ export default function Katalog() {
           <img src={iconFilter} alt="iconFilter" />
         </Button>
 
-        <FormDialogModal active={open} setActive={setOpen}>
-
-          <BlockSort arr={data} newArr={newArr} setNewArr={setNewArr} setOpenModal={setOpen}/>
-        </FormDialogModal>
+      
       </div>
+      <FormDialogModal active={open} setActive={setOpen}>
+
+<BlockSort arr={data} newArr={newArr} setNewArr={setNewArr} setOpenModal={setOpen}/>
+</FormDialogModal>
+<div className="catalog__container__mobile">
+<h2>Каталог товаров</h2>
+<Button
+          className="button__show__filter"
+          variant="contained"
+          onClick={() => setOpen(true)}
+        >
+          <img src={iconFilter} alt="iconFilter" />
+</Button>
+</div>
+<div className="select__container__mobile">
+<p>Cортировка :</p>
+          <FormControl variant="standard" sx={{ m: 1, minWidth: 120, boxShadow: 'none', outline: 'none', border: 'none', background: 'transparent' }}>
+            <Select
+              sx={{ color: '#EA899A' }}
+              value={age}
+
+              onChange={handleChange}
+              onOpen={() => setOpenSelect(true)} // Устанавливаем состояние при открытии
+              onClose={() => setOpenSelect(false)} // Устанавливаем состояние при закрытии
+              displayEmpty
+              inputProps={{ 'aria-label': 'Without label' }}
+              IconComponent={() => <CustomIcon open={openSelect} />
+
+              }
+            >
+
+              <MenuItem value={"популярные"}>популярные</MenuItem>
+              <MenuItem value={"по убыванию"}>по убыванию</MenuItem>
+              <MenuItem value={"по возрастанию"}>по возрастанию</MenuItem>
+            </Select>
+          </FormControl>
+</div>
+
       <div className="sort__card__container">
         <div className="block__sort__component">
           <BlockSort arr={data} newArr={newArr} setNewArr={setNewArr} />
         </div>
+
+        <div className="connect__manager__container">
+        <Button
+                    className="button__connect__manager"
+                    variant="contained"
+                    onClick={() => setOpenModalManager(true)}
+                >
+                    Мебель по индивидуальным размерам под заказ
+                </Button>
+        </div>
+        <FormDialogModal active={openModalManager} setActive={setOpenModalManager}>
+                <div className="modal__form">
+                    <div className="modal__form__header">
+                        <img src={closeModal} alt="close" onClick={() => setOpenModalManager(false)} />
+                    </div>
+                    <p className="modal__form__title">
+                        Оставьте <span style={{ fontWeight: 'bold', color: '#EA899A' }}>свои данные</span>,<br className="space2" /> и мы с вами свяжемся
+                    </p>
+                    <div className="modal__form__main">
+                        <img src={telegramModal} alt="" />
+                        <form >
+                            <input className="modal__form__input" type="text" placeholder="Введите имя" />
+                            <input className="modal__form__input" type="tel" placeholder="Введите телефон" />
+                            <Button className="modal__form__button catalog__button__form" variant="contained">Отправить</Button>
+                        </form>
+                    </div>
+                    <div className="modal__social__connection">
+                        <h3>А так же вы можете написать нам в соц. сети</h3>
+                        <div className="modal__social__icon__container">
+                            <div>
+                                <Link to={"https://vk.com/kalininy_delayut"} target="_blank">
+                                    <img src={VKontakte} alt="" />
+                                </Link>
+                            </div>
+                            <div>
+                                <Link to={"https://t.me/KalininyDelayut"} target="_blank">
+                                    <img src={telegramm} alt="" />
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </FormDialogModal>
 
         <div className="card__container">
 

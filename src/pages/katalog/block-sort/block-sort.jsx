@@ -10,6 +10,15 @@ import Switch from '@mui/material/Switch';
 import { alpha, styled } from '@mui/material/styles';
 import { pink } from '@mui/material/colors';
 import Slider from '@mui/material/Slider';
+import Button from '@mui/material/Button';
+
+import { Link } from 'react-router-dom';
+
+import FormDialogModal from "../../../components/main-dialog/main-modal.js";
+
+import telegramModal from "../../main/image-main/telega.svg";
+import VKontakte from '../../../components/footer/icon-footer/VK.svg';
+import telegramm from "../../../image/icons8-телеграм.svg";
 
 import strelkaSelect from "../image-katalog/strelkaSelect.svg";
 import closeModal from "../../../components/main-dialog/closeImg.svg";
@@ -33,27 +42,29 @@ export default function BlockSort({ arr, newArr, setNewArr, setOpenModal }) {
     const [selectedSize, setSelectedSize] = useState(arr.map(item => item.size));
     const [selectedMirror, setSelectedMirror] = useState(false);
 
+    const [openModalManager, setOpenModalManager] = useState(false);
+
     const handleCategoryChange = (event) => {
         const { checked, name } = event.target; // Получаем имя (категорию) и состояние чекбокса
 
         if (checked) {
             setSelectedCategories([...selectedCategories, name]); // Добавляем категорию в массив
-         
+
         } else {
             setSelectedCategories(selectedCategories.filter(category => category !== name)); // Удаляем категорию из массива
-        
+
         }
-      
+
     };
     const handleSizeChange = (event) => {
         const { checked, name } = event.target; // Получаем имя (size) и состояние чекбокса
 
         if (checked) {
             setSelectedSize([...selectedSize, name]); // Добавляем категорию в массив
-           
+
         } else {
             setSelectedSize(selectedSize.filter(size => size !== name)); // Удаляем категорию из массива
-           
+
         }
 
     };
@@ -98,27 +109,27 @@ export default function BlockSort({ arr, newArr, setNewArr, setOpenModal }) {
         const handleFilter = () => {
 
             const filteredArr = arr.filter(item => {
-              return (
-                (selectedCategories.length === 0 || selectedCategories.includes(item.category)) 
-                && (selectedSize.length === 0 || selectedSize.includes(item.size))
-                && item.priceNumber >= minPriceValue
-                && item.priceNumber <= maxPriceValue
-                && (selectedMirror ? item.mirror : true) 
-              );
+                return (
+                    (selectedCategories.length === 0 || selectedCategories.includes(item.category))
+                    && (selectedSize.length === 0 || selectedSize.includes(item.size))
+                    && item.priceNumber >= minPriceValue
+                    && item.priceNumber <= maxPriceValue
+                    && (selectedMirror ? item.mirror : true)
+                );
             });
-            setNewArr(filteredArr); 
-          };
-        handleFilter(); 
-      }, [selectedCategories,selectedSize,minPriceValue,maxPriceValue,selectedMirror,arr, setNewArr]);
+            setNewArr(filteredArr);
+        };
+        handleFilter();
+    }, [selectedCategories, selectedSize, minPriceValue, maxPriceValue, selectedMirror, arr, setNewArr]);
 
 
     return (
         <div className="sort__container">
             <div className='closeFilter__container'>
-            <h4 className='categoty__title'>Продукт</h4>
-            <img src={closeModal} alt="close" onClick={()=> setOpenModal(false)}/>
+                <h4 className='categoty__title'>Продукт</h4>
+                <img src={closeModal} alt="close" onClick={() => setOpenModal(false)} />
             </div>
-           
+
             {
                 exclusiveData.map((item) => (
                     <FormControlLabel
@@ -138,6 +149,55 @@ export default function BlockSort({ arr, newArr, setNewArr, setOpenModal }) {
                     />
                 ))
             }
+
+            <div className="button__container__manager">
+                <Button
+                    className="button__connect__manager"
+                    variant="contained"
+                    onClick={() => setOpenModalManager(true)}
+                >
+                    Мебель по индивидуальным размерам под заказ
+                </Button>
+            </div>
+
+
+
+
+            <FormDialogModal active={openModalManager} setActive={setOpenModalManager}>
+                <div className="modal__form">
+                    <div className="modal__form__header">
+                        <img src={closeModal} alt="close" onClick={() => setOpenModalManager(false)} />
+                    </div>
+                    <p className="modal__form__title">
+                        Оставьте <span style={{ fontWeight: 'bold', color: '#EA899A' }}>свои данные</span>,<br className="space2" /> и мы с вами свяжемся
+                    </p>
+                    <div className="modal__form__main">
+                        <img src={telegramModal} alt="" />
+                        <form >
+                            <input className="modal__form__input" type="text" placeholder="Введите имя" />
+                            <input className="modal__form__input" type="tel" placeholder="Введите телефон" />
+                            <Button className="modal__form__button" variant="contained">Отправить</Button>
+                        </form>
+                    </div>
+                    <div className="modal__social__connection">
+                        <h3>А так же вы можете написать нам в соц. сети</h3>
+                        <div className="modal__social__icon__container">
+                            <div>
+                                <Link to={"https://vk.com/kalininy_delayut"} target="_blank">
+                                    <img src={VKontakte} alt="" />
+                                </Link>
+                            </div>
+                            <div>
+                                <Link to={"https://t.me/KalininyDelayut"} target="_blank">
+                                    <img src={telegramm} alt="" />
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </FormDialogModal>
 
             <Accordion style={{ boxShadow: 'none', border: 'none', background: 'transparent', width: '100%' }} >
                 <AccordionSummary
@@ -204,9 +264,9 @@ export default function BlockSort({ arr, newArr, setNewArr, setOpenModal }) {
 
             <div className="block__sort__radio__container">
                 <p className='categoty__title '>Наличие рамок у зеркал</p>
-                <FormControlLabel control={<PinkSwitch 
-                checked={selectedMirror} 
-                onChange={() => setSelectedMirror(!selectedMirror)} 
+                <FormControlLabel control={<PinkSwitch
+                    checked={selectedMirror}
+                    onChange={() => setSelectedMirror(!selectedMirror)}
                 />} label="" />
             </div>
 

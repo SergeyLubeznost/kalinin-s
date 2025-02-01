@@ -1,3 +1,11 @@
+.catalog__container__mobile{
+    display: none;
+}
+
+.select__container__mobile{
+    display: none;
+}
+
 .main__catalog{
     background-color: rgba(245 245 245 0.73);
     padding: 0 9.3% 0 9.6%;
@@ -10,7 +18,7 @@
 }
 
 .button__show__filter{
-  display: none;
+  display: none!important;
 }
 .katalog__container__sort h2{
     font-family: 'Gotham';
@@ -79,7 +87,7 @@ height: 369px;
 }
 
 .catalog__like__container h3{
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .catalog__like__container .image-like{
@@ -138,6 +146,10 @@ height: 369px;
 
 .rotating-image {
     animation: rotate 1s linear forwards; /* Анимация вращения */
+  }
+
+  .connect__manager__container{
+    display: none;
   }
 
   @keyframes rotate {

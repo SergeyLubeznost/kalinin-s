@@ -108,6 +108,16 @@
     padding-left: 0px!important;
 }
 
+
+.button__connect__manager{
+    margin-top: 20px!important;
+    width: 100%;
+    font-size: 1.2rem;
+    color:  var(--main-bg-color)!important;
+    background-color: #FFFFFF!important;
+    text-transform: none !important;
+}
+
 @media (min-width: 969px) and (max-width: 1440px)  {
     .sort__container {
         width: 270px;
