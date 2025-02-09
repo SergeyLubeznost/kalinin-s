@@ -50,7 +50,7 @@
 @media (max-width: 539px) {
     .modal__content{
         border-radius: 0px;
-        overflow-y: auto; /* Убедитесь, что это свойство установлено */
+        overflow-y: scroll; /* Убедитесь, что это свойство установлено */
         min-height: 100vh; /* Задайте максимальную высоту */
     }
 
