@@ -11,7 +11,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-y: auto;
     opacity: 0;
     pointer-events: none; /* Отключаем события указателя по умолчанию */
     transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -51,5 +50,10 @@
 @media (max-width: 539px) {
     .modal__content{
         border-radius: 38px;
+    }
+
+    .modal { 
+        align-items: start;
+        overflow-y: auto;
     }
 }
