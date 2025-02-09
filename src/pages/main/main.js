@@ -278,11 +278,6 @@ function Main() {
             slidesPerView: 1, // Для ширины более 1024 пикселей
           },
         }}
-
-        autoplay={{
-          delay: 4500, // задержка в миллисекундах
-          disableOnInteraction: false, // чтобы автопрокрутка не отключалась при взаимодействии с слайдом
-      }}
       >
 
         <SwiperSlide><div className="slide1">
