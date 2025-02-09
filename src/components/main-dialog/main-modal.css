@@ -55,5 +55,6 @@
     .modal { 
         align-items: start;
         overflow-y: auto;
+        position: absolute;
     }
 }
