@@ -6,6 +6,7 @@ import DeliveryPage from "./pages/delivery/delivery";
 import AboutUs from "./pages/abautUs/about";
 import Main from "./pages/main/main";
 import Katalog from './pages/katalog/katalog';
+import ProductPage from './pages/productPageFolder/productPage';
 
 import reportWebVitals from './reportWebVitals';
 import {
@@ -13,6 +14,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
+// Создание маршрутизатора с использованием флага v7_relativeSplatPath
 const router = createBrowserRouter([
   {
     path: "/",
@@ -27,17 +29,25 @@ const router = createBrowserRouter([
         element: <Katalog />,
       },
       {
+        path: "/katalog/:itemId", // Маршрут для страницы товара
+        element: <ProductPage />, // Компонент страницы товара
+      },
+      {
         path: "/delivery", 
         element: <DeliveryPage />, 
       },
-     
       {
         path: "/about",
-        element: <AboutUs/>
+        element: <AboutUs />,
       }
     ],
   },
-]);
+], {
+  future: {
+    v7_relativeSplatPath: true,  // Включение флага для относительных путей
+    v7_startTransition: true,     // Включение флага для обновления состояния
+  },
+});
 
 const logPerformanceMetrics = (metric) => {
   console.log(metric); // Здесь будет объект со всеми метриками

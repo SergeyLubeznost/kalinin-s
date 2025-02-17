@@ -47,4 +47,7 @@
             font-size: 16px!important;
             border-radius: 7px!important;
         }
+        .button__show__more {
+            width: 240px;
+        }
 }

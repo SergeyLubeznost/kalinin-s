@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 import "./katalog-desktop.css";
 import "./katalog-laptop.css";
 import "./katalog-tablet.css";
@@ -20,7 +21,7 @@ import preloaderShowMore from "./image-katalog/PreloaderShowMore.svg";
 import iconFilter from "./image-katalog/icon_filter.svg"
 
 import FormDialogModal from "../../components/main-dialog/main-modal.js";
-import { Link } from 'react-router-dom';
+
 import telegramModal from "../main/image-main/telega.svg";
 import VKontakte from '../../components/footer/icon-footer/VK.svg';
 import telegramm from "../../image/icons8-телеграм.svg";
@@ -229,7 +230,9 @@ const [openModalManager, setOpenModalManager] = useState(false);
                 <p className="matherial__title catalog__matherial__title">Материал: {item.material}</p>
                 <div className="block__price catalog__block__price">
                   <p>{item.price} р.</p>
+                  <Link to={`/katalog/${item.id}`}>
                   <Button className="price__button catalog__price__button" variant="contained" >Купить</Button>
+                  </Link>
                 </div>
               </div>)
           })}
