@@ -1,0 +1,12 @@
+.main__product__page{
+    padding: 0 9.3% 0 9.6%;
+}
+
+.slider__select__color__container{
+display: flex;
+justify-content: space-between;
+width: 100%;
+}
+.slider__select__color__container div{
+width: 50%;
+}

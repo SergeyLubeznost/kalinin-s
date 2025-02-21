@@ -1,7 +1,9 @@
 
-.swiper3 {
-    width: 100%;
-    height: 100%;
+.mySwiper3 {
+  width: 600px !important;
+  padding-left: 0;
+  height: 600px;
+  padding-right: 0 ;
   }
   
   .swiper-slide3 {
@@ -37,23 +39,19 @@
   }
   
   .mySwiper4 {
-    height: 50%;
-    width: 100%;
-  }
-  
-  .mySwiper4 {
-    height: 20%;
+    /* height: 99px; */
+    width: 77.3% !important;
     box-sizing: border-box;
     padding: 10px 0;
   }
   
   .mySwiper4 .swiper-slide4 {
-    width: 25%;
+    width: 100%;
     height: 100%;
     opacity: 0.4;
   }
   
-  .mySwiper4 .swiper-slide4-thumb-active {
+  .mySwiper4 .swiper-slide-thumb-active {
     opacity: 1;
   }
   
@@ -63,3 +61,8 @@
     height: 100%;
     object-fit: cover;
   }
+
+  .swiper-free-mode > .swiper-wrapper {
+    transition-timing-function: ease-out;
+    margin: 0 0;
+}
