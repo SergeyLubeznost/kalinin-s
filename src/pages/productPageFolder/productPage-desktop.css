@@ -7,6 +7,13 @@ display: flex;
 justify-content: space-between;
 width: 100%;
 }
-.slider__select__color__container div{
+.slider__select__color__container .select__color__semi__container{
 width: 50%;
+}
+
+.select__color__container{
+    width: 100%;
+}
+.select__color__block{
+    width: 100%;
 }
