@@ -2,6 +2,22 @@
     padding: 0 9.3% 0 9.6%;
 }
 
+.bread__crumbs{
+    margin-top: 50px;
+}
+
+.bread__crumb__link{
+    font-size: 18px;
+    font-weight: 400;
+    color: #9e9e9e;
+}
+.font__bread__crumb{
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+}
+
+
 .slider__select__color__container{
 display: flex;
 justify-content: space-between;
@@ -12,8 +28,93 @@ width: 50%;
 }
 
 .select__color__container{
-    width: 100%;
+    width: 708px;
+    box-sizing: border-box;
+    height: 567px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 64px auto;
+    padding: 59px 70px;
+}
+
+.select__color__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.select__color__header h2{
+    font-family: 'Gotham';
+    font-weight: 700;
+    font-size: 35px;
+}
+.select__color__header__likes{
+    font-family: 'G-l';
+    font-weight: 400;
+    font-size: 25px;
+}
+.select__color__header__likes span svg{
+    width: 32px !important;
+    height: 33px !important;
+}
+.select__color__material,.select__color__block{
+    font-family: 'G-l';
+    font-weight: 400;
+    font-size: 22px; 
+    margin-bottom: 35px;
+}
+.select__color__material span{
+    font-family: 'G-l';
+    font-weight: 700;
+    font-size: 22px; 
+    margin-right: 22px;
+}
+.select__color__block span{
+    font-family: 'G-l';
+    font-weight: 700;
+    font-size: 22px; 
+    margin-right: 22px;
 }
 .select__color__block{
     width: 100%;
+}
+
+.rotate__container{
+    transform: rotate(-90deg);
+    width:45.8% !important;;
+}
+
+
+.textSelect{
+    font-family: 'G-l' !important;
+    font-weight: 400 !important;
+    font-size: 22px !important;
+    color: var(--main-bg-color) !important;
+    width: 80%;
+    background-color: white;
+    left: -23px!important;
+}
+.textSelect img{
+   margin-left: 17px;
+}
+
+.priceProduct__containe{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.priceProduct__containe p{
+    font-family: 'Gotham';
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.product__button{
+    width: 211px;
+    height: 53px;
+    border-radius: 10px !important;
+    background-color: #EA899A !important;
+    font-family: 'G-l' !important;
+    font-weight: 400 !important;
+    font-size: 20px !important;
+    text-transform: none !important;
 }
