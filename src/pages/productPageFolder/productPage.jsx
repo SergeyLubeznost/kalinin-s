@@ -305,7 +305,7 @@ const ProductPage = () => {
             />
           </TabList>
         </Box>
-        <TabPanel value="О товаре">О товаре</TabPanel>
+        <TabPanel value="О товаре">О товаре все просто</TabPanel>
         <TabPanel value="Комплектация">Комплектация</TabPanel>
         <TabPanel value="Отзывы">Отзывы</TabPanel>
       </TabContext>
