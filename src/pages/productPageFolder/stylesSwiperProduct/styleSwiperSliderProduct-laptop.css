@@ -1,0 +1,25 @@
+@media (min-width: 969px) and (max-width: 1600px)  {
+    .mySwiper3 {
+        width: 498px !important;
+        padding-left: 0;
+        height: 504px;
+        padding-right: 0;
+        transform: rotate(90deg);
+    }
+    .swiper-slide4 img {
+        width: 85px;
+        height: 85px;
+    }
+
+    .mySwiper4 .swiper-slide4 {
+        width: 85px !important;
+        height: 85px !important;
+ 
+        margin-right: 18px !important;
+    }
+    
+    .mySwiper4 {
+        width: 572px !important;
+        margin-right: 73.5px;
+    }
+}

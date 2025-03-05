@@ -38,6 +38,9 @@ import "swiper/css/navigation";
 import "swiper/css/thumbs";
 
 import "./stylesSwiperProduct/styleSwiperSliderProduct.css";
+import "./stylesSwiperProduct/styleSwiperSliderProduct-laptop.css";
+import "./stylesSwiperProduct/styleSwiperSliderProduct-tablet.css";
+import "./stylesSwiperProduct/styleSwiperSliderProduct-mobile.css";
 import data from "../main/data";
 
 import iconComplect from "./imagePageProduct/iconComplect.svg"
@@ -65,17 +68,13 @@ const ProductPage = () => {
   // Загрузите информацию о товаре с ID itemId
 
   const breadcrumbs = [
-    <Link to="/katalog" className="bread__crumb__link ">
+    <Link to="/katalog" key="1" className="bread__crumb__link">
       Каталог
     </Link>,
-    <Link to="" className="bread__crumb__link ">
+    <Link to="" key="2" className="bread__crumb__link">
       {product.category}
     </Link>,
-    <Typography
-      key="3"
-      className="font__bread__crumb"
-      sx={{ color: "text.primary" }}
-    >
+    <Typography key="3" className="font__bread__crumb" sx={{ color: "text.primary" }}>
       {product.title}
     </Typography>,
   ];
@@ -185,7 +184,7 @@ const ProductPage = () => {
               <p>
                 <span>Цвет:</span> {selectedColor}
               </p>
-              <div style={{ display: "flex", marginBottom: "35px" }}>
+              <div className="select__color__tablet" style={{ display: "flex", marginBottom: "35px" }}>
                 {product.color.map((colorObj) =>
                   Object.entries(colorObj).map(([key, value]) => (
                     <div
@@ -223,6 +222,7 @@ const ProductPage = () => {
                   Выбор комплектации <img src={iconComplect} alt="иконка" />
                 </InputLabel>
                 <Select
+                className="select__tablet"
                   labelId="demo-simple-select-label"
                   id="demo-simple-select"
                   value={age}
@@ -231,9 +231,9 @@ const ProductPage = () => {
                   IconComponent={() => null} // Убираем иконку
                   onChange={handleChange}
                 >
-                  <MenuItem value={10}>Ten</MenuItem>
-                  <MenuItem value={20}>Twenty</MenuItem>
-                  <MenuItem value={30}>Thirty</MenuItem>
+                  <MenuItem  className="select__tablet__item" value={10}>Ten</MenuItem>
+                  <MenuItem className="select__tablet__item" value={20}>Twenty</MenuItem>
+                  <MenuItem className="select__tablet__item" value={30}>Thirty</MenuItem>
                 </Select>
               </FormControl>
             </Box>

@@ -1,0 +1,44 @@
+@media (min-width: 540px) and (max-width: 968px) {
+    .mySwiper3 {
+        width: 320px !important;
+        padding-left: 0;
+        height: 320px;
+        padding-right: 0;
+        transform: rotate(0deg);
+    }
+    .swiper-slide4 img {
+        width: 52px;
+        height: 52px;
+    }
+
+    .mySwiper4 .swiper-slide4 {
+        width: 52px !important;
+        height: 52px !important;
+        transform: rotate(90deg);
+        margin-right: 15px !important;
+    }
+    
+    .mySwiper4 {
+        width: 343px !important;
+        box-sizing: border-box;
+        padding: 10px 0;
+        margin-top: 10px;
+        margin-right: 0px;
+        transform: rotate(0deg);
+      }
+
+   
+      .swiper-button-next::after,
+      .swiper-button-prev::after{
+        width: 25px;
+        height: 25px;
+        font-size: 25px !important;
+        cursor: none;
+      }
+      .swiper-button-next,
+      .swiper-button-prev{
+      cursor: none;
+      width: 13px;
+      height: 25px;
+      }
+}

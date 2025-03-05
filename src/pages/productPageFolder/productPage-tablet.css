@@ -1,0 +1,80 @@
+@media (min-width: 540px) and (max-width: 968px) {
+    .main__product__page {
+        padding: 0 2.3% 0 2.3%;
+      }
+
+      .bread__crumbs {
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+      .slider__select__color__container .select__color__semi__container {
+        width: 55%;
+    }
+    
+      .slider__select__color__container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+    
+      .select__color__container {
+        width: 387px;
+        height: 387px;
+        margin: 0px auto;
+        padding: 0px 21px;
+      }
+      .rotate__container {
+        transform: rotate(0deg);
+        width: 320px !important;
+      }
+    
+      .select__color__header h2 {
+        font-size: 25px;
+      }
+      .select__color__header__likes {
+        font-size: 18px;
+      }
+    
+      .select__color__header__likes span svg {
+        width: 27px !important;
+        height: 28px !important;
+      }
+    
+      .select__color__material span {
+        font-size: 14px;
+        margin-right: 22px;
+    }
+    .select__color__block span {
+        font-size: 14px;
+        margin-right: 22px;
+    }
+      .select__color__material,
+      .select__color__block {
+   
+        font-size: 14px;
+        margin-bottom: 25px;
+      }
+
+      .select__color__tablet{
+        margin-bottom: 25px !important;
+        margin-top: 25px;
+      }
+
+      .select__tablet{
+        height: 30px;
+      }
+    
+      .textSelect {
+        font-size: 16px !important;
+      }
+      .priceProduct__containe p {
+        margin: 0;
+        font-size: 25px;
+      }
+
+      .product__button{
+        width: 177px;
+        font-size: 18px !important;
+    }
+}

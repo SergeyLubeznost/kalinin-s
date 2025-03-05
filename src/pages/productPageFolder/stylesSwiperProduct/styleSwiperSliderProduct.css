@@ -44,10 +44,11 @@
   }
   
   .mySwiper4 {
-    width: 84.3% !important;
+    width: 85.3% !important;
     box-sizing: border-box;
     padding: 10px 0;
     margin-top: 10px;
+    margin-right: 55.5px;
     transform: rotate(180deg);
   }
   .mySwiper4 > .swiper-wrapper{
