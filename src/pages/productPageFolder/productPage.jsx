@@ -31,6 +31,13 @@ import Stack from "@mui/material/Stack";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import InputBase from '@mui/material/InputBase';
 
+
+import Tab from '@mui/material/Tab';
+import TabContext from '@mui/lab/TabContext';
+import TabList from '@mui/lab/TabList';
+import TabPanel from '@mui/lab/TabPanel';
+
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -49,6 +56,13 @@ import iconComplect from "./imagePageProduct/iconComplect.svg"
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 
 const ProductPage = () => {
+  const [value, setValue] = React.useState('О товаре');
+
+  const handleChangeTabs = (event, newValue) => {
+    setValue(newValue);
+  };
+
+
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const { itemId } = useParams();
   const product = data.find((item) => item.id === parseInt(itemId));
@@ -249,6 +263,53 @@ const ProductPage = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="tabs__container">
+      <Box sx={{ width: '100%', typography: 'body1' }}>
+      <TabContext value={value}>
+        <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+          <TabList  onChange={handleChangeTabs} aria-label="lab API tabs example">
+            <Tab className="tabs__product"
+              label={<Typography 
+                        sx={{ 
+                          fontWeight: value === "О товаре" ? 'bold' : 'normal', 
+                          color: value === "О товаре" ? 'black' : 'inherit' 
+                        }}
+                     >
+                     О товаре
+                   </Typography>} 
+              value="О товаре" 
+            />
+            <Tab className="tabs__product"
+              label={<Typography 
+                        sx={{ 
+                          fontWeight: value === "Комплектация" ? 'bold' : 'normal', 
+                          color: value === "Комплектация" ? 'black' : 'inherit' 
+                        }}
+                     >
+                     Комплектация
+                   </Typography>} 
+              value="Комплектация" 
+            />
+            <Tab className="tabs__product"
+              label={<Typography 
+                        sx={{ 
+                          fontWeight: value === "Отзывы" ? 'bold' : 'normal', 
+                          color: value === "Отзывы" ? 'black' : 'inherit' 
+                        }}
+                     >
+                     Отзывы
+                   </Typography>} 
+              value="Отзывы" 
+            />
+          </TabList>
+        </Box>
+        <TabPanel value="О товаре">О товаре</TabPanel>
+        <TabPanel value="Комплектация">Комплектация</TabPanel>
+        <TabPanel value="Отзывы">Отзывы</TabPanel>
+      </TabContext>
+    </Box>
       </section>
     </main>
   );
