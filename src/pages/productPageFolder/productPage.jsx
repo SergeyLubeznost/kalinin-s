@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import "./productPage-desktop.css";
@@ -65,6 +65,9 @@ const ProductPage = () => {
 
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const { itemId } = useParams();
+   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [itemId]);
   const product = data.find((item) => item.id === parseInt(itemId));
 
   const [selectedColor, setSelectedColor] = useState(
@@ -305,7 +308,17 @@ const ProductPage = () => {
             />
           </TabList>
         </Box>
-        <TabPanel value="О товаре">О товаре все просто</TabPanel>
+        <TabPanel value="О товаре">О товаре все просто
+          <div className="mainAboutProductContainer">
+            <div className="aboutProductConatainer">
+              <h3>{product.title1}</h3>
+              <p>{product.discription1}</p>
+              <h4>{product.subTitle1}</h4>
+              <p>{product.discription2}</p>
+            </div>
+            <div></div>
+          </div>
+        </TabPanel>
         <TabPanel value="Комплектация">Комплектация</TabPanel>
         <TabPanel value="Отзывы">Отзывы</TabPanel>
       </TabContext>
