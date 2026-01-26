@@ -11,7 +11,7 @@ import "./productPage-mobile.css";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 //import Button from '@mui/material/Button';
-import { styled } from '@mui/material/styles';
+import { styled } from "@mui/material/styles";
 import Checkbox from "@mui/material/Checkbox";
 import FavoriteBorder from "@mui/icons-material/FavoriteBorder";
 import Favorite from "@mui/icons-material/Favorite";
@@ -29,14 +29,12 @@ import Typography from "@mui/material/Typography";
 
 import Stack from "@mui/material/Stack";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
-import InputBase from '@mui/material/InputBase';
+import InputBase from "@mui/material/InputBase";
 
-
-import Tab from '@mui/material/Tab';
-import TabContext from '@mui/lab/TabContext';
-import TabList from '@mui/lab/TabList';
-import TabPanel from '@mui/lab/TabPanel';
-
+import Tab from "@mui/material/Tab";
+import TabContext from "@mui/lab/TabContext";
+import TabList from "@mui/lab/TabList";
+import TabPanel from "@mui/lab/TabPanel";
 
 // Import Swiper styles
 import "swiper/css";
@@ -50,22 +48,21 @@ import "./stylesSwiperProduct/styleSwiperSliderProduct-tablet.css";
 import "./stylesSwiperProduct/styleSwiperSliderProduct-mobile.css";
 import data from "../main/data";
 
-import iconComplect from "./imagePageProduct/iconComplect.svg"
+import iconComplect from "./imagePageProduct/iconComplect.svg";
 
 // import required modules
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 
 const ProductPage = () => {
-  const [value, setValue] = React.useState('О товаре');
+  const [value, setValue] = React.useState("О товаре");
 
   const handleChangeTabs = (event, newValue) => {
     setValue(newValue);
   };
 
-
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const { itemId } = useParams();
-   useEffect(() => {
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, [itemId]);
   const product = data.find((item) => item.id === parseInt(itemId));
@@ -91,48 +88,51 @@ const ProductPage = () => {
     <Link to="" key="2" className="bread__crumb__link">
       {product.category}
     </Link>,
-    <Typography key="3" className="font__bread__crumb" sx={{ color: "text.primary" }}>
+    <Typography
+      key="3"
+      className="font__bread__crumb"
+      sx={{ color: "text.primary" }}
+    >
       {product.title}
     </Typography>,
   ];
 
   const BootstrapInput = styled(InputBase)(({ theme }) => ({
-    'label + &': {
+    "label + &": {
       marginTop: theme.spacing(2),
     },
-    '& .MuiInputBase-input': {
+    "& .MuiInputBase-input": {
       borderRadius: 4,
-      position: 'relative',
+      position: "relative",
       backgroundColor: theme.palette.background.paper,
-      border: 'none', // Убираем границу,
+      border: "none", // Убираем границу,
       fontSize: 22,
-      padding: '10px 0px 10px 0px',
-      transition: theme.transitions.create(['border-color', 'box-shadow']),
+      padding: "10px 0px 10px 0px",
+      transition: theme.transitions.create(["border-color", "box-shadow"]),
       // Use the system font instead of the default Roboto font.
       fontFamily: [
-        '-apple-system',
-        'BlinkMacSystemFont',
+        "-apple-system",
+        "BlinkMacSystemFont",
         '"Segoe UI"',
-        'Roboto',
+        "Roboto",
         '"Helvetica Neue"',
-        'Arial',
-        'sans-serif',
+        "Arial",
+        "sans-serif",
         '"Apple Color Emoji"',
         '"Segoe UI Emoji"',
         '"Segoe UI Symbol"',
-      ].join(','),
-      '&:focus': {
+      ].join(","),
+      "&:focus": {
         borderRadius: 4,
-        borderColor: 'transparent',
-        border: 'none', // Убираем границу при фокусе
-      boxShadow: 'none', // Убираем тень
+        borderColor: "transparent",
+        border: "none", // Убираем границу при фокусе
+        boxShadow: "none", // Убираем тень
       },
-      '&:hover': {
-        border: 'none', // Убираем границу при наведении
+      "&:hover": {
+        border: "none", // Убираем границу при наведении
       },
     },
   }));
-
 
   return (
     <main className="main__product__page">
@@ -196,12 +196,17 @@ const ProductPage = () => {
                 {product.likes}
               </p>
             </div>
-            <p className="select__color__material"><span>Материал:</span> {product.material}</p>
+            <p className="select__color__material">
+              <span>Материал:</span> {product.material}
+            </p>
             <div className="select__color__block">
               <p>
                 <span>Цвет:</span> {selectedColor}
               </p>
-              <div className="select__color__tablet" style={{ display: "flex", marginBottom: "35px" }}>
+              <div
+                className="select__color__tablet"
+                style={{ display: "flex", marginBottom: "35px" }}
+              >
                 {product.color.map((colorObj) =>
                   Object.entries(colorObj).map(([key, value]) => (
                     <div
@@ -230,7 +235,7 @@ const ProductPage = () => {
               </div>
             </div>
 
-            <Box sx={{m: 1, minWidth: 120 }}>
+            <Box sx={{ m: 1, minWidth: 120 }}>
               <FormControl fullWidth>
                 <InputLabel
                   id="demo-simple-select-label"
@@ -239,7 +244,7 @@ const ProductPage = () => {
                   Выбор комплектации <img src={iconComplect} alt="иконка" />
                 </InputLabel>
                 <Select
-                className="select__tablet"
+                  className="select__tablet"
                   labelId="demo-simple-select-label"
                   id="demo-simple-select"
                   value={age}
@@ -248,20 +253,23 @@ const ProductPage = () => {
                   IconComponent={() => null} // Убираем иконку
                   onChange={handleChange}
                 >
-                  <MenuItem  className="select__tablet__item" value={10}>Ten</MenuItem>
-                  <MenuItem className="select__tablet__item" value={20}>Twenty</MenuItem>
-                  <MenuItem className="select__tablet__item" value={30}>Thirty</MenuItem>
+                  <MenuItem className="select__tablet__item" value={10}>
+                    Ten
+                  </MenuItem>
+                  <MenuItem className="select__tablet__item" value={20}>
+                    Twenty
+                  </MenuItem>
+                  <MenuItem className="select__tablet__item" value={30}>
+                    Thirty
+                  </MenuItem>
                 </Select>
               </FormControl>
             </Box>
 
             <div className="priceProduct__containe">
               <p>{product.price} р.</p>
-              <Button
-                className="product__button "
-                variant="contained"
-              >
-               Заказать
+              <Button className="product__button " variant="contained">
+                Заказать
               </Button>
             </div>
           </div>
@@ -269,60 +277,79 @@ const ProductPage = () => {
       </section>
 
       <section className="tabs__container">
-      <Box sx={{ width: '100%', typography: 'body1' }}>
-      <TabContext value={value}>
-        <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-          <TabList  onChange={handleChangeTabs} aria-label="lab API tabs example">
-            <Tab className="tabs__product"
-              label={<Typography 
-                        sx={{ 
-                          fontWeight: value === "О товаре" ? 'bold' : 'normal', 
-                          color: value === "О товаре" ? 'black' : 'inherit' 
-                        }}
-                     >
-                     О товаре
-                   </Typography>} 
-              value="О товаре" 
-            />
-            <Tab className="tabs__product"
-              label={<Typography 
-                        sx={{ 
-                          fontWeight: value === "Комплектация" ? 'bold' : 'normal', 
-                          color: value === "Комплектация" ? 'black' : 'inherit' 
-                        }}
-                     >
-                     Комплектация
-                   </Typography>} 
-              value="Комплектация" 
-            />
-            <Tab className="tabs__product"
-              label={<Typography 
-                        sx={{ 
-                          fontWeight: value === "Отзывы" ? 'bold' : 'normal', 
-                          color: value === "Отзывы" ? 'black' : 'inherit' 
-                        }}
-                     >
-                     Отзывы
-                   </Typography>} 
-              value="Отзывы" 
-            />
-          </TabList>
+        <Box sx={{ width: "100%", typography: "body1" }}>
+          <TabContext value={value}>
+            <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+              <TabList
+                onChange={handleChangeTabs}
+                aria-label="lab API tabs example"
+              >
+                <Tab
+                  className="tabs__product"
+                  label={
+                    <Typography
+                      sx={{
+                        fontWeight: value === "О товаре" ? "bold" : "normal",
+                        color: value === "О товаре" ? "black" : "inherit",
+                      }}
+                    >
+                      О товаре
+                    </Typography>
+                  }
+                  value="О товаре"
+                />
+                <Tab
+                  className="tabs__product"
+                  label={
+                    <Typography
+                      sx={{
+                        fontWeight:
+                          value === "Комплектация" ? "bold" : "normal",
+                        color: value === "Комплектация" ? "black" : "inherit",
+                      }}
+                    >
+                      Комплектация
+                    </Typography>
+                  }
+                  value="Комплектация"
+                />
+                <Tab
+                  className="tabs__product"
+                  label={
+                    <Typography
+                      sx={{
+                        fontWeight: value === "Отзывы" ? "bold" : "normal",
+                        color: value === "Отзывы" ? "black" : "inherit",
+                      }}
+                    >
+                      Отзывы
+                    </Typography>
+                  }
+                  value="Отзывы"
+                />
+              </TabList>
+            </Box>
+            <TabPanel value="О товаре">
+              <div className="mainAboutProductContainer">
+                <div className="aboutProductConatainer">
+                  <h3>{product.title1}</h3>
+                  <p>{product.discription1}</p>
+                  <h4>{product.subTitle1}</h4>
+                  <p>{product.discription2}</p>
+                </div>
+                <div className="containerPhotoAbout">
+                  <img src={product.aboutImages[0]} alt="" />
+                  <div>
+                    <img src={product.aboutImages[1]} alt="" />
+                    <img src={product.aboutImages[2]} alt="" />
+                  </div>
+                </div>
+              </div>
+            </TabPanel>
+            <TabPanel value="Комплектация">Комплектация</TabPanel>
+            <TabPanel value="Отзывы">Отзывы</TabPanel>
+          </TabContext>
         </Box>
-        <TabPanel value="О товаре">О товаре все просто
-          <div className="mainAboutProductContainer">
-            <div className="aboutProductConatainer">
-              <h3>{product.title1}</h3>
-              <p>{product.discription1}</p>
-              <h4>{product.subTitle1}</h4>
-              <p>{product.discription2}</p>
-            </div>
-            <div></div>
-          </div>
-        </TabPanel>
-        <TabPanel value="Комплектация">Комплектация</TabPanel>
-        <TabPanel value="Отзывы">Отзывы</TabPanel>
-      </TabContext>
-    </Box>
       </section>
     </main>
   );

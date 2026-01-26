@@ -132,3 +132,14 @@ width: 50%;
     font-weight: 700!important;
     font-size: 25px !important;
 }
+
+.mainAboutProductContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.aboutProductConatainer{
+width: 50%;
+}
+.aboutProductConatainer > h3{
+    font-size: 40px;
+}
