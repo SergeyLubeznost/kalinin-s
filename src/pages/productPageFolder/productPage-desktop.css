@@ -1,145 +1,187 @@
-.main__product__page{
-    padding: 0 9.3% 0 9.6%;
+.main__product__page {
+  padding: 0 9.3% 0 9.6%;
 }
 
-.bread__crumbs{
-    margin-top: 50px;
+.bread__crumbs {
+  margin-top: 50px;
 }
 
-.bread__crumb__link{
-    font-size: 18px;
-    font-weight: 400;
-    color: #9e9e9e;
+.bread__crumb__link {
+  font-size: 18px;
+  font-weight: 400;
+  color: #9e9e9e;
 }
-.font__bread__crumb{
-    font-size: 18px;
-    font-weight: 400;
-    color: black;
-}
-
-
-.slider__select__color__container{
-display: flex;
-justify-content: space-between;
-width: 100%;
-}
-.slider__select__color__container .select__color__semi__container{
-width: 50%;
+.font__bread__crumb {
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
 }
 
-.select__color__container{
-    width: 708px;
-    box-sizing: border-box;
-    height: 567px;
-    background-color: white;
-    border-radius: 10px;
-    margin: 64px auto;
-    padding: 59px 70px;
+.slider__select__color__container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.slider__select__color__container .select__color__semi__container {
+  width: 50%;
 }
 
-.select__color__header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.select__color__header h2{
-    font-family: 'Gotham';
-    font-weight: 700;
-    font-size: 35px;
-}
-.select__color__header__likes{
-    font-family: 'G-l';
-    font-weight: 400;
-    font-size: 25px;
-}
-.select__color__header__likes span svg{
-    width: 32px !important;
-    height: 33px !important;
-}
-.select__color__material,.select__color__block{
-    font-family: 'G-l';
-    font-weight: 400;
-    font-size: 22px; 
-    margin-bottom: 35px;
-}
-.select__color__material span{
-    font-family: 'G-l';
-    font-weight: 700;
-    font-size: 22px; 
-    margin-right: 22px;
-}
-.select__color__block span{
-    font-family: 'G-l';
-    font-weight: 700;
-    font-size: 22px; 
-    margin-right: 22px;
-}
-.select__color__block{
-    width: 100%;
+.select__color__container {
+  width: 708px;
+  box-sizing: border-box;
+  height: 567px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 64px auto;
+  padding: 59px 70px;
 }
 
-.rotate__container{
-    transform: rotate(-90deg);
-    width:45.8% !important;;
+.select__color__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.select__color__header h2 {
+  font-family: "Gotham";
+  font-weight: 700;
+  font-size: 35px;
+}
+.select__color__header__likes {
+  font-family: "G-l";
+  font-weight: 400;
+  font-size: 25px;
+}
+.select__color__header__likes span svg {
+  width: 32px !important;
+  height: 33px !important;
+}
+.select__color__material,
+.select__color__block {
+  font-family: "G-l";
+  font-weight: 400;
+  font-size: 22px;
+  margin-bottom: 35px;
+}
+.select__color__material span {
+  font-family: "G-l";
+  font-weight: 700;
+  font-size: 22px;
+  margin-right: 22px;
+}
+.select__color__block span {
+  font-family: "G-l";
+  font-weight: 700;
+  font-size: 22px;
+  margin-right: 22px;
+}
+.select__color__block {
+  width: 100%;
 }
 
-
-.textSelect{
-    font-family: 'G-l' !important;
-    font-weight: 400 !important;
-    font-size: 22px !important;
-    color: var(--main-bg-color) !important;
-    width: 80%;
-    background-color: white;
-    left: -23px!important;
-}
-.textSelect img{
-   margin-left: 17px;
+.rotate__container {
+  transform: rotate(-90deg);
+  width: 45.8% !important;
 }
 
-.priceProduct__containe{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.textSelect {
+  font-family: "G-l" !important;
+  font-weight: 400 !important;
+  font-size: 22px !important;
+  color: var(--main-bg-color) !important;
+  width: 80%;
+  background-color: white;
+  left: -23px !important;
 }
-.priceProduct__containe p{
-    font-family: 'Gotham';
-    font-weight: 700;
-    font-size: 45px;
-}
-
-.product__button{
-    width: 211px;
-    height: 53px;
-    border-radius: 10px !important;
-    background-color: #EA899A !important;
-    font-family: 'G-l' !important;
-    font-weight: 400 !important;
-    font-size: 20px !important;
-    text-transform: none !important;
+.textSelect img {
+  margin-left: 17px;
 }
 
-
-
-.MuiTabs-indicator{
-    background-color: #EA899A!important;
+.priceProduct__containe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.priceProduct__containe p {
+  font-family: "Gotham";
+  font-weight: 700;
+  font-size: 45px;
 }
 
-.tabs__product{
-    margin-right: 129px!important;
-    text-transform: none !important;
-    font-family: 'Gotham'!important;
-    font-weight: 700!important;
-    font-size: 25px !important;
+.product__button {
+  width: 211px;
+  height: 53px;
+  border-radius: 10px !important;
+  background-color: #ea899a !important;
+  font-family: "G-l" !important;
+  font-weight: 400 !important;
+  font-size: 20px !important;
+  text-transform: none !important;
 }
 
-.mainAboutProductContainer{
-    display: flex;
-    justify-content: space-between;
+.MuiTabs-indicator {
+  background-color: #ea899a !important;
 }
-.aboutProductConatainer{
-width: 50%;
+
+.tabs__product {
+  margin-right: 129px !important;
+  text-transform: none !important;
+  font-family: "Gotham" !important;
+  font-weight: 700 !important;
+  font-size: 25px !important;
 }
-.aboutProductConatainer > h3{
-    font-size: 40px;
+.mainAboutProductContainer * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mainAboutProductContainer {
+  display: flex;
+  /* justify-content: space-between; */
+}
+.tabPanel__pading {
+  padding-left: 0 !important;
+  padding-top: 31px !important;
+}
+.aboutProductConatainer {
+  width: 50%;
+}
+.aboutProductConatainer * {
+  width: 523px;
+}
+.aboutProductConatainer > h3 {
+  font-size: 40px;
+  font-family: "Gotham";
+  font-weight: 700;
+  margin-bottom: 11px;
+}
+.aboutProductConatainer > p {
+  font-size: 18px;
+  font-family: "M-l";
+  font-weight: 400;
+  margin-bottom: 11px;
+  line-height: 155%;
+}
+.aboutProductConatainer > h4 {
+  font-size: 25px;
+  font-family: "Gotham";
+  font-weight: 700;
+  margin-top: 57px;
+  margin-bottom: 31px;
+  line-height: 155%;
+}
+
+.containerPhotoAbout * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.containerPhotoAbout > img {
+  width: 541px;
+  height: 241px;
+  margin-bottom: 23px;
+}
+.containerPhotoAbout > div > img {
+  width: 259px;
+  height: 293px;
+  margin-right: 23px;
 }

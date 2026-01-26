@@ -329,7 +329,7 @@ const ProductPage = () => {
                 />
               </TabList>
             </Box>
-            <TabPanel value="О товаре">
+            <TabPanel className="tabPanel__pading" value="О товаре">
               <div className="mainAboutProductContainer">
                 <div className="aboutProductConatainer">
                   <h3>{product.title1}</h3>
@@ -346,8 +346,40 @@ const ProductPage = () => {
                 </div>
               </div>
             </TabPanel>
-            <TabPanel value="Комплектация">Комплектация</TabPanel>
-            <TabPanel value="Отзывы">Отзывы</TabPanel>
+            <TabPanel className="tabPanel__pading" value="Комплектация">
+                 <div className="mainAboutProductContainer">
+                <div className="aboutProductConatainer">
+                  <h3>{product.title1}</h3>
+                  <p>{product.discription1}</p>
+                  <h4>{product.subTitle1}</h4>
+                  <p>{product.discription2}</p>
+                </div>
+                <div className="containerPhotoAbout">
+                  <img src={product.aboutImages[0]} alt="" />
+                  <div>
+                    <img src={product.aboutImages[1]} alt="" />
+                    <img src={product.aboutImages[2]} alt="" />
+                  </div>
+                </div>
+              </div>
+            </TabPanel>
+            <TabPanel className="tabPanel__pading" value="Отзывы">
+                 <div className="mainAboutProductContainer">
+                <div className="aboutProductConatainer">
+                  <h3>{product.title1}</h3>
+                  <p>{product.discription1}</p>
+                  <h4>{product.subTitle1}</h4>
+                  <p>{product.discription2}</p>
+                </div>
+                <div className="containerPhotoAbout">
+                  <img src={product.aboutImages[0]} alt="" />
+                  <div>
+                    <img src={product.aboutImages[1]} alt="" />
+                    <img src={product.aboutImages[2]} alt="" />
+                  </div>
+                </div>
+              </div>
+            </TabPanel>
           </TabContext>
         </Box>
       </section>

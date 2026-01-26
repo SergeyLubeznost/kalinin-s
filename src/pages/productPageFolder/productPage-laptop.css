@@ -47,4 +47,35 @@
     margin: 0;
     font-size: 40px;
   }
+
+  .aboutProductConatainer > h3 {
+    font-size: 35px;
+  }
+  .aboutProductConatainer > p {
+    font-size: 16px;
+  }
+  .aboutProductConatainer > h4 {
+    font-size: 22px;
+    font-family: "Gotham";
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 31px;
+    line-height: 155%;
+  }
+
+  .containerPhotoAbout * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .containerPhotoAbout > img {
+    width: 521px;
+    height: 221px;
+    margin-bottom: 16px;
+  }
+  .containerPhotoAbout > div > img {
+    width: 249px;
+    height: 273px;
+    margin-right: 23px;
+  }
 }
