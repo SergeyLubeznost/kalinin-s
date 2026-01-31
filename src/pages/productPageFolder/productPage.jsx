@@ -62,13 +62,14 @@ const ProductPage = () => {
 
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const { itemId } = useParams();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [itemId]);
   const product = data.find((item) => item.id === parseInt(itemId));
 
   const [selectedColor, setSelectedColor] = useState(
-    Object.keys(product.color[0])[0]
+    Object.keys(product.color[0])[0],
   );
   const handleColorClick = (color) => {
     setSelectedColor(color);
@@ -230,7 +231,7 @@ const ProductPage = () => {
                       }}
                       onClick={() => handleColorClick(key)}
                     />
-                  ))
+                  )),
                 )}
               </div>
             </div>
@@ -347,7 +348,7 @@ const ProductPage = () => {
               </div>
             </TabPanel>
             <TabPanel className="tabPanel__pading" value="Комплектация">
-                 <div className="mainAboutProductContainer">
+              <div className="mainAboutProductContainer">
                 <div className="aboutProductConatainer">
                   <h3>{product.title1}</h3>
                   <p>{product.discription1}</p>
@@ -364,7 +365,7 @@ const ProductPage = () => {
               </div>
             </TabPanel>
             <TabPanel className="tabPanel__pading" value="Отзывы">
-                 <div className="mainAboutProductContainer">
+              <div className="mainAboutProductContainer">
                 <div className="aboutProductConatainer">
                   <h3>{product.title1}</h3>
                   <p>{product.discription1}</p>

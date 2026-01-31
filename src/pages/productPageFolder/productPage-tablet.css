@@ -77,4 +77,53 @@
         width: 177px;
         font-size: 18px !important;
     }
+.tabPanel__pading {
+  padding-right: 0px!important;
+}
+    .mainAboutProductContainer {
+  display: flex;
+  justify-content: space-between;
+}
+    .aboutProductConatainer {
+  width: 50%;
+}
+    .aboutProductConatainer *{
+  width: 295px;
+}
+    
+  .aboutProductConatainer > h3 {
+    font-size: 20px;
+    
+  }
+  .aboutProductConatainer > p {
+    font-size: 14px;
+  }
+  .aboutProductConatainer > h4 {
+    font-size: 16px;
+    font-family: "Gotham";
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 31px;
+    line-height: 155%;
+  }
+
+  .containerPhotoAbout * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .containerPhotoAbout > img {
+    width: 391px;
+    height: 228px;
+    margin-bottom: 7px;
+  }
+  .containerPhotoAbout > div > img {
+          width: 187px;
+        height: 225px;
+    margin-right: 0px;
+  }
+  .containerPhotoAbout > div  {
+      display: flex;
+      justify-content: space-between;
+  }
 }
