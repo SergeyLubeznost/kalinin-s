@@ -101,4 +101,75 @@
     margin-right: 0% !important;
     font-size: 14px !important;
 }
+
+.tabPanel__pading {
+  padding: 0!important;
+}
+.mainAboutProductContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+  .aboutProductConatainer {
+  width: 100%;
+}
+    .aboutProductConatainer *{
+  width: 100%;
+}
+  .aboutProductConatainer > h3 {
+    margin-top: 47px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .aboutProductConatainer > p {
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .aboutProductConatainer > h4 {
+    font-size: 16px;
+    font-family: "Gotham";
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    line-height: 155%;
+     padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .image__mobille__tab{
+  display: block;
+  width:100%;
+  height: 251px;
+}
+.noimage__mobille__tab{
+  display: none;
+}
+.images__group__mobile{
+  display: none;
+}
+
+ .swiper-slide {
+  width: 70%;
+}
+
+.swiper-slide:nth-child(2n) {
+  width: 70%;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider__mobile__product{
+  width: 100%;
+}
+.mySwiper5 {
+  display: block;
+}
 }

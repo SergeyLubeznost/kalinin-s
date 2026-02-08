@@ -10,6 +10,7 @@ import "./productPage-mobile.css";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from 'swiper/modules';
 //import Button from '@mui/material/Button';
 import { styled } from "@mui/material/styles";
 import Checkbox from "@mui/material/Checkbox";
@@ -59,6 +60,8 @@ const ProductPage = () => {
   const handleChangeTabs = (event, newValue) => {
     setValue(newValue);
   };
+
+  // const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const { itemId } = useParams();
@@ -335,14 +338,38 @@ const ProductPage = () => {
                 <div className="aboutProductConatainer">
                   <h3>{product.title1}</h3>
                   <p>{product.discription1}</p>
+                  <img
+                    className="image__mobille__tab"
+                    src={product.aboutImages[0]}
+                    alt=""
+                  />
+
                   <h4>{product.subTitle1}</h4>
                   <p>{product.discription2}</p>
                 </div>
                 <div className="containerPhotoAbout">
-                  <img src={product.aboutImages[0]} alt="" />
-                  <div>
+                  <img
+                    className="noimage__mobille__tab"
+                    src={product.aboutImages[0]}
+                    alt=""
+                  />
+                  <div className="images__group__mobile">
                     <img src={product.aboutImages[1]} alt="" />
                     <img src={product.aboutImages[2]} alt="" />
+                  </div>
+                  <div className="slider__mobile__product">
+                    <Swiper
+                      slidesPerView={"auto"}
+                      spaceBetween={30}
+                      pagination={{
+                        clickable: true,
+                      }}
+                      modules={[Pagination]}
+                      className="mySwiper5"
+                    >
+                      <SwiperSlide className="image__mobile__slider__item1"> <img className="image__mobile__slider1" src={product.aboutImages[1]} alt="" /></SwiperSlide>
+                      <SwiperSlide className="image__mobile__slider__item2"><img className="image__mobile__slider2" src={product.aboutImages[2]} alt="" /></SwiperSlide>
+                    </Swiper>
                   </div>
                 </div>
               </div>

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.53870428.css",
-    "main.js": "/static/js/main.8afddcc1.js",
+    "main.css": "/static/css/main.c398806f.css",
+    "main.js": "/static/js/main.dfcd93a4.js",
     "static/js/453.3e375d93.chunk.js": "/static/js/453.3e375d93.chunk.js",
     "static/media/Group17.png": "/static/media/Group17.9d99e3f5449de59c8a76.png",
     "static/media/Group 14.png": "/static/media/Group 14.e7b8b209e214eb498e06.png",
@@ -51,7 +51,7 @@
     "static/media/icons8-телеграм.svg": "/static/media/icons8-телеграм.e6cbdfa80097ae5338e7379257e7c200.svg",
     "static/media/track2.svg": "/static/media/track2.2e37ab2e11e50320fbbf114abce547d5.svg",
     "static/media/icon-return.svg": "/static/media/icon-return.1a2258e158af54dac6cca25b38a3ec3e.svg",
-    "static/media/iconComplect.svg": "/static/media/iconComplect.c83819756577ed7a4960ae0598e24793.svg",
+    "static/media/iconComplect.svg": "/static/media/iconComplect.1a2258e158af54dac6cca25b38a3ec3e.svg",
     "static/media/phone.svg": "/static/media/phone.e96df442aa2c7ebc1d6548b48ccbee21.svg",
     "static/media/strelkaSelect.svg": "/static/media/strelkaSelect.44a807944f50726a9c7663443821a920.svg",
     "static/media/track.svg": "/static/media/track.18f2a4822d647b5d03c6acd57ea804b8.svg",
@@ -63,12 +63,12 @@
     "static/media/like.svg": "/static/media/like.f6f64adce528dfbd066a9da22850c3f5.svg",
     "index.html": "/index.html",
     "static/media/telega.svg": "/static/media/telega.a00f20d0a54594f3190060c30c08adb1.svg",
-    "main.53870428.css.map": "/static/css/main.53870428.css.map",
-    "main.8afddcc1.js.map": "/static/js/main.8afddcc1.js.map",
+    "main.c398806f.css.map": "/static/css/main.c398806f.css.map",
+    "main.dfcd93a4.js.map": "/static/js/main.dfcd93a4.js.map",
     "453.3e375d93.chunk.js.map": "/static/js/453.3e375d93.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.53870428.css",
-    "static/js/main.8afddcc1.js"
+    "static/css/main.c398806f.css",
+    "static/js/main.dfcd93a4.js"
   ]
 }

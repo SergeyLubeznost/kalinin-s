@@ -185,3 +185,11 @@
   height: 293px;
   margin-right: 23px;
 }
+
+.image__mobille__tab{
+  display: none;
+}
+
+.mySwiper5{
+  display: none;
+}
