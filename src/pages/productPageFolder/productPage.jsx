@@ -375,8 +375,8 @@ const ProductPage = () => {
               </div>
             </TabPanel>
             <TabPanel className="tabPanel__pading" value="Комплектация">
-              <div className="mainAboutProductContainer">
-                <div className="aboutProductConatainer">
+              <div className="mainAboutCharacteristics">
+                <div className="aboutProductCharacteristics">
                   <h3>{product.title1}</h3>
                   <p>{product.discription1}</p>
                   <h4>{product.subTitle1}</h4>
