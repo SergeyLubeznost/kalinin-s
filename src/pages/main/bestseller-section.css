@@ -52,12 +52,12 @@
     width: 100% !important;
     margin-bottom: -11%;
     margin-top: 2%;
-    height: 640px;
+    height: 720px;
 }
 
 .card-bestseller{
     width: 465px;
-    height: 613px;
+    height: 700px;
     border-radius: 15px !important;
     border: 2px solid #E3E3E3;
     box-shadow: 0 4px 27px 0 #6363634D;
@@ -94,7 +94,7 @@ border-radius: 15px 15px 0 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 47px;
+    height: 141px;
     margin-top: 3%;
     padding-left: 4%;
     padding-right: 7%;
@@ -104,8 +104,8 @@ border-radius: 15px 15px 0 0;
     font-family: 'Gotham';
     color: #3D3D3D;
     font-weight: 700;
-    font-size: 30px;
-    line-height: 46.56px;
+    font-size: 27px;
+    line-height: 40px;
 }
 
 .title__like-container .image-like{
@@ -123,6 +123,7 @@ border-radius: 15px 15px 0 0;
     font-weight: 700;
     font-size: 20px;
     line-height: 31.04px;
+    text-align: center;
 }
 
 .matherial__title{

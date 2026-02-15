@@ -152,24 +152,24 @@
   display: none;
 }
 
- .swiper-slide {
+ .slider__mobile__product .swiper-slide {
   width: 70%;
 }
 
-.swiper-slide:nth-child(2n) {
+.slider__mobile__product .swiper-slide:nth-child(2n) {
   width: 70%;
 }
-.swiper-slide img {
+.slider__mobile__product .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.slider__mobile__product{
+.slider__mobile__product .slider__mobile__product{
   width: 100%;
 }
-.mySwiper5 {
+.slider__mobile__product .mySwiper5 {
   display: block;
 }
 }

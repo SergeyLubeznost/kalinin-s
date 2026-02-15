@@ -45,9 +45,17 @@
     }
 
     .catalog__kard {
-        width: 221px !important;
+        /* width: 221px !important;
         height: 371px !important;
-        margin-bottom: 30px;
+        margin-bottom: 30px; */
+    width: 31% !important;
+        height: 460px !important;
+        margin-bottom: 22px;
+    }
+    .catalog__category{
+        height: 43px;
+        display: flex;
+        align-items: center;
     }
 
     .catalog__kard img {
@@ -72,6 +80,7 @@
         margin-top: 3%;
         padding-left: 5%;
         padding-right: 4%;
+        height: 122px;
     }
 
     .catalog__like__container .image-like {
@@ -82,7 +91,7 @@
         left: 0%;
     }
 
-    .catalog__like__container p {
+    .likes__update__for__card p {
         font-size: 16px;
     }
 

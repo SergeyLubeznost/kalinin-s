@@ -1,7 +1,7 @@
 @media (min-width: 540px) and (max-width: 968px) {
     .section-bestseller{
         padding: 0 2.3% 0 2.3%;
-        height: 72vh;
+        height: 77vh;
         margin-top: 0px;
         overflow: hidden;
     }
@@ -32,7 +32,7 @@
 
     .card-bestseller{
         width: 379.44px;
-        height: 547px;
+        height: 630px;
         border-radius: 15px !important;
         border: 2px solid #E3E3E3;
         box-shadow: 0 4px 27px 0 #6363634D;

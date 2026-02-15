@@ -1,53 +1,58 @@
-@media (min-width: 969px) and (max-width: 1600px)  {
-    .main__catalog{
-        padding: 0 2.3% 0 2.3%;
-    }
-    .katalog__container__sort h2{
-        font-size: 30px;
-    }
-    .select__container p{
-      font-size: 17px;
-    }
-    .catalog__kard{
-        width: 30%!important;
-        height: 475px!important;
-        margin-bottom: 33px;
-    }
-    .catalog__kard img{
-        width:100%;
-        height: 268px;
-    }
-    .catalog__title{
-        width: 143px;
-        height: 31px;
-    }
-    .catalog__title p{
-        font-size: 14px;
-         }
-     
-        
-        .catalog__like__container h3{
-            font-size: 20px;
-        }
-        .catalog__like__container p {
-            font-size: 18px;
-        }
+@media (min-width: 969px) and (max-width: 1600px) {
+  .main__catalog {
+    padding: 0 2.3% 0 2.3%;
+  }
+  .katalog__container__sort h2 {
+    font-size: 30px;
+  }
+  .select__container p {
+    font-size: 17px;
+  }
+  .catalog__kard {
+    width: 32% !important;
+    height: 600px !important;
+    margin-bottom: 33px;
+  }
 
-        .catalog__matherial__title{
-            font-size: 14px; 
-        }
+  .catalog__like__container {
+    height: 135px;
+    margin-top: 1%;
+}
+  .catalog__kard img {
+    width: 100%;
+    height: 268px;
+  }
+  .catalog__title {
+    width: 143px;
+    height: 31px;
+  }
+  .catalog__title p {
+    font-size: 14px;
+  }
 
-        .catalog__block__price p{
-            font-size: 20px;
-        }
-        
-        .catalog__price__button{
-            width: 164px;
-            height: 33px;
-            font-size: 16px!important;
-            border-radius: 7px!important;
-        }
-        .button__show__more {
-            width: 240px;
-        }
+  .catalog__like__container h3 {
+    font-size: 20px;
+    line-height: 39.56px;
+  }
+  .catalog__like__container p {
+    font-size: 18px;
+  }
+
+  .catalog__matherial__title {
+    font-size: 14px;
+  }
+
+  .catalog__block__price p {
+    font-size: 20px;
+  }
+
+  .catalog__price__button {
+    width: 164px;
+    height: 33px;
+    font-size: 16px !important;
+    border-radius: 7px !important;
+  }
+  .button__show__more {
+    width: 240px;
+  }
 }
