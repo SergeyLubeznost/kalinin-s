@@ -29,7 +29,7 @@
 .select__color__container {
   width: 708px;
   box-sizing: border-box;
-  height: 567px;
+  height: 650px;
   background-color: white;
   border-radius: 10px;
   margin: 64px auto;
@@ -79,7 +79,7 @@
 }
 
 .rotate__container {
-  transform: rotate(-90deg);
+  transform: rotate(-90deg) translateY(29px);
   width: 45.8% !important;
 }
 

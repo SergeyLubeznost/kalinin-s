@@ -1,4 +1,7 @@
 @media (min-width: 540px) and (max-width: 968px) {
+  .tabs__container{
+  margin-top: 30px;
+  }
     .main__product__page {
         padding: 0 2.3% 0 2.3%;
       }
@@ -20,7 +23,7 @@
     
       .select__color__container {
         width: 387px;
-        height: 387px;
+        height: 410px;
         margin: 0px auto;
         padding: 0px 21px;
       }
