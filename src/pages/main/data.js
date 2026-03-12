@@ -27,7 +27,7 @@ let data = [
     discription2:
       "At vitae, ut vitae vestibulum nunc, viverra enim. Eget ullamcorper bibendum lacus nunc, urna, in suscipit. Sed volutpat enim tincidunt a imperdiet fames. Viverra sed neque turpis mi. Odio id rhoncus risus elementum commodo ut.",
     aboutImages: [aboutImage1, aboutImage2, aboutImage3],
-     characteristics: [
+    characteristics: [
       { label: "Стол: ", value: "100д х 80в х 40г" },
       { label: "Проем для ног: ", value: "45см" },
       { label: "Гримерное зеркало: ", value: "100д х 80в" },
@@ -36,7 +36,7 @@ let data = [
       { label: "Стеклянная поверхность: ", value: "1500руб" },
       { label: "Разделители в ящик съемные: ", value: "1000руб" },
       { label: "Розетка: ", value: "500" },
-      { label: "Выключатель" },
+      { label: "Выключатель", value: "" },
       {
         label:
           "Толкатели-открывается и закрывается при помощи нажатия на фасад ящика ариковая система полного выдвижения ящиков.Качественная профессиональная сборка ",
@@ -46,7 +46,7 @@ let data = [
         value: "Банкетка(расцветки разные в наличии)",
       },
       { label: "Размер: ", value: "40д х 40ш х 47в " },
-      { label: "Цена: ", value: "8000руб", value2: "2990руб" },
+      { labelPrice: "Цена: ", curPrice: "8000руб", newPrice: "2990руб" },
     ],
   },
   {
@@ -70,7 +70,7 @@ let data = [
     discription2:
       "At vitae, ut vitae vestibulum nunc, viverra enim. Eget ullamcorper bibendum lacus nunc, urna, in suscipit. Sed volutpat enim tincidunt a imperdiet fames. Viverra sed neque turpis mi. Odio id rhoncus risus elementum commodo ut.",
     aboutImages: [aboutImage1, aboutImage2, aboutImage3],
-     characteristics: [
+    characteristics: [
       { label: "Стол: ", value: "100д х 80в х 40г" },
       { label: "Проем для ног: ", value: "45см" },
       { label: "Гримерное зеркало: ", value: "100д х 80в" },
@@ -79,7 +79,7 @@ let data = [
       { label: "Стеклянная поверхность: ", value: "1500руб" },
       { label: "Разделители в ящик съемные: ", value: "1000руб" },
       { label: "Розетка: ", value: "500" },
-      { label: "Выключатель" },
+      { label: "Выключатель", value: "" },
       {
         label:
           "Толкатели-открывается и закрывается при помощи нажатия на фасад ящика ариковая система полного выдвижения ящиков.Качественная профессиональная сборка ",
@@ -89,7 +89,7 @@ let data = [
         value: "Банкетка(расцветки разные в наличии)",
       },
       { label: "Размер: ", value: "40д х 40ш х 47в " },
-      { label: "Цена: ", value: "8000руб", value2: "2990руб" },
+    { labelPrice: "Цена: ", curPrice: "8000руб", newPrice: "2990руб" },
     ],
   },
   {
@@ -113,7 +113,7 @@ let data = [
     discription2:
       "At vitae, ut vitae vestibulum nunc, viverra enim. Eget ullamcorper bibendum lacus nunc, urna, in suscipit. Sed volutpat enim tincidunt a imperdiet fames. Viverra sed neque turpis mi. Odio id rhoncus risus elementum commodo ut.",
     aboutImages: [aboutImage1, aboutImage2, aboutImage3],
-     characteristics: [
+    characteristics: [
       { label: "Стол: ", value: "100д х 80в х 40г" },
       { label: "Проем для ног: ", value: "45см" },
       { label: "Гримерное зеркало: ", value: "100д х 80в" },
@@ -122,7 +122,7 @@ let data = [
       { label: "Стеклянная поверхность: ", value: "1500руб" },
       { label: "Разделители в ящик съемные: ", value: "1000руб" },
       { label: "Розетка: ", value: "500" },
-      { label: "Выключатель" },
+      { label: "Выключатель", value: "" },
       {
         label:
           "Толкатели-открывается и закрывается при помощи нажатия на фасад ящика ариковая система полного выдвижения ящиков.Качественная профессиональная сборка ",
@@ -132,7 +132,7 @@ let data = [
         value: "Банкетка(расцветки разные в наличии)",
       },
       { label: "Размер: ", value: "40д х 40ш х 47в " },
-      { label: "Цена: ", value: "8000руб", value2: "2990руб" },
+     { labelPrice: "Цена: ", curPrice: "8000руб", newPrice: "2990руб" },
     ],
   },
   {
@@ -156,7 +156,7 @@ let data = [
     discription2:
       "At vitae, ut vitae vestibulum nunc, viverra enim. Eget ullamcorper bibendum lacus nunc, urna, in suscipit. Sed volutpat enim tincidunt a imperdiet fames. Viverra sed neque turpis mi. Odio id rhoncus risus elementum commodo ut.",
     aboutImages: [aboutImage1, aboutImage2, aboutImage3],
-     characteristics: [
+    characteristics: [
       { label: "Стол: ", value: "100д х 80в х 40г" },
       { label: "Проем для ног: ", value: "45см" },
       { label: "Гримерное зеркало: ", value: "100д х 80в" },
@@ -165,7 +165,7 @@ let data = [
       { label: "Стеклянная поверхность: ", value: "1500руб" },
       { label: "Разделители в ящик съемные: ", value: "1000руб" },
       { label: "Розетка: ", value: "500" },
-      { label: "Выключатель" },
+      { label: "Выключатель", value: "" },
       {
         label:
           "Толкатели-открывается и закрывается при помощи нажатия на фасад ящика ариковая система полного выдвижения ящиков.Качественная профессиональная сборка ",
@@ -175,7 +175,7 @@ let data = [
         value: "Банкетка(расцветки разные в наличии)",
       },
       { label: "Размер: ", value: "40д х 40ш х 47в " },
-      { label: "Цена: ", value: "8000руб", value2: "2990руб" },
+      { labelPrice: "Цена: ", curPrice: "8000руб", newPrice: "2990руб" },
     ],
   },
   {
@@ -199,7 +199,7 @@ let data = [
     discription2:
       "At vitae, ut vitae vestibulum nunc, viverra enim. Eget ullamcorper bibendum lacus nunc, urna, in suscipit. Sed volutpat enim tincidunt a imperdiet fames. Viverra sed neque turpis mi. Odio id rhoncus risus elementum commodo ut.",
     aboutImages: [aboutImage1, aboutImage2, aboutImage3],
-     characteristics: [
+    characteristics: [
       { label: "Стол: ", value: "100д х 80в х 40г" },
       { label: "Проем для ног: ", value: "45см" },
       { label: "Гримерное зеркало: ", value: "100д х 80в" },
@@ -208,7 +208,7 @@ let data = [
       { label: "Стеклянная поверхность: ", value: "1500руб" },
       { label: "Разделители в ящик съемные: ", value: "1000руб" },
       { label: "Розетка: ", value: "500" },
-      { label: "Выключатель" },
+      { label: "Выключатель", value: "" },
       {
         label:
           "Толкатели-открывается и закрывается при помощи нажатия на фасад ящика ариковая система полного выдвижения ящиков.Качественная профессиональная сборка ",
@@ -218,7 +218,7 @@ let data = [
         value: "Банкетка(расцветки разные в наличии)",
       },
       { label: "Размер: ", value: "40д х 40ш х 47в " },
-      { label: "Цена: ", value: "8000руб", value2: "2990руб" },
+     { labelPrice: "Цена: ", curPrice: "8000руб", newPrice: "2990руб" },
     ],
   },
   {
@@ -242,7 +242,7 @@ let data = [
     discription2:
       "At vitae, ut vitae vestibulum nunc, viverra enim. Eget ullamcorper bibendum lacus nunc, urna, in suscipit. Sed volutpat enim tincidunt a imperdiet fames. Viverra sed neque turpis mi. Odio id rhoncus risus elementum commodo ut.",
     aboutImages: [aboutImage1, aboutImage2, aboutImage3],
-     characteristics: [
+    characteristics: [
       { label: "Стол: ", value: "100д х 80в х 40г" },
       { label: "Проем для ног: ", value: "45см" },
       { label: "Гримерное зеркало: ", value: "100д х 80в" },
@@ -251,7 +251,7 @@ let data = [
       { label: "Стеклянная поверхность: ", value: "1500руб" },
       { label: "Разделители в ящик съемные: ", value: "1000руб" },
       { label: "Розетка: ", value: "500" },
-      { label: "Выключатель" },
+      { label: "Выключатель", value: "" },
       {
         label:
           "Толкатели-открывается и закрывается при помощи нажатия на фасад ящика ариковая система полного выдвижения ящиков.Качественная профессиональная сборка ",
@@ -261,7 +261,7 @@ let data = [
         value: "Банкетка(расцветки разные в наличии)",
       },
       { label: "Размер: ", value: "40д х 40ш х 47в " },
-      { label: "Цена: ", value: "8000руб", value2: "2990руб" },
+      { labelPrice: "Цена: ", curPrice: "8000руб", newPrice: "2990руб" },
     ],
   },
   {
@@ -285,7 +285,7 @@ let data = [
     discription2:
       "At vitae, ut vitae vestibulum nunc, viverra enim. Eget ullamcorper bibendum lacus nunc, urna, in suscipit. Sed volutpat enim tincidunt a imperdiet fames. Viverra sed neque turpis mi. Odio id rhoncus risus elementum commodo ut.",
     aboutImages: [aboutImage1, aboutImage2, aboutImage3],
-     characteristics: [
+    characteristics: [
       { label: "Стол: ", value: "100д х 80в х 40г" },
       { label: "Проем для ног: ", value: "45см" },
       { label: "Гримерное зеркало: ", value: "100д х 80в" },
@@ -294,7 +294,7 @@ let data = [
       { label: "Стеклянная поверхность: ", value: "1500руб" },
       { label: "Разделители в ящик съемные: ", value: "1000руб" },
       { label: "Розетка: ", value: "500" },
-      { label: "Выключатель" },
+      { label: "Выключатель", value: "" },
       {
         label:
           "Толкатели-открывается и закрывается при помощи нажатия на фасад ящика ариковая система полного выдвижения ящиков.Качественная профессиональная сборка ",
@@ -304,7 +304,7 @@ let data = [
         value: "Банкетка(расцветки разные в наличии)",
       },
       { label: "Размер: ", value: "40д х 40ш х 47в " },
-      { label: "Цена: ", value: "8000руб", value2: "2990руб" },
+      { labelPrice: "Цена: ", curPrice: "8000руб", newPrice: "2990руб" },
     ],
   },
   {
@@ -328,7 +328,7 @@ let data = [
     discription2:
       "At vitae, ut vitae vestibulum nunc, viverra enim. Eget ullamcorper bibendum lacus nunc, urna, in suscipit. Sed volutpat enim tincidunt a imperdiet fames. Viverra sed neque turpis mi. Odio id rhoncus risus elementum commodo ut.",
     aboutImages: [aboutImage1, aboutImage2, aboutImage3],
-     characteristics: [
+    characteristics: [
       { label: "Стол: ", value: "100д х 80в х 40г" },
       { label: "Проем для ног: ", value: "45см" },
       { label: "Гримерное зеркало: ", value: "100д х 80в" },
@@ -337,7 +337,7 @@ let data = [
       { label: "Стеклянная поверхность: ", value: "1500руб" },
       { label: "Разделители в ящик съемные: ", value: "1000руб" },
       { label: "Розетка: ", value: "500" },
-      { label: "Выключатель" },
+      { label: "Выключатель", value: "" },
       {
         label:
           "Толкатели-открывается и закрывается при помощи нажатия на фасад ящика ариковая система полного выдвижения ящиков.Качественная профессиональная сборка ",
@@ -347,7 +347,7 @@ let data = [
         value: "Банкетка(расцветки разные в наличии)",
       },
       { label: "Размер: ", value: "40д х 40ш х 47в " },
-      { label: "Цена: ", value: "8000руб", value2: "2990руб" },
+     { labelPrice: "Цена: ", curPrice: "8000руб", newPrice: "2990руб" },
     ],
   },
   {
@@ -371,7 +371,7 @@ let data = [
     discription2:
       "At vitae, ut vitae vestibulum nunc, viverra enim. Eget ullamcorper bibendum lacus nunc, urna, in suscipit. Sed volutpat enim tincidunt a imperdiet fames. Viverra sed neque turpis mi. Odio id rhoncus risus elementum commodo ut.",
     aboutImages: [aboutImage1, aboutImage2, aboutImage3],
-     characteristics: [
+    characteristics: [
       { label: "Стол: ", value: "100д х 80в х 40г" },
       { label: "Проем для ног: ", value: "45см" },
       { label: "Гримерное зеркало: ", value: "100д х 80в" },
@@ -380,7 +380,7 @@ let data = [
       { label: "Стеклянная поверхность: ", value: "1500руб" },
       { label: "Разделители в ящик съемные: ", value: "1000руб" },
       { label: "Розетка: ", value: "500" },
-      { label: "Выключатель" },
+      { label: "Выключатель", value: "" },
       {
         label:
           "Толкатели-открывается и закрывается при помощи нажатия на фасад ящика ариковая система полного выдвижения ящиков.Качественная профессиональная сборка ",
@@ -390,7 +390,7 @@ let data = [
         value: "Банкетка(расцветки разные в наличии)",
       },
       { label: "Размер: ", value: "40д х 40ш х 47в " },
-      { label: "Цена: ", value: "8000руб", value2: "2990руб" },
+     { labelPrice: "Цена: ", curPrice: "8000руб", newPrice: "2990руб" },
     ],
   },
   {
@@ -414,7 +414,7 @@ let data = [
     discription2:
       "At vitae, ut vitae vestibulum nunc, viverra enim. Eget ullamcorper bibendum lacus nunc, urna, in suscipit. Sed volutpat enim tincidunt a imperdiet fames. Viverra sed neque turpis mi. Odio id rhoncus risus elementum commodo ut.",
     aboutImages: [aboutImage1, aboutImage2, aboutImage3],
-     characteristics: [
+    characteristics: [
       { label: "Стол: ", value: "100д х 80в х 40г" },
       { label: "Проем для ног: ", value: "45см" },
       { label: "Гримерное зеркало: ", value: "100д х 80в" },
@@ -423,7 +423,7 @@ let data = [
       { label: "Стеклянная поверхность: ", value: "1500руб" },
       { label: "Разделители в ящик съемные: ", value: "1000руб" },
       { label: "Розетка: ", value: "500" },
-      { label: "Выключатель" },
+      { label: "Выключатель", value: "" },
       {
         label:
           "Толкатели-открывается и закрывается при помощи нажатия на фасад ящика ариковая система полного выдвижения ящиков.Качественная профессиональная сборка ",
@@ -433,7 +433,7 @@ let data = [
         value: "Банкетка(расцветки разные в наличии)",
       },
       { label: "Размер: ", value: "40д х 40ш х 47в " },
-      { label: "Цена: ", value: "8000руб", value2: "2990руб" },
+     { labelPrice: "Цена: ", curPrice: "8000руб", newPrice: "2990руб" },
     ],
   },
   {
@@ -457,7 +457,7 @@ let data = [
     discription2:
       "At vitae, ut vitae vestibulum nunc, viverra enim. Eget ullamcorper bibendum lacus nunc, urna, in suscipit. Sed volutpat enim tincidunt a imperdiet fames. Viverra sed neque turpis mi. Odio id rhoncus risus elementum commodo ut.",
     aboutImages: [aboutImage1, aboutImage2, aboutImage3],
-     characteristics: [
+    characteristics: [
       { label: "Стол: ", value: "100д х 80в х 40г" },
       { label: "Проем для ног: ", value: "45см" },
       { label: "Гримерное зеркало: ", value: "100д х 80в" },
@@ -466,7 +466,7 @@ let data = [
       { label: "Стеклянная поверхность: ", value: "1500руб" },
       { label: "Разделители в ящик съемные: ", value: "1000руб" },
       { label: "Розетка: ", value: "500" },
-      { label: "Выключатель" },
+      { label: "Выключатель", value: "" },
       {
         label:
           "Толкатели-открывается и закрывается при помощи нажатия на фасад ящика ариковая система полного выдвижения ящиков.Качественная профессиональная сборка ",
@@ -476,7 +476,7 @@ let data = [
         value: "Банкетка(расцветки разные в наличии)",
       },
       { label: "Размер: ", value: "40д х 40ш х 47в " },
-      { label: "Цена: ", value: "8000руб", value2: "2990руб" },
+      { labelPrice: "Цена: ", curPrice: "8000руб", newPrice: "2990руб" },
     ],
   },
   {
@@ -500,7 +500,7 @@ let data = [
     discription2:
       "At vitae, ut vitae vestibulum nunc, viverra enim. Eget ullamcorper bibendum lacus nunc, urna, in suscipit. Sed volutpat enim tincidunt a imperdiet fames. Viverra sed neque turpis mi. Odio id rhoncus risus elementum commodo ut.",
     aboutImages: [aboutImage1, aboutImage2, aboutImage3],
-     characteristics: [
+    characteristics: [
       { label: "Стол: ", value: "100д х 80в х 40г" },
       { label: "Проем для ног: ", value: "45см" },
       { label: "Гримерное зеркало: ", value: "100д х 80в" },
@@ -509,7 +509,7 @@ let data = [
       { label: "Стеклянная поверхность: ", value: "1500руб" },
       { label: "Разделители в ящик съемные: ", value: "1000руб" },
       { label: "Розетка: ", value: "500" },
-      { label: "Выключатель" },
+      { label: "Выключатель", value: "" },
       {
         label:
           "Толкатели-открывается и закрывается при помощи нажатия на фасад ящика ариковая система полного выдвижения ящиков.Качественная профессиональная сборка ",
@@ -519,7 +519,7 @@ let data = [
         value: "Банкетка(расцветки разные в наличии)",
       },
       { label: "Размер: ", value: "40д х 40ш х 47в " },
-      { label: "Цена: ", value: "8000руб", value2: "2990руб" },
+      { labelPrice: "Цена: ", curPrice: "8000руб", newPrice: "2990руб" },
     ],
   },
   {
@@ -552,7 +552,7 @@ let data = [
       { label: "Стеклянная поверхность: ", value: "1500руб" },
       { label: "Разделители в ящик съемные: ", value: "1000руб" },
       { label: "Розетка: ", value: "500" },
-      { label: "Выключатель" },
+      { label: "Выключатель", value: "" },
       {
         label:
           "Толкатели-открывается и закрывается при помощи нажатия на фасад ящика ариковая система полного выдвижения ящиков.Качественная профессиональная сборка ",
@@ -562,7 +562,7 @@ let data = [
         value: "Банкетка(расцветки разные в наличии)",
       },
       { label: "Размер: ", value: "40д х 40ш х 47в " },
-      { label: "Цена: ", value: "8000руб", value2: "2990руб" },
+      { labelPrice: "Цена: ", curPrice: "8000руб", newPrice: "2990руб" },
     ],
   },
   {
@@ -586,7 +586,7 @@ let data = [
     discription2:
       "At vitae, ut vitae vestibulum nunc, viverra enim. Eget ullamcorper bibendum lacus nunc, urna, in suscipit. Sed volutpat enim tincidunt a imperdiet fames. Viverra sed neque turpis mi. Odio id rhoncus risus elementum commodo ut.",
     aboutImages: [aboutImage1, aboutImage2, aboutImage3],
-     characteristics: [
+    characteristics: [
       { label: "Стол: ", value: "100д х 80в х 40г" },
       { label: "Проем для ног: ", value: "45см" },
       { label: "Гримерное зеркало: ", value: "100д х 80в" },
@@ -595,7 +595,7 @@ let data = [
       { label: "Стеклянная поверхность: ", value: "1500руб" },
       { label: "Разделители в ящик съемные: ", value: "1000руб" },
       { label: "Розетка: ", value: "500" },
-      { label: "Выключатель" },
+      { label: "Выключатель", value: "" },
       {
         label:
           "Толкатели-открывается и закрывается при помощи нажатия на фасад ящика ариковая система полного выдвижения ящиков.Качественная профессиональная сборка ",
@@ -605,7 +605,7 @@ let data = [
         value: "Банкетка(расцветки разные в наличии)",
       },
       { label: "Размер: ", value: "40д х 40ш х 47в " },
-      { label: "Цена: ", value: "8000руб", value2: "2990руб" },
+     { labelPrice: "Цена: ", curPrice: "8000руб", newPrice: "2990руб" },
     ],
   },
 ];

@@ -193,3 +193,38 @@
 .mySwiper5{
   display: none;
 }
+
+.aboutProductCharacteristics{
+  width: 750px;
+}
+.aboutProductCharacteristics *{
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.aboutProductCharacteristics > h3{
+    font-size: 40px;
+  font-family: "Gotham";
+  font-weight: 700;
+  margin-bottom: 11px;
+}
+
+.characteristicsBlock{
+  width: 100%;
+}
+.characteristicsPar{
+    font-size: 18px;
+  font-family: "M-l";
+  font-weight: 400;
+  margin-bottom: 11px;
+  line-height: 155%;
+}
+.characteristicsBoldLabel{
+  font-weight: bold;
+}
+.colorNewPrice{
+  color:var(--main-bg-color);
+}
+.strikethrough {
+  text-decoration: line-through;
+}

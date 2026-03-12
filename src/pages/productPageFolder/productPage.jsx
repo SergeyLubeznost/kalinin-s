@@ -10,7 +10,7 @@ import "./productPage-mobile.css";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from 'swiper/modules';
+import { Pagination } from "swiper/modules";
 //import Button from '@mui/material/Button';
 import { styled } from "@mui/material/styles";
 import Checkbox from "@mui/material/Checkbox";
@@ -367,8 +367,21 @@ const ProductPage = () => {
                       modules={[Pagination]}
                       className="mySwiper5"
                     >
-                      <SwiperSlide className="image__mobile__slider__item1"> <img className="image__mobile__slider1" src={product.aboutImages[1]} alt="" /></SwiperSlide>
-                      <SwiperSlide className="image__mobile__slider__item2"><img className="image__mobile__slider2" src={product.aboutImages[2]} alt="" /></SwiperSlide>
+                      <SwiperSlide className="image__mobile__slider__item1">
+                        {" "}
+                        <img
+                          className="image__mobile__slider1"
+                          src={product.aboutImages[1]}
+                          alt=""
+                        />
+                      </SwiperSlide>
+                      <SwiperSlide className="image__mobile__slider__item2">
+                        <img
+                          className="image__mobile__slider2"
+                          src={product.aboutImages[2]}
+                          alt=""
+                        />
+                      </SwiperSlide>
                     </Swiper>
                   </div>
                 </div>
@@ -377,17 +390,26 @@ const ProductPage = () => {
             <TabPanel className="tabPanel__pading" value="Комплектация">
               <div className="mainAboutCharacteristics">
                 <div className="aboutProductCharacteristics">
-                  <h3>{product.title1}</h3>
-                  <p>{product.discription1}</p>
-                  <h4>{product.subTitle1}</h4>
-                  <p>{product.discription2}</p>
-                </div>
-                <div className="containerPhotoAbout">
-                  <img src={product.aboutImages[0]} alt="" />
-                  <div>
-                    <img src={product.aboutImages[1]} alt="" />
-                    <img src={product.aboutImages[2]} alt="" />
-                  </div>
+                  <h3>{product.title}</h3>
+                  {product.characteristics.map((item, index) => (
+                    <div className="characteristicsBlock" key={index}>
+                      <p className="characteristicsPar">
+                        <span className="characteristicsBoldLabel">{item.label}</span> {item.value}
+                      </p>
+                      {item.newPrice ? (
+                        <p>
+                          <span className="characteristicsPar characteristicsBoldLabel">{item.labelPrice}</span>
+                          <span className="characteristicsPar strikethrough">{item.curPrice} </span>
+                          <span className="characteristicsPar colorNewPrice characteristicsBoldLabel"> {item.newPrice}</span>
+                        </p>
+                      ) : (
+                        <p>
+                          <span className="characteristicsPar characteristicsBoldLabel">{item.labelPrice} </span>
+                          <span className="characteristicsPar colorNewPrice characteristicsBoldLabel">{item.curPrice}</span>
+                        </p>
+                      )}
+                    </div>
+                  ))}
                 </div>
               </div>
             </TabPanel>
