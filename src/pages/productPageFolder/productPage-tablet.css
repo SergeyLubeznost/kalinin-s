@@ -129,4 +129,12 @@
       display: flex;
       justify-content: space-between;
   }
+  .aboutProductCharacteristics {
+  width: 100%;
+}
+.aboutProductCharacteristics > h3 {
+  font-size: 25px;
+  
+}
+
 }

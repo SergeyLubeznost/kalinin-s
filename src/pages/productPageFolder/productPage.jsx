@@ -11,17 +11,13 @@ import "./productPage-mobile.css";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
-//import Button from '@mui/material/Button';
-import { styled } from "@mui/material/styles";
+
 import Checkbox from "@mui/material/Checkbox";
 import FavoriteBorder from "@mui/icons-material/FavoriteBorder";
 import Favorite from "@mui/icons-material/Favorite";
 
 import Box from "@mui/material/Box";
-import InputLabel from "@mui/material/InputLabel";
-import MenuItem from "@mui/material/MenuItem";
-import FormControl from "@mui/material/FormControl";
-import Select from "@mui/material/Select";
+
 
 import Button from "@mui/material/Button";
 
@@ -30,7 +26,6 @@ import Typography from "@mui/material/Typography";
 
 import Stack from "@mui/material/Stack";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
-import InputBase from "@mui/material/InputBase";
 
 import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
@@ -49,9 +44,6 @@ import "./stylesSwiperProduct/styleSwiperSliderProduct-tablet.css";
 import "./stylesSwiperProduct/styleSwiperSliderProduct-mobile.css";
 import data from "../main/data";
 
-import iconComplect from "./imagePageProduct/iconComplect.svg";
-
-// import required modules
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 
 const ProductPage = () => {
@@ -60,8 +52,6 @@ const ProductPage = () => {
   const handleChangeTabs = (event, newValue) => {
     setValue(newValue);
   };
-
-  // const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const { itemId } = useParams();
@@ -78,11 +68,6 @@ const ProductPage = () => {
     setSelectedColor(color);
   };
 
-  const [age, setAge] = React.useState("");
-
-  const handleChange = (event) => {
-    setAge(event.target.value);
-  };
   // Загрузите информацию о товаре с ID itemId
 
   const breadcrumbs = [
@@ -100,43 +85,6 @@ const ProductPage = () => {
       {product.title}
     </Typography>,
   ];
-
-  const BootstrapInput = styled(InputBase)(({ theme }) => ({
-    "label + &": {
-      marginTop: theme.spacing(2),
-    },
-    "& .MuiInputBase-input": {
-      borderRadius: 4,
-      position: "relative",
-      backgroundColor: theme.palette.background.paper,
-      border: "none", // Убираем границу,
-      fontSize: 22,
-      padding: "10px 0px 10px 0px",
-      transition: theme.transitions.create(["border-color", "box-shadow"]),
-      // Use the system font instead of the default Roboto font.
-      fontFamily: [
-        "-apple-system",
-        "BlinkMacSystemFont",
-        '"Segoe UI"',
-        "Roboto",
-        '"Helvetica Neue"',
-        "Arial",
-        "sans-serif",
-        '"Apple Color Emoji"',
-        '"Segoe UI Emoji"',
-        '"Segoe UI Symbol"',
-      ].join(","),
-      "&:focus": {
-        borderRadius: 4,
-        borderColor: "transparent",
-        border: "none", // Убираем границу при фокусе
-        boxShadow: "none", // Убираем тень
-      },
-      "&:hover": {
-        border: "none", // Убираем границу при наведении
-      },
-    },
-  }));
 
   return (
     <main className="main__product__page">
@@ -238,37 +186,6 @@ const ProductPage = () => {
                 )}
               </div>
             </div>
-
-            <Box sx={{ m: 1, minWidth: 120 }}>
-              <FormControl fullWidth>
-                <InputLabel
-                  id="demo-simple-select-label"
-                  className="textSelect"
-                >
-                  Выбор комплектации <img src={iconComplect} alt="иконка" />
-                </InputLabel>
-                <Select
-                  className="select__tablet"
-                  labelId="demo-simple-select-label"
-                  id="demo-simple-select"
-                  value={age}
-                  label="Выбор комплектации"
-                  input={<BootstrapInput />}
-                  IconComponent={() => null} // Убираем иконку
-                  onChange={handleChange}
-                >
-                  <MenuItem className="select__tablet__item" value={10}>
-                    Ten
-                  </MenuItem>
-                  <MenuItem className="select__tablet__item" value={20}>
-                    Twenty
-                  </MenuItem>
-                  <MenuItem className="select__tablet__item" value={30}>
-                    Thirty
-                  </MenuItem>
-                </Select>
-              </FormControl>
-            </Box>
 
             <div className="priceProduct__containe">
               <p>{product.price} р.</p>
@@ -414,20 +331,26 @@ const ProductPage = () => {
               </div>
             </TabPanel>
             <TabPanel className="tabPanel__pading" value="Отзывы">
-              <div className="mainAboutProductContainer">
-                <div className="aboutProductConatainer">
-                  <h3>{product.title1}</h3>
-                  <p>{product.discription1}</p>
-                  <h4>{product.subTitle1}</h4>
-                  <p>{product.discription2}</p>
-                </div>
-                <div className="containerPhotoAbout">
-                  <img src={product.aboutImages[0]} alt="" />
-                  <div>
-                    <img src={product.aboutImages[1]} alt="" />
-                    <img src={product.aboutImages[2]} alt="" />
-                  </div>
-                </div>
+              <div className="mainAboutProductContainerReviews">
+              <Swiper
+        slidesPerView={3}
+        spaceBetween={30}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
+        className="mySwiper8"
+      >
+        <SwiperSlide>Slide 1</SwiperSlide>
+        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide>Slide 5</SwiperSlide>
+        <SwiperSlide>Slide 6</SwiperSlide>
+        <SwiperSlide>Slide 7</SwiperSlide>
+        <SwiperSlide>Slide 8</SwiperSlide>
+        <SwiperSlide>Slide 9</SwiperSlide>
+      </Swiper>
               </div>
             </TabPanel>
           </TabContext>

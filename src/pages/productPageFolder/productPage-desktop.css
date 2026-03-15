@@ -21,6 +21,12 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 .slider__select__color__container .select__color__semi__container {
   width: 50%;
@@ -34,6 +40,8 @@
   border-radius: 10px;
   margin: 64px auto;
   padding: 59px 70px;
+
+ 
 }
 
 .select__color__header {
@@ -186,44 +194,44 @@
   margin-right: 23px;
 }
 
-.image__mobille__tab{
+.image__mobille__tab {
   display: none;
 }
 
-.mySwiper5{
+.mySwiper5 {
   display: none;
 }
 
-.aboutProductCharacteristics{
-  width: 750px;
+.aboutProductCharacteristics {
+  width: 880px;
 }
-.aboutProductCharacteristics *{
-    margin: 0;
+.aboutProductCharacteristics * {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.aboutProductCharacteristics > h3{
-    font-size: 40px;
+.aboutProductCharacteristics > h3 {
+  font-size: 35px;
   font-family: "Gotham";
   font-weight: 700;
   margin-bottom: 11px;
 }
 
-.characteristicsBlock{
+.characteristicsBlock {
   width: 100%;
 }
-.characteristicsPar{
-    font-size: 18px;
+.characteristicsPar {
+  font-size: 18px;
   font-family: "M-l";
   font-weight: 400;
   margin-bottom: 11px;
   line-height: 155%;
 }
-.characteristicsBoldLabel{
+.characteristicsBoldLabel {
   font-weight: bold;
 }
-.colorNewPrice{
-  color:var(--main-bg-color);
+.colorNewPrice {
+  color: var(--main-bg-color);
 }
 .strikethrough {
   text-decoration: line-through;
