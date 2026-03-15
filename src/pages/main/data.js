@@ -4,6 +4,9 @@ import imgLikes from "./image-main/bestseller-img/like.svg";
 import aboutImage1 from "./image-main/aboutProduct/horizondImage.png";
 import aboutImage2 from "./image-main/aboutProduct/verticalImage1.png";
 import aboutImage3 from "./image-main/aboutProduct/verticalImage2.png";
+import reviews1 from "../productPageFolder/imagePageProduct/168002784718767307 1.png"
+import reviews2 from "../productPageFolder/imagePageProduct/c970ab26ee_upload_2024_09_03_16_23_51_383 1.png"
+import reviews3 from "../productPageFolder/imagePageProduct/task-text 1.png"
 
 let data = [
   {
@@ -48,6 +51,14 @@ let data = [
       { label: "Размер: ", value: "40д х 40ш х 47в " },
       { labelPrice: "Цена: ", curPrice: "8000руб", newPrice: "2990руб" },
     ],
+    reviews: [
+reviews1,
+reviews2,
+reviews3,
+reviews1,
+reviews2,
+reviews3,
+    ],
   },
   {
     id: 2,
@@ -90,6 +101,14 @@ let data = [
       },
       { label: "Размер: ", value: "40д х 40ш х 47в " },
     { labelPrice: "Цена: ", curPrice: "8000руб", newPrice: "2990руб" },
+    ],
+        reviews: [
+reviews1,
+reviews2,
+reviews3,
+reviews1,
+reviews2,
+reviews3,
     ],
   },
   {
@@ -134,6 +153,14 @@ let data = [
       { label: "Размер: ", value: "40д х 40ш х 47в " },
      { labelPrice: "Цена: ", curPrice: "8000руб", newPrice: "2990руб" },
     ],
+    reviews: [
+reviews1,
+reviews2,
+reviews3,
+reviews1,
+reviews2,
+reviews3,
+    ],
   },
   {
     id: 4,
@@ -176,6 +203,14 @@ let data = [
       },
       { label: "Размер: ", value: "40д х 40ш х 47в " },
       { labelPrice: "Цена: ", curPrice: "8000руб", newPrice: "2990руб" },
+    ],
+        reviews: [
+reviews1,
+reviews2,
+reviews3,
+reviews1,
+reviews2,
+reviews3,
     ],
   },
   {
@@ -220,6 +255,14 @@ let data = [
       { label: "Размер: ", value: "40д х 40ш х 47в " },
      { labelPrice: "Цена: ", curPrice: "8000руб", newPrice: "2990руб" },
     ],
+        reviews: [
+reviews1,
+reviews2,
+reviews3,
+reviews1,
+reviews2,
+reviews3,
+    ],
   },
   {
     id: 6,
@@ -262,6 +305,14 @@ let data = [
       },
       { label: "Размер: ", value: "40д х 40ш х 47в " },
       { labelPrice: "Цена: ", curPrice: "8000руб", newPrice: "2990руб" },
+    ],
+        reviews: [
+reviews1,
+reviews2,
+reviews3,
+reviews1,
+reviews2,
+reviews3,
     ],
   },
   {
@@ -306,6 +357,14 @@ let data = [
       { label: "Размер: ", value: "40д х 40ш х 47в " },
       { labelPrice: "Цена: ", curPrice: "8000руб", newPrice: "2990руб" },
     ],
+        reviews: [
+reviews1,
+reviews2,
+reviews3,
+reviews1,
+reviews2,
+reviews3,
+    ],
   },
   {
     id: 8,
@@ -348,6 +407,14 @@ let data = [
       },
       { label: "Размер: ", value: "40д х 40ш х 47в " },
      { labelPrice: "Цена: ", curPrice: "8000руб", newPrice: "2990руб" },
+    ],
+        reviews: [
+reviews1,
+reviews2,
+reviews3,
+reviews1,
+reviews2,
+reviews3,
     ],
   },
   {
@@ -392,6 +459,14 @@ let data = [
       { label: "Размер: ", value: "40д х 40ш х 47в " },
      { labelPrice: "Цена: ", curPrice: "8000руб", newPrice: "2990руб" },
     ],
+        reviews: [
+reviews1,
+reviews2,
+reviews3,
+reviews1,
+reviews2,
+reviews3,
+    ],
   },
   {
     id: 10,
@@ -434,6 +509,14 @@ let data = [
       },
       { label: "Размер: ", value: "40д х 40ш х 47в " },
      { labelPrice: "Цена: ", curPrice: "8000руб", newPrice: "2990руб" },
+    ],
+        reviews: [
+reviews1,
+reviews2,
+reviews3,
+reviews1,
+reviews2,
+reviews3,
     ],
   },
   {
@@ -478,6 +561,14 @@ let data = [
       { label: "Размер: ", value: "40д х 40ш х 47в " },
       { labelPrice: "Цена: ", curPrice: "8000руб", newPrice: "2990руб" },
     ],
+        reviews: [
+reviews1,
+reviews2,
+reviews3,
+reviews1,
+reviews2,
+reviews3,
+    ],
   },
   {
     id: 12,
@@ -520,6 +611,14 @@ let data = [
       },
       { label: "Размер: ", value: "40д х 40ш х 47в " },
       { labelPrice: "Цена: ", curPrice: "8000руб", newPrice: "2990руб" },
+    ],
+        reviews: [
+reviews1,
+reviews2,
+reviews3,
+reviews1,
+reviews2,
+reviews3,
     ],
   },
   {
@@ -564,6 +663,14 @@ let data = [
       { label: "Размер: ", value: "40д х 40ш х 47в " },
       { labelPrice: "Цена: ", curPrice: "8000руб", newPrice: "2990руб" },
     ],
+        reviews: [
+reviews1,
+reviews2,
+reviews3,
+reviews1,
+reviews2,
+reviews3,
+    ],
   },
   {
     id: 14,
@@ -606,6 +713,14 @@ let data = [
       },
       { label: "Размер: ", value: "40д х 40ш х 47в " },
      { labelPrice: "Цена: ", curPrice: "8000руб", newPrice: "2990руб" },
+    ],
+        reviews: [
+reviews1,
+reviews2,
+reviews3,
+reviews1,
+reviews2,
+reviews3,
     ],
   },
 ];

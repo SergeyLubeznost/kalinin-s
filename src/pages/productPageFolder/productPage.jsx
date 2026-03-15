@@ -7,6 +7,7 @@ import "./productPage-desktop.css";
 import "./productPage-laptop.css";
 import "./productPage-tablet.css";
 import "./productPage-mobile.css";
+import './sliderReviews.css';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -341,15 +342,11 @@ const ProductPage = () => {
         modules={[Pagination]}
         className="mySwiper8"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        {
+          product.reviews.map((item, index)=>(
+            <SwiperSlide key={index}><img src={item} alt="" /></SwiperSlide>
+          ))
+        }
       </Swiper>
               </div>
             </TabPanel>

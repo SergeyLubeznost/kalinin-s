@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4d7ef024.css",
-    "main.js": "/static/js/main.4884c5b9.js",
+    "main.css": "/static/css/main.a1cf930f.css",
+    "main.js": "/static/js/main.57ae16d5.js",
     "static/js/453.3e375d93.chunk.js": "/static/js/453.3e375d93.chunk.js",
     "static/media/Group17.png": "/static/media/Group17.9d99e3f5449de59c8a76.png",
     "static/media/Group 14.png": "/static/media/Group 14.e7b8b209e214eb498e06.png",
@@ -13,14 +13,17 @@
     "static/media/Group15.png": "/static/media/Group15.9fa8e6d471eeadb37363.png",
     "static/media/Group19.png": "/static/media/Group19.4e08d8467bb61ffe34de.png",
     "static/media/Rectangle 14 (1).png": "/static/media/Rectangle 14 (1).058a397031ca69493f60.png",
+    "static/media/task-text 1.png": "/static/media/task-text 1.fe0dbdad0746803a47be.png",
     "static/media/Group16.png": "/static/media/Group16.49c36314c762c88d5668.png",
     "static/media/Rectangle 14.png": "/static/media/Rectangle 14.8611ea012896431296d9.png",
     "static/media/horizondImage.png": "/static/media/horizondImage.2c1f9e906b5aad8a65ba.png",
     "static/media/Montserrat-Medium.ttf": "/static/media/Montserrat-Medium.b8c6753baa964ccac1ba.ttf",
     "static/media/Montserrat-Light.ttf": "/static/media/Montserrat-Light.7179b7d2ac9b599db5f9.ttf",
+    "static/media/c970ab26ee_upload_2024_09_03_16_23_51_383 1.png": "/static/media/c970ab26ee_upload_2024_09_03_16_23_51_383 1.ec92a9c25e68585ba368.png",
     "static/media/verticalImage2.png": "/static/media/verticalImage2.a8417d84cff180bfab76.png",
     "static/media/verticalImage1.png": "/static/media/verticalImage1.0a4b220bfadeb5f6bf93.png",
     "static/media/для баннера 1.png": "/static/media/для баннера 1.c3ae2f6e17e86dc94350.png",
+    "static/media/ 1.png": "/static/media/168002784718767307 1.5d662651fb2ffb181e81.png",
     "static/media/background about us.png": "/static/media/background about us.6b0f85e40918220d3025.png",
     "static/media/Group 58.png": "/static/media/Group 58.94774e9bb367f5d127d8.png",
     "static/media/Rectangle10_11zon.webp": "/static/media/Rectangle10_11zon.ae11e064ba167f98628c.webp",
@@ -62,12 +65,12 @@
     "static/media/like.svg": "/static/media/like.f6f64adce528dfbd066a9da22850c3f5.svg",
     "index.html": "/index.html",
     "static/media/telega.svg": "/static/media/telega.a00f20d0a54594f3190060c30c08adb1.svg",
-    "main.4d7ef024.css.map": "/static/css/main.4d7ef024.css.map",
-    "main.4884c5b9.js.map": "/static/js/main.4884c5b9.js.map",
+    "main.a1cf930f.css.map": "/static/css/main.a1cf930f.css.map",
+    "main.57ae16d5.js.map": "/static/js/main.57ae16d5.js.map",
     "453.3e375d93.chunk.js.map": "/static/js/453.3e375d93.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d7ef024.css",
-    "static/js/main.4884c5b9.js"
+    "static/css/main.a1cf930f.css",
+    "static/js/main.57ae16d5.js"
   ]
 }
