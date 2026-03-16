@@ -20,40 +20,22 @@
   object-fit: cover;
 }
 
-.mySwiper8 > .swiper-pagination-fraction,
-.swiper-pagination-custom,
-.swiper-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal {
-  /* padding-left: 34%;
-  width: 32% !important;
-  top: 95% !important;
-  display: flex;
-  justify-content: space-evenly; */
-  padding-left: 40%;
+.mySwiper8 .swiper-pagination-bullets {
+    padding-left: 40% !important;
     width: 20% !important;
     top: 97% !important;
     display: flex;
     justify-content: space-evenly;
 }
 
-.mySwiper8
-  > .swiper-horizontal
-  > .swiper-pagination-bullets
-  .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets
-  .swiper-pagination-bullet {
+.mySwiper8 .swiper-pagination-bullet {
   width: 15px !important;
   height: 15px !important;
   border: #ea899a 2px solid;
   background: transparent !important;
   opacity: 1 !important;
 }
-.mySwiper8
-  > .swiper-horizontal
-  > .swiper-pagination-bullets
-  .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets
-  .swiper-pagination-bullet-active {
+.mySwiper8 .swiper-pagination-bullet-active {
   width: 15px !important;
   height: 15px !important;
   border: #ea899a 2px solid !important;
@@ -94,8 +76,8 @@
     width: 100%;
     height: 100%;
 }
-.mySwiper8 > .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
-    padding-left: 24%;
+.mySwiper8 >  .swiper-pagination  {
+    padding-left: 24%!important;
     width: 50% !important;
     top: 96% !important;
  
