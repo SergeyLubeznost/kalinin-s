@@ -6,10 +6,8 @@
 .mySwiper8 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background:transparent;
-/* width: 379px!important; */
-    /* margin-right: 30px!important; */
-  /* Center slide text vertically */
+  background: transparent;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +15,54 @@
 
 .mySwiper8 .swiper-slide img {
   display: block;
-  width: 50%;
-  height: 50%;
+  width: 60%;
+  height: 81%;
   object-fit: cover;
+}
+
+.mySwiper8 > .swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  padding-left: 34%;
+  width: 32% !important;
+  top: 95% !important;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.mySwiper8
+  > .swiper-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  width: 20px !important;
+  height: 20px !important;
+  border: #ea899a 2px solid;
+  background: transparent !important;
+  opacity: 1 !important;
+}
+.mySwiper8
+  > .swiper-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet-active {
+  width: 20px !important;
+  height: 20px !important;
+  border: #ea899a 2px solid !important;
+  background-color: #ea899a !important;
+}
+
+@media (min-width: 969px) and (max-width: 1600px) {
+  .mySwiper8 .swiper-slide img {
+    display: block;
+  width: 239px;
+        height: 525px;
+    object-fit: cover;
+  }
+  .mainAboutProductContainerReviews{
+  height: 695px;
+}
 }

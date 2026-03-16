@@ -7,7 +7,7 @@ import "./productPage-desktop.css";
 import "./productPage-laptop.css";
 import "./productPage-tablet.css";
 import "./productPage-mobile.css";
-import './sliderReviews.css';
+import "./sliderReviews.css";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -18,7 +18,6 @@ import FavoriteBorder from "@mui/icons-material/FavoriteBorder";
 import Favorite from "@mui/icons-material/Favorite";
 
 import Box from "@mui/material/Box";
-
 
 import Button from "@mui/material/Button";
 
@@ -312,18 +311,32 @@ const ProductPage = () => {
                   {product.characteristics.map((item, index) => (
                     <div className="characteristicsBlock" key={index}>
                       <p className="characteristicsPar">
-                        <span className="characteristicsBoldLabel">{item.label}</span> {item.value}
+                        <span className="characteristicsBoldLabel">
+                          {item.label}
+                        </span>{" "}
+                        {item.value}
                       </p>
                       {item.newPrice ? (
                         <p>
-                          <span className="characteristicsPar characteristicsBoldLabel">{item.labelPrice}</span>
-                          <span className="characteristicsPar strikethrough">{item.curPrice} </span>
-                          <span className="characteristicsPar colorNewPrice characteristicsBoldLabel"> {item.newPrice}</span>
+                          <span className="characteristicsPar characteristicsBoldLabel">
+                            {item.labelPrice}
+                          </span>
+                          <span className="characteristicsPar strikethrough">
+                            {item.curPrice}{" "}
+                          </span>
+                          <span className="characteristicsPar colorNewPrice characteristicsBoldLabel">
+                            {" "}
+                            {item.newPrice}
+                          </span>
                         </p>
                       ) : (
                         <p>
-                          <span className="characteristicsPar characteristicsBoldLabel">{item.labelPrice} </span>
-                          <span className="characteristicsPar colorNewPrice characteristicsBoldLabel">{item.curPrice}</span>
+                          <span className="characteristicsPar characteristicsBoldLabel">
+                            {item.labelPrice}{" "}
+                          </span>
+                          <span className="characteristicsPar colorNewPrice characteristicsBoldLabel">
+                            {item.curPrice}
+                          </span>
                         </p>
                       )}
                     </div>
@@ -333,21 +346,33 @@ const ProductPage = () => {
             </TabPanel>
             <TabPanel className="tabPanel__pading" value="Отзывы">
               <div className="mainAboutProductContainerReviews">
-              <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
-        className="mySwiper8"
-      >
-        {
-          product.reviews.map((item, index)=>(
-            <SwiperSlide key={index}><img src={item} alt="" /></SwiperSlide>
-          ))
-        }
-      </Swiper>
+                <Swiper
+                  slidesPerView={1} // Количество слайдов для самых маленьких экранов (мобильные)
+                  spaceBetween={30}
+                  pagination={{
+                    clickable: true,
+                  }}
+                  modules={[Pagination]}
+                  className="mySwiper8"
+                  breakpoints={{
+                    // Когда ширина экрана >= 540px
+                    540: {
+                      slidesPerView: 2,
+                      spaceBetween: 20, // Можно также менять расстояние между слайдами
+                    },
+                    // Когда ширина экрана >= 969px
+                    969: {
+                      slidesPerView: 3,
+                      spaceBetween: 30,
+                    },
+                  }}
+                >
+                  {product.reviews.map((item, index) => (
+                    <SwiperSlide key={index}>
+                      <img src={item} alt="" />
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
               </div>
             </TabPanel>
           </TabContext>
