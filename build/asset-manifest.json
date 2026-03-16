@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.d72d5bf5.css",
-    "main.js": "/static/js/main.1408ec08.js",
-    "static/js/453.3e375d93.chunk.js": "/static/js/453.3e375d93.chunk.js",
+    "main.css": "/static/css/main.a81ff750.css",
+    "main.js": "/static/js/main.d318c480.js",
+    "static/js/453.f098ca89.chunk.js": "/static/js/453.f098ca89.chunk.js",
     "static/media/Group17.png": "/static/media/Group17.9d99e3f5449de59c8a76.png",
     "static/media/Group 14.png": "/static/media/Group 14.e7b8b209e214eb498e06.png",
     "static/media/bckslide1.png": "/static/media/bckslide1.42d1c4c958dadae159d9.png",
@@ -65,12 +65,12 @@
     "static/media/like.svg": "/static/media/like.f6f64adce528dfbd066a9da22850c3f5.svg",
     "index.html": "/index.html",
     "static/media/telega.svg": "/static/media/telega.a00f20d0a54594f3190060c30c08adb1.svg",
-    "main.d72d5bf5.css.map": "/static/css/main.d72d5bf5.css.map",
-    "main.1408ec08.js.map": "/static/js/main.1408ec08.js.map",
-    "453.3e375d93.chunk.js.map": "/static/js/453.3e375d93.chunk.js.map"
+    "main.a81ff750.css.map": "/static/css/main.a81ff750.css.map",
+    "main.d318c480.js.map": "/static/js/main.d318c480.js.map",
+    "453.f098ca89.chunk.js.map": "/static/js/453.f098ca89.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d72d5bf5.css",
-    "static/js/main.1408ec08.js"
+    "static/css/main.a81ff750.css",
+    "static/js/main.d318c480.js"
   ]
 }
