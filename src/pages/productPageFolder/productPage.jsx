@@ -378,6 +378,50 @@ const ProductPage = () => {
           </TabContext>
         </Box>
       </section>
+
+      <section className="similar__products__section">
+        <h2>Похожие товары:</h2>
+        <Swiper
+          slidesPerView={4}
+          spaceBetween={30}
+          watchSlidesProgress={true}
+          freeMode={true}
+          navigation={true}
+          loop={true}
+          // pagination={{
+          //   clickable: false,
+          // }}
+          modules={[FreeMode, Navigation]}
+          className="mySwiper9"
+        >
+          {data.map((item, index) => (
+            <SwiperSlide key={index}>
+              <div className="cardSimilar">
+                <img src={item.img} alt="" />
+                <div className="cardSimilarCategory">
+                  <div>
+                    <p>{item.category}</p>
+                  </div>
+                </div>
+                <h3>{item.title}</h3>
+                <div className="cardSimilarPriceBlock">
+                  <p>{item.price}</p>
+                  <Button variant="contained">Купить</Button>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+
+          {/* <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide>Slide 5</SwiperSlide>
+        <SwiperSlide>Slide 6</SwiperSlide>
+        <SwiperSlide>Slide 7</SwiperSlide>
+        <SwiperSlide>Slide 8</SwiperSlide>
+        <SwiperSlide>Slide 9</SwiperSlide> */}
+        </Swiper>
+      </section>
     </main>
   );
 };

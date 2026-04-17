@@ -240,3 +240,60 @@
 .mainAboutProductContainerReviews{
   height: 650px;
 }
+
+.similar__products__section{
+  height: 500px;
+}
+
+.similar__products__section h2{
+ font-family: "Gotham";
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.cardSimilar *{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.cardSimilar{
+width: 323px!important;
+border-radius: 10px;
+border:#DCDCDC 1px solid;
+}
+.cardSimilar img{
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.cardSimilarCategory > div{
+  width: 200px;
+background-color: #FFBFBF;
+border-radius: 5px;
+padding: 6px 22px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin:12px 0px 16px 10px;
+}
+.cardSimilarCategory > div > p{
+color:white;
+  font-size: 16px;
+  font-family: "M-l";
+  font-weight: 400;
+}
+
+.cardSimilar h3{
+  font-family: "Gotham";
+  font-weight: 700;
+  font-size: 22px;
+  margin-left: 10px;
+  height: 30px;
+}
+
+.cardSimilarPriceBlock{
+margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
