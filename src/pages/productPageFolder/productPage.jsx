@@ -8,6 +8,7 @@ import "./productPage-laptop.css";
 import "./productPage-tablet.css";
 import "./productPage-mobile.css";
 import "./sliderReviews.css";
+import "./mySwipper9Folder/mySwiper9.css"
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
