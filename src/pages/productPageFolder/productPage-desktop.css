@@ -21,12 +21,12 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 .slider__select__color__container .select__color__semi__container {
   width: 50%;
@@ -40,8 +40,6 @@
   border-radius: 10px;
   margin: 64px auto;
   padding: 59px 70px;
-
- 
 }
 
 .select__color__header {
@@ -237,63 +235,80 @@
   text-decoration: line-through;
 }
 
-.mainAboutProductContainerReviews{
+.mainAboutProductContainerReviews {
   height: 650px;
 }
 
-.similar__products__section{
-  height: 500px;
+.similar__products__section {
+  height: 600px;
 }
 
-.similar__products__section h2{
- font-family: "Gotham";
+.similar__products__section h2 {
+  font-family: "Gotham";
   font-weight: 700;
   font-size: 35px;
 }
 
-.cardSimilar *{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+.cardSimilar * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.cardSimilar{
-width: 323px!important;
-border-radius: 10px;
-border:#DCDCDC 1px solid;
+.cardSimilar {
+  width: 323px !important;
+  border-radius: 10px;
+  border: #dcdcdc 1px solid;
 }
-.cardSimilar img{
+.cardSimilar img {
   width: 100%;
   border-radius: 10px 10px 0px 0px;
 }
 
-.cardSimilarCategory > div{
+.cardSimilarCategory > div {
   width: 200px;
-background-color: #FFBFBF;
-border-radius: 5px;
-padding: 6px 22px;
-display: flex;
-justify-content: center;
-align-items: center;
-margin:12px 0px 16px 10px;
+  background-color: #ffbfbf;
+  border-radius: 5px;
+  padding: 6px 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px 0px 16px 10px;
 }
-.cardSimilarCategory > div > p{
-color:white;
+.cardSimilarCategory > div > p {
+  color: white;
   font-size: 16px;
   font-family: "M-l";
   font-weight: 400;
 }
 
-.cardSimilar h3{
+.cardSimilar h3 {
   font-family: "Gotham";
   font-weight: 700;
   font-size: 22px;
   margin-left: 10px;
-  height: 30px;
+  height: 80px;
 }
 
-.cardSimilarPriceBlock{
-margin-left: 10px;
+.cardSimilarPriceBlock {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 90px;
+  padding: 16px 10px 23px 10px;
+}
+.cardSimilarPriceBlock p {
+  font-family: "Montserrat"; /* Исправлено на правильное написание */
+  font-weight: 500;
+  font-size: 25px;
+}
+.cardSimilarPriceBlock .cardSimilarPriceButton {
+  font-family: "Montserrat"; /* Исправлено на правильное написание */
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+  text-transform: none;
+  background-color: #ea899a;
+  border-radius: 10px;
+  width: 122px;
+  height: 48px;
 }

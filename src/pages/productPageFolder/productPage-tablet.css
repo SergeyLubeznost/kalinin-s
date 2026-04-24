@@ -137,4 +137,51 @@
   
 }
 
+  .similar__products__section {
+  height: 440px;
+}
+
+.similar__products__section h2 {
+  font-size: 25px;
+}
+
+.cardSimilar {
+  width: 176px !important;
+}
+.cardSimilar img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.cardSimilarCategory > div {
+        width: 113px;
+        border-radius: 5px;
+        padding: 6px 0px;
+        margin: 12px 0px 16px 10px;
+}
+.cardSimilarCategory > div > p {
+  
+  font-size: 11px;
+
+}
+
+.cardSimilar h3 {
+        font-size: 16px;
+        margin-left: 10px;
+        height: 77px;
+}
+
+.cardSimilarPriceBlock {
+        height: 65px;
+        padding: 0px 10px 11px 10px;
+}
+.cardSimilarPriceBlock p {
+  font-size: 16px;
+}
+.cardSimilarPriceBlock .cardSimilarPriceButton {
+font-size: 14px;
+        width: 72px;
+        height: 34px;
+}
+
 }

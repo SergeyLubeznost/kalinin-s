@@ -8,7 +8,7 @@ import "./productPage-laptop.css";
 import "./productPage-tablet.css";
 import "./productPage-mobile.css";
 import "./sliderReviews.css";
-import "./mySwipper9Folder/mySwiper9.css"
+import "./mySwipper9Folder/mySwiper9.css";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -406,21 +406,20 @@ const ProductPage = () => {
                 </div>
                 <h3>{item.title}</h3>
                 <div className="cardSimilarPriceBlock">
-                  <p>{item.price}</p>
-                  <Button variant="contained">Купить</Button>
+                  <p>{item.price} р.</p>
+                  <Link to={`/katalog/${item.id}`}>
+                    <Button
+                    className="cardSimilarPriceButton"
+                    variant="contained"
+                  >
+                    Купить
+                  </Button>
+                  </Link>
+                
                 </div>
               </div>
             </SwiperSlide>
           ))}
-
-          {/* <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide> */}
         </Swiper>
       </section>
     </main>
