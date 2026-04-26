@@ -14,7 +14,7 @@
   /* Добавляем отступы по бокам, чтобы стрелки не закрывали контент */
   /* padding: 0 40px !important;  */
    height: 500px;
-width: 1150px;
+width: 90%;
   }
 }
 @media (min-width: 540px) and (max-width: 968px) {
