@@ -383,14 +383,24 @@ const ProductPage = () => {
       <section className="similar__products__section">
         <h2>Похожие товары:</h2>
         <Swiper
-          slidesPerView={4}
-          spaceBetween={30}
+          slidesPerView={1}
+          spaceBetween={-95}
+          centeredSlides={true}
+          breakpoints={{
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 30,
+              centeredSlides: false,
+          
+            }
+          }}
+
           watchSlidesProgress={true}
           freeMode={true}
           navigation={true}
           loop={true}
           // pagination={{
-          //   clickable: false,
+          //   clickable: true, // Делает точки кликабельными
           // }}
           modules={[FreeMode, Navigation]}
           className="mySwiper9"
@@ -409,13 +419,13 @@ const ProductPage = () => {
                   <p>{item.price} р.</p>
                   <Link to={`/katalog/${item.id}`}>
                     <Button
-                    className="cardSimilarPriceButton"
-                    variant="contained"
-                  >
-                    Купить
-                  </Button>
+                      className="cardSimilarPriceButton"
+                      variant="contained"
+                    >
+                      Купить
+                    </Button>
                   </Link>
-                
+
                 </div>
               </div>
             </SwiperSlide>

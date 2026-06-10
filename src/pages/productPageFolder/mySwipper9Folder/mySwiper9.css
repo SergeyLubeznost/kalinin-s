@@ -24,4 +24,20 @@ width: 90%;
    /* height: 500px;
 width: 1150px; 
   } */
+  
+}
+
+@media (max-width: 539px) {
+ .mySwiper9 > .swiper-wrapper > .swiper-slide{ 
+    display: flex;
+    justify-content: center;
+   }
+
+   .mySwiper9 {
+  height: 369px;
+}
+.mySwiper9 .swiper-button-next,
+.mySwiper9 .swiper-button-prev {
+  display: none !important;
+}
 }

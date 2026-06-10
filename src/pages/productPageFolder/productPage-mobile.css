@@ -10,12 +10,15 @@
 
     height: 40px;
   }
-  .bread__crumbs > nav > ol > li > p {
+
+  .bread__crumbs>nav>ol>li>p {
     font-size: 14px !important;
   }
-  .bread__crumbs > nav > ol > li {
+
+  .bread__crumbs>nav>ol>li {
     margin: 0px !important;
   }
+
   .bread__crumb__link {
     margin-right: 0px !important;
     font-size: 14px !important;
@@ -40,6 +43,7 @@
     margin: 0px auto;
     padding: 0px 11px;
   }
+
   .rotate__container {
     transform: rotate(0deg);
     width: 100% !important;
@@ -48,6 +52,7 @@
   .select__color__header h2 {
     font-size: 21px;
   }
+
   .select__color__header__likes {
     font-size: 16px;
     text-align: center;
@@ -62,10 +67,12 @@
     font-size: 14px;
     margin-right: 22px;
   }
+
   .select__color__block span {
     font-size: 14px;
     margin-right: 22px;
   }
+
   .select__color__material,
   .select__color__block {
     font-size: 14px;
@@ -84,6 +91,7 @@
   .textSelect {
     font-size: 16px !important;
   }
+
   .priceProduct__containe p {
     margin: 0;
     font-size: 25px;
@@ -104,31 +112,37 @@
   .tabPanel__pading {
     padding: 0 !important;
   }
+
   .mainAboutProductContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
+
   .aboutProductConatainer {
     width: 100%;
   }
+
   .aboutProductConatainer * {
     width: 100%;
   }
-  .aboutProductConatainer > h3 {
+
+  .aboutProductConatainer>h3 {
     margin-top: 47px;
     font-size: 20px;
     margin-bottom: 30px;
     padding-left: 10px;
     padding-right: 10px;
   }
-  .aboutProductConatainer > p {
+
+  .aboutProductConatainer>p {
     font-size: 14px;
     padding-left: 10px;
     padding-right: 10px;
   }
-  .aboutProductConatainer > h4 {
+
+  .aboutProductConatainer>h4 {
     font-size: 16px;
     font-family: "Gotham";
     font-weight: 700;
@@ -144,9 +158,11 @@
     width: 100%;
     height: 251px;
   }
+
   .noimage__mobille__tab {
     display: none;
   }
+
   .images__group__mobile {
     display: none;
   }
@@ -158,6 +174,7 @@
   .slider__mobile__product .swiper-slide:nth-child(2n) {
     width: 70%;
   }
+
   .slider__mobile__product .swiper-slide img {
     display: block;
     width: 100%;
@@ -168,37 +185,97 @@
   .slider__mobile__product .slider__mobile__product {
     width: 100%;
   }
+
   .slider__mobile__product .mySwiper5 {
     display: block;
   }
 
-  .aboutProductCharacteristics{
-  width: 100%;
-  padding-bottom: 20px;
-}
+  .aboutProductCharacteristics {
+    width: 100%;
+    padding-bottom: 20px;
+  }
 
-.aboutProductCharacteristics > h3{
+  .aboutProductCharacteristics>h3 {
     font-size: 20px;
     margin-top: 20px;
+  }
+
+  .characteristicsBlock {
+    width: 100%;
+  }
+
+  .characteristicsPar {
+    font-size: 14px;
+    font-family: "M-l";
+    font-weight: 400;
+    margin-bottom: 11px;
+    line-height: 155%;
+  }
+
+  .characteristicsBoldLabel {
+    font-weight: bold;
+  }
+
+  .colorNewPrice {
+    color: var(--main-bg-color);
+  }
+
+  .strikethrough {
+    text-decoration: line-through;
+  }
+
+  .similar__products__section h2 {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .similar__products__section {
+    height: 440px;
 }
 
-.characteristicsBlock{
-  width: 100%;
-}
-.characteristicsPar{
-    font-size: 14px;
-  font-family: "M-l";
-  font-weight: 400;
-  margin-bottom: 11px;
-  line-height: 155%;
-}
-.characteristicsBoldLabel{
-  font-weight: bold;
-}
-.colorNewPrice{
-  color:var(--main-bg-color);
-}
-.strikethrough {
-  text-decoration: line-through;
-}
+  .cardSimilar {
+    width: 65% !important;
+    height: 335px;
+  }
+
+  .cardSimilar img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .cardSimilarCategory>div {
+    width: 113px;
+    border-radius: 5px;
+    padding: 6px 0px;
+    margin: 3px 0px 10px 10px;
+  }
+
+  .cardSimilarCategory>div>p {
+
+    font-size: 11px;
+
+  }
+
+  .cardSimilar h3 {
+    font-size: 16px;
+    margin-left: 10px;
+    height: 55px;
+  }
+
+  .cardSimilarPriceBlock {
+    height: 56px;
+    padding: 0px 10px 11px 10px;
+  }
+
+  .cardSimilarPriceBlock p {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .cardSimilarPriceBlock .cardSimilarPriceButton {
+    font-size: 12px;
+    width: 100px;
+    height: 29px;
+  }
 }
