@@ -1,43 +1,107 @@
-.mySwiper9 {
-  /* Добавляем отступы по бокам, чтобы стрелки не закрывали контент */
-  /* padding: 0 40px !important;  */
-   height: 500px;
+/* 1. Главный контейнер для слайдера и кнопок */
+.slider-wrapper-block {
+  position: relative !important;
+  padding: 0 50px !important;
 }
-/* .mySwiper9 .swiper-wrapper{
-  Добавляем отступы по бокам, чтобы стрелки не закрывали контент */
-  /* padding: 0 40px !important; 
-  height: 500px;
-} */
+
+/* 2. Контейнер самого слайдера */
+.mySwiper9 {
+  overflow: hidden !important; /* Четко обрезает слайды, оставляя ровно 4 */
+}
+
+/* 3. ОБЩИЕ СТИЛИ ДЛЯ ОБЕИХ КНОПОК */
+.slider-wrapper-block .custom-prev-btn,
+.slider-wrapper-block .custom-next-btn {
+  position: absolute !important;
+  top: 45% !important; /* Выравниваем по центру картинок */
+  /* 🌟 ГЛАВНОЕ: поднимаем кнопки на самый верхний слой, чтобы карточки их не перекрывали */
+  z-index: 9999 !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 40px !important; /* Фиксированный размер круга */
+  height: 40px !important;
+}
+
+
+
+
+/* Избавляемся от паразитных перекрытий прозрачных областей картинок */
+.slider-wrapper-block .custom-prev-btn img,
+.slider-wrapper-block .custom-next-btn img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  pointer-events: none !important; /* Клик проходит сквозь саму картинку на кнопку */
+}
+
+/* 4. ВЫНОСИМ ЛЕВУЮ КНОПКУ НА БЕЛОЕ ПОЛЕ (влево от слайдера) */
+.slider-wrapper-block .custom-prev-btn {
+  left: -35px !important;
+}
+
+/* 5. ВЫНОСИМ ПРАВУЮ КНОПКУ НА БЕЛОЕ ПОЛЕ (вправо от слайдера) */
+.slider-wrapper-block .custom-next-btn {
+  right: -10px !important;
+}
+
+/* Поворачиваем правую стрелку */
+.slider-wrapper-block .custom-prev-btn img {
+  transform: rotate(180deg) !important;
+}
+
+/* 5. ЧТО ДЕЛАТЬ, ЕСЛИ СЛАЙДЕР ЗАКОНЧИЛСЯ (стиль для заблокированной кнопки) */
+.mySwiper9 .swiper-button-disabled {
+  opacity: 0.3 !important;
+  pointer-events: none !important; /* Кнопка перестает кликаться, если листать некуда */
+}
 
 @media (min-width: 969px) and (max-width: 1600px) {
+  .slider-wrapper-block {
+  position: relative !important;
+   box-sizing: border-box !important;
+  padding: 50px 0px !important;
+          width: 100%;
+}
+.slider-wrapper-block .custom-prev-btn {
+  left: 10px !important;
+}
+
+/* 5. ВЫНОСИМ ПРАВУЮ КНОПКУ НА БЕЛОЕ ПОЛЕ (вправо от слайдера) */
+.slider-wrapper-block .custom-next-btn {
+  right: 10px !important;
+}
+
   .mySwiper9 {
-  /* Добавляем отступы по бокам, чтобы стрелки не закрывали контент */
-  /* padding: 0 40px !important;  */
-   height: 500px;
-width: 90%;
+    height: 500px;
+    width: 90%;
   }
 }
 @media (min-width: 540px) and (max-width: 968px) {
-  /* .mySwiper9 {
-  /* Добавляем отступы по бокам, чтобы стрелки не закрывали контент
-  /* padding: 0 40px !important;  */
-   /* height: 500px;
-width: 1150px; 
-  } */
-  
+.slider-wrapper-block .custom-prev-btn,
+.slider-wrapper-block .custom-next-btn {
+    display: none !important;
+  }
+  .slider-wrapper-block {
+    padding: 0 0px !important;
+}
 }
 
 @media (max-width: 539px) {
- .mySwiper9 > .swiper-wrapper > .swiper-slide{ 
+  .mySwiper9 > .swiper-wrapper > .swiper-slide {
     display: flex;
     justify-content: center;
-   }
+  }
 
-   .mySwiper9 {
-  height: 369px;
-}
-.mySwiper9 .swiper-button-next,
-.mySwiper9 .swiper-button-prev {
-  display: none !important;
+  .mySwiper9 {
+    height: 369px;
+  }
+ .slider-wrapper-block .custom-prev-btn,
+.slider-wrapper-block .custom-next-btn {
+    display: none !important;
+  }
+  .slider-wrapper-block {
+    padding: 0 0px !important;
 }
 }

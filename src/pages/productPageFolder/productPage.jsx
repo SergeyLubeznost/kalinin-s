@@ -19,20 +19,16 @@ import FavoriteBorder from "@mui/icons-material/FavoriteBorder";
 import Favorite from "@mui/icons-material/Favorite";
 
 import Box from "@mui/material/Box";
-
 import Button from "@mui/material/Button";
-
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Typography from "@mui/material/Typography";
-
 import Stack from "@mui/material/Stack";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
-
 import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
-
+import NumberSpinner from "../../components/NumberSpinner";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -44,6 +40,8 @@ import "./stylesSwiperProduct/styleSwiperSliderProduct-laptop.css";
 import "./stylesSwiperProduct/styleSwiperSliderProduct-tablet.css";
 import "./stylesSwiperProduct/styleSwiperSliderProduct-mobile.css";
 import data from "../main/data";
+
+import navig from "./mySwipper9Folder/right.png";
 
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 
@@ -188,6 +186,10 @@ const ProductPage = () => {
               </div>
             </div>
 
+            <div className="counterConteiner">
+               <NumberSpinner min={1} max={100} defaultValue={1} size="small" />
+            </div>
+           
             <div className="priceProduct__containe">
               <p>{product.price} р.</p>
               <Button className="product__button " variant="contained">
@@ -382,55 +384,64 @@ const ProductPage = () => {
 
       <section className="similar__products__section">
         <h2>Похожие товары:</h2>
-        <Swiper
-          slidesPerView={1}
-          spaceBetween={-95}
-          centeredSlides={true}
-          breakpoints={{
-            1024: {
-              slidesPerView: 4,
-              spaceBetween: 30,
-              centeredSlides: false,
-          
-            }
-          }}
-
-          watchSlidesProgress={true}
-          freeMode={true}
-          navigation={true}
-          loop={true}
-          // pagination={{
-          //   clickable: true, // Делает точки кликабельными
-          // }}
-          modules={[FreeMode, Navigation]}
-          className="mySwiper9"
-        >
-          {data.map((item, index) => (
-            <SwiperSlide key={index}>
-              <div className="cardSimilar">
-                <img src={item.img} alt="" />
-                <div className="cardSimilarCategory">
-                  <div>
-                    <p>{item.category}</p>
+        <div className="slider-wrapper-block">
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={-95}
+            centeredSlides={true}
+            breakpoints={{
+              539: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+                centeredSlides: false,
+                freeMode: false,
+              },
+            }}
+            watchSlidesProgress={true}
+            freeMode={true}
+            navigation={{
+              nextEl: ".custom-next-btn",
+              prevEl: ".custom-prev-btn",
+            }}
+            loop={true}
+            // pagination={{
+            //   clickable: true, // Делает точки кликабельными
+            // }}
+            modules={[FreeMode, Navigation]}
+            className="mySwiper9"
+          >
+            {data.map((item, index) => (
+              <SwiperSlide key={index}>
+                <div className="cardSimilar">
+                  <img src={item.img} alt="" />
+                  <div className="cardSimilarCategory">
+                    <div>
+                      <p>{item.category}</p>
+                    </div>
+                  </div>
+                  <h3>{item.title}</h3>
+                  <div className="cardSimilarPriceBlock">
+                    <p>{item.price} р.</p>
+                    <Link to={`/katalog/${item.id}`}>
+                      <Button
+                        className="cardSimilarPriceButton"
+                        variant="contained"
+                      >
+                        Купить
+                      </Button>
+                    </Link>
                   </div>
                 </div>
-                <h3>{item.title}</h3>
-                <div className="cardSimilarPriceBlock">
-                  <p>{item.price} р.</p>
-                  <Link to={`/katalog/${item.id}`}>
-                    <Button
-                      className="cardSimilarPriceButton"
-                      variant="contained"
-                    >
-                      Купить
-                    </Button>
-                  </Link>
-
-                </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          <div className="custom-prev-btn">
+            <img src={navig} alt="text" />
+          </div>
+          <div className="custom-next-btn">
+            <img src={navig} alt="text" />
+          </div>
+        </div>
       </section>
     </main>
   );

@@ -47,6 +47,11 @@
   .textSelect {
     font-size: 20px !important;
   }
+
+  .counterConteiner {
+    height: 95px;
+    margin-top: -25px;
+  }
   .priceProduct__containe p {
     margin: 0;
     font-size: 40px;
@@ -92,7 +97,7 @@
   }
 
   .cardSimilar {
-    width: 100% !important;
+    width: 98% !important;
   }
   .cardSimilar img {
     width: 100%;
@@ -113,7 +118,7 @@
   }
 
   .cardSimilar h3 {
-    font-size: 20px;
+    font-size: 18px;
     margin-left: 10px;
     height: 80px;
   }

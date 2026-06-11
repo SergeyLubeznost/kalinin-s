@@ -102,6 +102,12 @@
   margin-left: 17px;
 }
 
+.counterConteiner{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
 .priceProduct__containe {
   display: flex;
   justify-content: space-between;
@@ -241,6 +247,7 @@
 
 .similar__products__section {
   height: 600px;
+  
 }
 
 .similar__products__section h2 {
